@@ -1,0 +1,46 @@
+"""Candidate feature design (auto-generated, auditable)."""
+import numpy as np
+
+
+def _lag(x, k):
+    out = np.empty_like(x, dtype=float)
+    out[:k] = x[:k]
+    out[k:] = x[:-k]
+    return out
+
+
+def _roll(x, w):
+    return np.convolve(x, np.ones(w) / w, mode="same")
+
+
+def _ewm(x, alpha):
+    out = np.empty_like(x, dtype=float)
+    acc = x[0]
+    for i, v in enumerate(x):
+        acc = alpha * v + (1 - alpha) * acc
+        out[i] = acc
+    return out
+
+
+SPEC = [('p_ewm', {'alpha': 0.05}), ('pet_ewm', {'alpha': 0.05}), ('harm', {'k': 1}), (np.str_('p_lag'), {'k': 3}), (np.str_('log_p_ewm'), {'alpha': 0.1})]
+
+
+def build_features(ctx):
+    P, T, PET, SNOW, doy = ctx["P"], ctx["T"], ctx["PET"], ctx["SNOW"], ctx["doy"]
+    P = np.maximum(P, 0.0)
+    PET = np.maximum(PET, 0.0)
+    cols, names = [], []
+
+    def add(v, name):
+        cols.append(np.asarray(v, dtype=float))
+        names.append(name)
+
+    add(_ewm(P, 0.05), 'p_ewm0.05')
+    add(_ewm(PET, 0.05), 'pet_ewm0.05')
+    add(np.sin(2 * np.pi * doy / 365.25 * 1), 'sin1')
+    add(np.cos(2 * np.pi * doy / 365.25 * 1), 'cos1')
+    add(_lag(P, 3), 'p_lag3')
+    add(np.log1p(_ewm(P, 0.1)), 'log_p_ewm0.1')
+
+    X = np.column_stack(cols) if cols else np.zeros((len(P), 0))
+    return X, names

@@ -1,0 +1,17 @@
+{
+  "hid": "H-I4",
+  "claim": "多数流域后半段（约 2004–2022）的 P–Q 弹性低于前半段（1985–2003），径流对降水的敏感性在减弱。",
+  "criteria": [
+    {
+      "metric": "neg_delta_elast",
+      "direction": "median>",
+      "threshold": 0.0,
+      "supports": "Δ弹性中位数 < 0",
+      "weakens": "Δ弹性中位数 ≥ 0",
+      "value": 0.197,
+      "n": 21,
+      "verdict": "supports"
+    }
+  ],
+  "overall": "supports"
+}

@@ -1,0 +1,6 @@
+{"ts": "2026-10-27T10:26:01+00:00", "stage": "boss", "kind": "decision", "payload": {"topic": "run-init", "choice": "created"}}
+{"ts": "2026-10-27T10:26:03+00:00", "stage": "data", "kind": "built", "payload": {"source": "synthetic", "n_basins": 6, "data_sha": "215e185e0d18943170f04cb7a38d637dba52d667c7deb908019e142cbbbea865"}}
+{"ts": "2026-10-27T10:26:11+00:00", "stage": "data", "kind": "built", "payload": {"source": "synthetic", "n_basins": 6, "data_sha": "337d02240d3c4e9bd9534485056e60f90ccd171ba150e9199aa61ba136c5dbf8"}}
+{"ts": "2026-10-27T10:26:13+00:00", "stage": "experiment", "kind": "branch1_done", "payload": {"evals": 21, "best_val_median": null, "best_test_median": 0.9526481592547538, "best_n_features": 6}}
+{"ts": "2026-10-27T10:26:23+00:00", "stage": "experiment", "kind": "branch1_done", "payload": {"evals": 21, "best_val_median": 0.9508140125745155, "best_test_median": 0.9526481592547538, "best_n_features": 6}}
+{"ts": "2026-10-27T10:26:28+00:00", "stage": "analysis", "kind": "signatures", "payload": {"n_basins": 6, "n_anomalies": 3}}

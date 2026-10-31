@@ -1,0 +1,1788 @@
+{
+ "n_sent": 153,
+ "n_mapped": 110,
+ "per_paper": {
+  "doi:10.5281/zenodo.22236304": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.22236305": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.19682815": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.23475995": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.23475994": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.21036545": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.21036546": {
+   "mapped": false
+  },
+  "arxiv:2609.21822v1": {
+   "mapped": true,
+   "s2_title": "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty",
+   "year": 2026,
+   "citations": 1,
+   "n_refs": 0,
+   "n_refs_listed": 0,
+   "internal_targets": []
+  },
+  "doi:10.5281/zenodo.21428081": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.21428080": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.22909062": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.22909063": {
+   "mapped": false
+  },
+  "doi:10.48550/arxiv.2606.03568": {
+   "mapped": true,
+   "s2_title": "Learned Non-Maximum Suppression for 3D Object Detection",
+   "year": 2026,
+   "citations": 0,
+   "n_refs": 18,
+   "n_refs_listed": 18,
+   "internal_targets": []
+  },
+  "doi:10.5281/zenodo.23171906": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.23171907": {
+   "mapped": false
+  },
+  "arxiv:2603.06917v2": {
+   "mapped": true,
+   "s2_title": "PaQ-DETR: Learning Pattern and Quality-Aware Dynamic Queries for Object Detection",
+   "year": 2026,
+   "citations": 7,
+   "n_refs": 51,
+   "n_refs_listed": 51,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "doi:10.5281/zenodo.22122833": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.18618628": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.18618629": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.20717956": {
+   "mapped": false
+  },
+  "arxiv:2609.39467v1": {
+   "mapped": true,
+   "s2_title": "DensePed-Lite: Quality-Aware Adaptive Detection for Dense Pedestrians under Occlusion",
+   "year": 2026,
+   "citations": 0,
+   "n_refs": 29,
+   "n_refs_listed": 29,
+   "internal_targets": [
+    "arxiv:1904.03629v1"
+   ]
+  },
+  "doi:10.5281/zenodo.20630251": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.20630252": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.18220587": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.18237321": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.18213579": {
+   "mapped": false
+  },
+  "arxiv:2606.31157v1": {
+   "mapped": true,
+   "s2_title": "Rethinking Foundation Model Collaboration: Enhancing Specialized Models through Proxy Task Reasoning",
+   "year": 2026,
+   "citations": 1,
+   "n_refs": 36,
+   "n_refs_listed": 36,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2601.03736": {
+   "mapped": true,
+   "s2_title": "HyperCOD: The First Challenging Benchmark and Baseline for Hyperspectral Camouflaged Object Detection",
+   "year": 2026,
+   "citations": 2,
+   "n_refs": 23,
+   "n_refs_listed": 23,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2605.25860": {
+   "mapped": true,
+   "s2_title": "SAM3-Assisted Training of Lightweight YOLO Models for Precision Pig Farming",
+   "year": 2026,
+   "citations": 0,
+   "n_refs": 18,
+   "n_refs_listed": 18,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2507.12727v1": {
+   "mapped": true,
+   "s2_title": "SOD-YOLO: Enhancing YOLO-Based Detection of Small Objects in UAV Imagery",
+   "year": 2025,
+   "citations": 22,
+   "n_refs": 23,
+   "n_refs_listed": 23,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2512.11683v1": {
+   "mapped": true,
+   "s2_title": "Depth-Copy-Paste: Multimodal and Depth-Aware Compositing for Robust Face Detection",
+   "year": 2025,
+   "citations": 1,
+   "n_refs": 35,
+   "n_refs_listed": 35,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2504.16740v1": {
+   "mapped": true,
+   "s2_title": "Gaussian Splatting is an Effective Data Generator for 3D Object Detection",
+   "year": 2025,
+   "citations": 3,
+   "n_refs": 51,
+   "n_refs_listed": 51,
+   "internal_targets": []
+  },
+  "arxiv:2504.19574v2": {
+   "mapped": true,
+   "s2_title": "DG-DETR: Toward Domain Generalized Detection Transformer",
+   "year": 2025,
+   "citations": 5,
+   "n_refs": 54,
+   "n_refs_listed": 54,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2510.03858v1": {
+   "mapped": true,
+   "s2_title": "Cross-View Open-Vocabulary Object Detection in Aerial Imagery",
+   "year": 2025,
+   "citations": 3,
+   "n_refs": 58,
+   "n_refs_listed": 58,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2401.17270",
+    "doi:10.48550/arxiv.2306.09683",
+    "arxiv:2203.12976v1",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2507.10844v2": {
+   "mapped": true,
+   "s2_title": "MLLM-Guided Autonomous Object Detection for Open-World Understanding",
+   "year": 2025,
+   "citations": 7,
+   "n_refs": 55,
+   "n_refs_listed": 55,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2401.17270",
+    "doi:10.48550/arxiv.2306.09683",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "doi:10.5281/zenodo.16904070": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.16904069": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.17339025": {
+   "mapped": false
+  },
+  "arxiv:2509.22365v1": {
+   "mapped": true,
+   "s2_title": "HierLight-YOLO: A Hierarchical and Lightweight Object Detection Network for UAV Photography",
+   "year": 2025,
+   "citations": 7,
+   "n_refs": 42,
+   "n_refs_listed": 42,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2504.11995v1": {
+   "mapped": true,
+   "s2_title": "A Review of YOLOv12: Attention-Based Enhancements vs. Previous Versions",
+   "year": 2025,
+   "citations": 63,
+   "n_refs": 67,
+   "n_refs_listed": 67,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "doi:10.5281/zenodo.15863059": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.15863060": {
+   "mapped": false
+  },
+  "arxiv:2507.12087v2": {
+   "mapped": true,
+   "s2_title": "YOLOv8-SMOT: An Efficient and Robust Framework for Real-Time Small Object Tracking via Slice-Assisted Training and Adaptive Association",
+   "year": 2025,
+   "citations": 1,
+   "n_refs": 28,
+   "n_refs_listed": 28,
+   "internal_targets": [
+    "arxiv:1906.11172v1"
+   ]
+  },
+  "arxiv:2503.20516v1": {
+   "mapped": true,
+   "s2_title": "Small Object Detection: A Comprehensive Survey on Challenges, Techniques and Real-World Applications",
+   "year": 2025,
+   "citations": 216,
+   "n_refs": 91,
+   "n_refs_listed": 91,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2507.00849": {
+   "mapped": true,
+   "s2_title": "UAVD-Mamba: Deformable Token Fusion Vision Mamba for Multimodal UAV Detection",
+   "year": 2025,
+   "citations": 8,
+   "n_refs": 33,
+   "n_refs_listed": 33,
+   "internal_targets": []
+  },
+  "doi:10.13021/jssr.2025": {
+   "mapped": false
+  },
+  "arxiv:2504.07958v3": {
+   "mapped": true,
+   "s2_title": "Detect Anything 3D in the Wild",
+   "year": 2025,
+   "citations": 40,
+   "n_refs": 88,
+   "n_refs_listed": 88,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2507.22675": {
+   "mapped": true,
+   "s2_title": "MergeSAM: Unsupervised Change Detection Of Remote Sensing Images Based on the Segment Anything Model",
+   "year": 2025,
+   "citations": 1,
+   "n_refs": 19,
+   "n_refs_listed": 19,
+   "internal_targets": []
+  },
+  "arxiv:2412.10453v1": {
+   "mapped": true,
+   "s2_title": "Analysis of Object Detection Models for Tiny Object in Satellite Imagery: A Dataset-Centric Approach",
+   "year": 2024,
+   "citations": 2,
+   "n_refs": 59,
+   "n_refs_listed": 59,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2407.18137v2": {
+   "mapped": true,
+   "s2_title": "XS-VID: A Large-Scale Benchmark for Small Object Detection and Tracking in Videos.",
+   "year": 2024,
+   "citations": 8,
+   "n_refs": 148,
+   "n_refs_listed": 148,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2401.17270",
+    "doi:10.48550/arxiv.2306.09683"
+   ]
+  },
+  "doi:10.5281/zenodo.14053981": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.14053980": {
+   "mapped": false
+  },
+  "arxiv:2410.13565v1": {
+   "mapped": true,
+   "s2_title": "SDI-Paste: Synthetic Dynamic Instance Copy-Paste for Video Instance Segmentation",
+   "year": 2024,
+   "citations": 2,
+   "n_refs": 60,
+   "n_refs_listed": 60,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2401.08056v1": {
+   "mapped": true,
+   "s2_title": "Robust Tiny Object Detection in Aerial Images amidst Label Noise",
+   "year": 2024,
+   "citations": 7,
+   "n_refs": 50,
+   "n_refs_listed": 50,
+   "internal_targets": [
+    "arxiv:2003.01285v1"
+   ]
+  },
+  "arxiv:2407.07958v1": {
+   "mapped": true,
+   "s2_title": "Bayesian Detector Combination for Object Detection with Crowdsourced Annotations",
+   "year": 2024,
+   "citations": 6,
+   "n_refs": 60,
+   "n_refs_listed": 60,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2409.09412": {
+   "mapped": true,
+   "s2_title": "Label Convergence: Defining an Upper Performance Bound in Object Recognition Through Contradictory Annotations",
+   "year": 2024,
+   "citations": 10,
+   "n_refs": 47,
+   "n_refs_listed": 47,
+   "internal_targets": [
+    "arxiv:2003.01285v1"
+   ]
+  },
+  "arxiv:2406.11313v1": {
+   "mapped": true,
+   "s2_title": "Semi-Supervised Domain Adaptation Using Target-Oriented Domain Augmentation for 3D Object Detection",
+   "year": 2024,
+   "citations": 2,
+   "n_refs": 43,
+   "n_refs_listed": 43,
+   "internal_targets": []
+  },
+  "arxiv:2404.01819v1": {
+   "mapped": true,
+   "s2_title": "Sparse Semi-DETR: Sparse Learnable Queries for Semi-Supervised Object Detection",
+   "year": 2024,
+   "citations": 41,
+   "n_refs": 61,
+   "n_refs_listed": 61,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2409.10350v1": {
+   "mapped": true,
+   "s2_title": "Point2Graph: An End-to-End Point Cloud-Based 3D Open-Vocabulary Scene Graph for Robot Navigation",
+   "year": 2024,
+   "citations": 15,
+   "n_refs": 52,
+   "n_refs_listed": 52,
+   "internal_targets": []
+  },
+  "arxiv:2406.11739v1": {
+   "mapped": true,
+   "s2_title": "V3Det Challenge 2024 on Vast Vocabulary and Open Vocabulary Object Detection: Methods and Results",
+   "year": 2024,
+   "citations": 2,
+   "n_refs": 43,
+   "n_refs_listed": 43,
+   "internal_targets": [
+    "arxiv:2304.03752v2"
+   ]
+  },
+  "doi:10.48448/17gg-qe74": {
+   "mapped": false
+  },
+  "arxiv:2406.19407v8": {
+   "mapped": true,
+   "s2_title": "YOLO advances to its genesis: a decadal and comprehensive review of the You Only Look Once (YOLO) series",
+   "year": 2024,
+   "citations": 430,
+   "n_refs": 171,
+   "n_refs_listed": 171,
+   "internal_targets": [
+    "arxiv:2304.00501v7"
+   ]
+  },
+  "doi:10.5281/zenodo.12787165": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.12787166": {
+   "mapped": false
+  },
+  "doi:10.48550/arxiv.2401.17270": {
+   "mapped": true,
+   "s2_title": "YOLO-World: Real-Time Open-Vocabulary Object Detection",
+   "year": 2024,
+   "citations": 1169,
+   "n_refs": 69,
+   "n_refs_listed": 69,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2306.09683",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2411.15620v1": {
+   "mapped": true,
+   "s2_title": "Fine-Grained Open-Vocabulary Object Recognition via User-Guided Segmentation",
+   "year": 2024,
+   "citations": 0,
+   "n_refs": 26,
+   "n_refs_listed": 26,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2401.17270",
+    "doi:10.48550/arxiv.2306.09683"
+   ]
+  },
+  "arxiv:2410.19635v1": {
+   "mapped": true,
+   "s2_title": "Frozen-DETR: Enhancing DETR with Image Understanding from Frozen Foundation Models",
+   "year": 2024,
+   "citations": 26,
+   "n_refs": 76,
+   "n_refs_listed": 76,
+   "internal_targets": []
+  },
+  "arxiv:2404.06277v2": {
+   "mapped": true,
+   "s2_title": "Learning Embeddings with Centroid Triplet Loss for Object Identification in Robotic Grasping",
+   "year": 2024,
+   "citations": 3,
+   "n_refs": 32,
+   "n_refs_listed": 32,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2401.14248": {
+   "mapped": true,
+   "s2_title": "On generalisability of segment anything model for nuclear instance segmentation in histology images",
+   "year": 2024,
+   "citations": 3,
+   "n_refs": 1,
+   "n_refs_listed": 1,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2408.09839": {
+   "mapped": true,
+   "s2_title": "Segment-Anything Models Achieve Zero-shot Robustness in Autonomous Driving",
+   "year": 2024,
+   "citations": 7,
+   "n_refs": 51,
+   "n_refs_listed": 51,
+   "internal_targets": []
+  },
+  "arxiv:2303.09061v1": {
+   "mapped": true,
+   "s2_title": "MixTeacher: Mining Promising Labels with Mixed Scale Teacher for Semi-Supervised Object Detection",
+   "year": 2023,
+   "citations": 56,
+   "n_refs": 50,
+   "n_refs_listed": 50,
+   "internal_targets": []
+  },
+  "doi:10.5281/zenodo.8398464": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.8398463": {
+   "mapped": false
+  },
+  "doi:10.13140/rg.2.2.19965.13282": {
+   "mapped": false
+  },
+  "doi:10.48550/arxiv.2310.17949": {
+   "mapped": true,
+   "s2_title": "Instance Segmentation under Occlusions via Location-aware Copy-Paste Data Augmentation",
+   "year": 2023,
+   "citations": 1,
+   "n_refs": 17,
+   "n_refs_listed": 17,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2308.14772": {
+   "mapped": true,
+   "s2_title": "Copy-Paste Image Augmentation with Poisson Image Editing for Ultrasound Instance Segmentation Learning",
+   "year": 2023,
+   "citations": 1,
+   "n_refs": 12,
+   "n_refs_listed": 12,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2310.00372v1": {
+   "mapped": true,
+   "s2_title": "Deep Active Learning with Noisy Oracle in Object Detection",
+   "year": 2023,
+   "citations": 4,
+   "n_refs": 28,
+   "n_refs_listed": 28,
+   "internal_targets": []
+  },
+  "arxiv:2303.09608v3": {
+   "mapped": true,
+   "s2_title": "VEIL: Vetting Extracted Image Labels from In-the-Wild Captions for Weakly-Supervised Object Detection",
+   "year": 2023,
+   "citations": 0,
+   "n_refs": 60,
+   "n_refs_listed": 60,
+   "internal_targets": []
+  },
+  "doi:10.17023/mnyc-3y11": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.7619445": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.7619446": {
+   "mapped": false
+  },
+  "arxiv:2311.11646v4": {
+   "mapped": true,
+   "s2_title": "CastDet: Toward Open Vocabulary Aerial Object Detection with CLIP-Activated Student-Teacher Learning",
+   "year": 2023,
+   "citations": 54,
+   "n_refs": 74,
+   "n_refs_listed": 74,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2401.17270",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2304.03752v2": {
+   "mapped": true,
+   "s2_title": "V3Det: Vast Vocabulary Visual Detection Dataset",
+   "year": 2023,
+   "citations": 106,
+   "n_refs": 75,
+   "n_refs_listed": 75,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2312.14465v1": {
+   "mapped": true,
+   "s2_title": "FM-OV3D: Foundation Model-based Cross-modal Knowledge Blending for Open-Vocabulary 3D Detection",
+   "year": 2023,
+   "citations": 27,
+   "n_refs": 37,
+   "n_refs_listed": 37,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2306.09683": {
+   "mapped": true,
+   "s2_title": "Scaling Open-Vocabulary Object Detection",
+   "year": 2023,
+   "citations": 517,
+   "n_refs": 49,
+   "n_refs_listed": 49,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2104.01318",
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "doi:10.48550/arxiv.2312.12437": {
+   "mapped": true,
+   "s2_title": "Weakly Supervised Open-Vocabulary Object Detection",
+   "year": 2023,
+   "citations": 26,
+   "n_refs": 57,
+   "n_refs_listed": 57,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2011.09315",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2304.00501v7": {
+   "mapped": true,
+   "s2_title": "A Comprehensive Review of YOLO Architectures in Computer Vision: From YOLOv1 to YOLOv8 and YOLO-NAS",
+   "year": 2023,
+   "citations": 3084,
+   "n_refs": 160,
+   "n_refs_listed": 160,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2304.06925v2": {
+   "mapped": true,
+   "s2_title": "YOLO-Drone:Airborne real-time detection of dense small objects from high-altitude perspective",
+   "year": 2023,
+   "citations": 15,
+   "n_refs": 56,
+   "n_refs_listed": 56,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2307.04816v1": {
+   "mapped": true,
+   "s2_title": "Q-YOLO: Efficient Inference for Real-time Object Detection",
+   "year": 2023,
+   "citations": 22,
+   "n_refs": 45,
+   "n_refs_listed": 45,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2304.07705v3": {
+   "mapped": true,
+   "s2_title": "Handling Heavy Occlusion in Dense Crowd Tracking by Focusing on the Heads",
+   "year": 2023,
+   "citations": 12,
+   "n_refs": 38,
+   "n_refs_listed": 38,
+   "internal_targets": [
+    "doi:10.48550/arxiv.1909.06826",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2310.05136v5": {
+   "mapped": true,
+   "s2_title": "InstructDET: Diversifying Referring Object Detection with Generalized Instructions",
+   "year": 2023,
+   "citations": 20,
+   "n_refs": 65,
+   "n_refs_listed": 65,
+   "internal_targets": []
+  },
+  "arxiv:2306.02245v2": {
+   "mapped": true,
+   "s2_title": "SAM3D: zero-shot 3D object detection via the segment anything model",
+   "year": 2023,
+   "citations": 72,
+   "n_refs": 37,
+   "n_refs_listed": 37,
+   "internal_targets": []
+  },
+  "arxiv:2312.05745v1": {
+   "mapped": true,
+   "s2_title": "Open World Object Detection in the Era of Foundation Models",
+   "year": 2023,
+   "citations": 19,
+   "n_refs": 37,
+   "n_refs_listed": 37,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2306.09683"
+   ]
+  },
+  "doi:10.48550/arxiv.2304.09148": {
+   "mapped": true,
+   "s2_title": "SAM Fails to Segment Anything? -- SAM-Adapter: Adapting SAM in Underperformed Scenes: Camouflage, Shadow, Medical Image Segmentation, and More",
+   "year": 2023,
+   "citations": 113,
+   "n_refs": 62,
+   "n_refs_listed": 62,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2308.05426": {
+   "mapped": true,
+   "s2_title": "Adaptive Low Rank Adaptation of Segment Anything to Salient Object Detection",
+   "year": 2023,
+   "citations": 15,
+   "n_refs": 42,
+   "n_refs_listed": 42,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2202.02489": {
+   "mapped": true,
+   "s2_title": "Investigating the Challenges of Class Imbalance and Scale Variation in Object Detection in Aerial Images",
+   "year": 2022,
+   "citations": 4,
+   "n_refs": 16,
+   "n_refs_listed": 16,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2212.02809v3": {
+   "mapped": true,
+   "s2_title": "An advanced YOLOv3 method for small object detection",
+   "year": 2022,
+   "citations": 17,
+   "n_refs": 41,
+   "n_refs_listed": 41,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2203.12976v1": {
+   "mapped": true,
+   "s2_title": "Focus-and-Detect: A Small Object Detection Framework for Aerial Images",
+   "year": 2022,
+   "citations": 133,
+   "n_refs": 64,
+   "n_refs_listed": 64,
+   "internal_targets": []
+  },
+  "arxiv:2210.03686v1": {
+   "mapped": true,
+   "s2_title": "Humans need not label more humans: Occlusion Copy & Paste for Occluded Human Instance Segmentation",
+   "year": 2022,
+   "citations": 7,
+   "n_refs": 36,
+   "n_refs_listed": 36,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2212.03863v2": {
+   "mapped": true,
+   "s2_title": "X-Paste: Revisiting Scalable Copy-Paste for Instance Segmentation using CLIP and StableDiffusion",
+   "year": 2022,
+   "citations": 76,
+   "n_refs": 64,
+   "n_refs_listed": 64,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177",
+    "doi:10.48550/arxiv.2212.03863"
+   ]
+  },
+  "arxiv:2209.13899v1": {
+   "mapped": true,
+   "s2_title": "Strong Instance Segmentation Pipeline for MMSports Challenge",
+   "year": 2022,
+   "citations": 2,
+   "n_refs": 20,
+   "n_refs_listed": 20,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2206.15134v1": {
+   "mapped": true,
+   "s2_title": "InsMix: Towards Realistic Generative Data Augmentation for Nuclei Instance Segmentation",
+   "year": 2022,
+   "citations": 39,
+   "n_refs": 30,
+   "n_refs_listed": 30,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2206.07634v2": {
+   "mapped": true,
+   "s2_title": "Real3D-Aug: Point Cloud Augmentation by Placing Real Objects with Occlusion Handling for 3D Detection and Segmentation",
+   "year": 2022,
+   "citations": 14,
+   "n_refs": 35,
+   "n_refs_listed": 35,
+   "internal_targets": [
+    "arxiv:2004.01643v2"
+   ]
+  },
+  "arxiv:2207.14172v2": {
+   "mapped": true,
+   "s2_title": "Semantic-Aligned Matching for Enhanced DETR Convergence and Multi-Scale Feature Fusion",
+   "year": 2022,
+   "citations": 38,
+   "n_refs": 87,
+   "n_refs_listed": 87,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2104.01318",
+    "doi:10.48550/arxiv.2207.14172"
+   ]
+  },
+  "doi:10.48550/arxiv.2202.09048": {
+   "mapped": true,
+   "s2_title": "Task Specific Attention is one more thing you need for object detection",
+   "year": 2022,
+   "citations": 4,
+   "n_refs": 22,
+   "n_refs_listed": 22,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2211.12914v2": {
+   "mapped": true,
+   "s2_title": "Open-vocabulary Attribute Detection",
+   "year": 2022,
+   "citations": 48,
+   "n_refs": 68,
+   "n_refs_listed": 68,
+   "internal_targets": []
+  },
+  "doi:10.26153/tsw/42046": {
+   "mapped": false
+  },
+  "arxiv:2110.00470v1": {
+   "mapped": true,
+   "s2_title": "Instance Segmentation Challenge Track Technical Report, VIPriors Workshop at ICCV 2021: Task-Specific Copy-Paste Data Augmentation Method for Instance Segmentation",
+   "year": 2021,
+   "citations": 6,
+   "n_refs": 21,
+   "n_refs_listed": 21,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2012.07177"
+   ]
+  },
+  "arxiv:2101.02971v1": {
+   "mapped": true,
+   "s2_title": "From Black-box to White-box: Examining Confidence Calibration under different Conditions",
+   "year": 2021,
+   "citations": 12,
+   "n_refs": 22,
+   "n_refs_listed": 22,
+   "internal_targets": []
+  },
+  "arxiv:2110.06923v1": {
+   "mapped": true,
+   "s2_title": "Object DGCNN: 3D Object Detection using Dynamic Graphs",
+   "year": 2021,
+   "citations": 129,
+   "n_refs": 81,
+   "n_refs_listed": 81,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2108.12118": {
+   "mapped": true,
+   "s2_title": "Densely-Populated Traffic Detection using YOLOv5 and Non-Maximum Suppression Ensembling",
+   "year": 2021,
+   "citations": 42,
+   "n_refs": 27,
+   "n_refs_listed": 27,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "doi:10.48550/arxiv.2106.02426": {
+   "mapped": true,
+   "s2_title": "NMS-Loss: Learning with Non-Maximum Suppression for Crowded Pedestrian Detection",
+   "year": 2021,
+   "citations": 42,
+   "n_refs": 37,
+   "n_refs_listed": 37,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2003.12729",
+    "doi:10.48550/arxiv.1909.06826",
+    "arxiv:1904.03629v1"
+   ]
+  },
+  "arxiv:2103.13886v2": {
+   "mapped": true,
+   "s2_title": "Robust and Accurate Object Detection via Adversarial Learning",
+   "year": 2021,
+   "citations": 84,
+   "n_refs": 44,
+   "n_refs_listed": 44,
+   "internal_targets": [
+    "arxiv:1906.11172v1",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2104.10786v1": {
+   "mapped": true,
+   "s2_title": "Exploring 2D Data Augmentation for 3D Monocular Object Detection",
+   "year": 2021,
+   "citations": 8,
+   "n_refs": 20,
+   "n_refs_listed": 20,
+   "internal_targets": []
+  },
+  "doi:10.5281/zenodo.4922799": {
+   "mapped": false
+  },
+  "doi:10.5281/zenodo.4922798": {
+   "mapped": false
+  },
+  "arxiv:2104.01318v1": {
+   "mapped": true,
+   "s2_title": "Efficient DETR: Improving End-to-End Object Detector with Dense Prior",
+   "year": 2021,
+   "citations": 373,
+   "n_refs": 44,
+   "n_refs_listed": 44,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2110.02011v3": {
+   "mapped": true,
+   "s2_title": "Sound Event Detection Transformer: An Event-based End-to-End Model for Sound Event Detection",
+   "year": 2021,
+   "citations": 28,
+   "n_refs": 52,
+   "n_refs_listed": 52,
+   "internal_targets": []
+  },
+  "arxiv:2105.10920v1": {
+   "mapped": true,
+   "s2_title": "End-to-End Video Object Detection with Spatial-Temporal Transformers",
+   "year": 2021,
+   "citations": 117,
+   "n_refs": 60,
+   "n_refs_listed": 60,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2105.10925": {
+   "mapped": true,
+   "s2_title": "COTR: Convolution in Transformer Network for End to End Polyp Detection",
+   "year": 2021,
+   "citations": 50,
+   "n_refs": 24,
+   "n_refs_listed": 24,
+   "internal_targets": []
+  },
+  "arxiv:2009.07168v2": {
+   "mapped": true,
+   "s2_title": "AMRNet: Chips Augmentation in Areial Images Object Detection",
+   "year": 2020,
+   "citations": 68,
+   "n_refs": 27,
+   "n_refs_listed": 27,
+   "internal_targets": []
+  },
+  "arxiv:2009.00206v2": {
+   "mapped": true,
+   "s2_title": "RangeRCNN: Towards Fast and Accurate 3D Object Detection with Range Image Representation",
+   "year": 2020,
+   "citations": 86,
+   "n_refs": 37,
+   "n_refs_listed": 37,
+   "internal_targets": []
+  },
+  "doi:10.48550/arxiv.2012.03265": {
+   "mapped": true,
+   "s2_title": "Towards Better Object Detection in Scale Variation with Adaptive Feature Selection",
+   "year": 2020,
+   "citations": 6,
+   "n_refs": 58,
+   "n_refs_listed": 58,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2012.07177v2": {
+   "mapped": true,
+   "s2_title": "Simple Copy-Paste is a Strong Data Augmentation Method for Instance Segmentation",
+   "year": 2020,
+   "citations": 1460,
+   "n_refs": 75,
+   "n_refs_listed": 75,
+   "internal_targets": [
+    "arxiv:1906.11172v1"
+   ]
+  },
+  "arxiv:2003.01285v1": {
+   "mapped": true,
+   "s2_title": "Towards Noise-resistant Object Detection with Noisy Annotations",
+   "year": 2020,
+   "citations": 40,
+   "n_refs": 52,
+   "n_refs_listed": 52,
+   "internal_targets": [
+    "arxiv:1812.00124v1"
+   ]
+  },
+  "arxiv:2003.03644v2": {
+   "mapped": true,
+   "s2_title": "Inferring Spatial Uncertainty in Object Detection",
+   "year": 2020,
+   "citations": 32,
+   "n_refs": 41,
+   "n_refs_listed": 41,
+   "internal_targets": [
+    "arxiv:1903.03838v2"
+   ]
+  },
+  "doi:10.48550/arxiv.2012.12195": {
+   "mapped": true,
+   "s2_title": "Labels are Not Perfect: Inferring Spatial Uncertainty in Object Detection",
+   "year": 2020,
+   "citations": 38,
+   "n_refs": 57,
+   "n_refs_listed": 57,
+   "internal_targets": [
+    "arxiv:1903.03838v2"
+   ]
+  },
+  "doi:10.48550/arxiv.2004.04455": {
+   "mapped": true,
+   "s2_title": "Decoupled Gradient Harmonized Detector for Partial Annotation: Application to Signet Ring Cell Detection",
+   "year": 2020,
+   "citations": 10,
+   "n_refs": 47,
+   "n_refs_listed": 47,
+   "internal_targets": []
+  },
+  "arxiv:2005.11426v1": {
+   "mapped": true,
+   "s2_title": "Hashing-based Non-Maximum Suppression for Crowded Object Detection",
+   "year": 2020,
+   "citations": 11,
+   "n_refs": 23,
+   "n_refs_listed": 23,
+   "internal_targets": []
+  },
+  "arxiv:2002.07662v2": {
+   "mapped": true,
+   "s2_title": "FeatureNMS: Non-Maximum Suppression by Learning Feature Embeddings",
+   "year": 2020,
+   "citations": 57,
+   "n_refs": 34,
+   "n_refs_listed": 34,
+   "internal_targets": [
+    "arxiv:1904.03629v1",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "doi:10.17023/ffhf-rz83": {
+   "mapped": false
+  },
+  "arxiv:2004.01643v2": {
+   "mapped": true,
+   "s2_title": "Quantifying Data Augmentation for LiDAR based 3D Object Detection",
+   "year": 2020,
+   "citations": 53,
+   "n_refs": 27,
+   "n_refs_listed": 27,
+   "internal_targets": []
+  },
+  "arxiv:2011.09315v2": {
+   "mapped": true,
+   "s2_title": "End-to-End Object Detection with Adaptive Clustering Transformer",
+   "year": 2020,
+   "citations": 227,
+   "n_refs": 49,
+   "n_refs_listed": 49,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2003.12729v2": {
+   "mapped": true,
+   "s2_title": "NMS by Representative Region: Towards Crowded Pedestrian Detection by Proposal Pairing",
+   "year": 2020,
+   "citations": 159,
+   "n_refs": 30,
+   "n_refs_listed": 30,
+   "internal_targets": [
+    "arxiv:1904.03629v1",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:2008.09993v2": {
+   "mapped": true,
+   "s2_title": "Visible Feature Guidance for Crowd Pedestrian Detection",
+   "year": 2020,
+   "citations": 4,
+   "n_refs": 37,
+   "n_refs_listed": 37,
+   "internal_targets": [
+    "doi:10.48550/arxiv.2003.12729",
+    "arxiv:1904.03629v1",
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1908.07323v2": {
+   "mapped": true,
+   "s2_title": "Consistent Scale Normalization for Object Recognition",
+   "year": 2019,
+   "citations": 0,
+   "n_refs": 32,
+   "n_refs_listed": 31,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1909.02301v1": {
+   "mapped": true,
+   "s2_title": "Detector with focus: Normalizing gradient in image pyramid",
+   "year": 2017,
+   "citations": 6,
+   "n_refs": 20,
+   "n_refs_listed": 20,
+   "internal_targets": []
+  },
+  "arxiv:1904.12619v2": {
+   "mapped": true,
+   "s2_title": "Multiple receptive fields and small-object-focusing weakly-supervised segmentation network for fast object detection",
+   "year": 2019,
+   "citations": 7,
+   "n_refs": 44,
+   "n_refs_listed": 44,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1903.03838v2": {
+   "mapped": true,
+   "s2_title": "BayesOD: A Bayesian Approach for Uncertainty Estimation in Deep Object Detectors",
+   "year": 2019,
+   "citations": 143,
+   "n_refs": 34,
+   "n_refs_listed": 34,
+   "internal_targets": []
+  },
+  "arxiv:1904.03629v1": {
+   "mapped": true,
+   "s2_title": "Adaptive NMS: Refining Pedestrian Detection in a Crowd",
+   "year": 2019,
+   "citations": 351,
+   "n_refs": 53,
+   "n_refs_listed": 53,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1906.11172v1": {
+   "mapped": true,
+   "s2_title": "Learning Data Augmentation Strategies for Object Detection",
+   "year": 2019,
+   "citations": 620,
+   "n_refs": 65,
+   "n_refs_listed": 65,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1909.06826v1": {
+   "mapped": true,
+   "s2_title": "PedHunter: Occlusion Robust Pedestrian Detector in Crowded Scenes",
+   "year": 2019,
+   "citations": 123,
+   "n_refs": 47,
+   "n_refs_listed": 47,
+   "internal_targets": []
+  },
+  "arxiv:1910.09188v2": {
+   "mapped": true,
+   "s2_title": "Attribute-Aware Pedestrian Detection in a Crowd",
+   "year": 2019,
+   "citations": 82,
+   "n_refs": 57,
+   "n_refs_listed": 57,
+   "internal_targets": [
+    "arxiv:1904.03629v1"
+   ]
+  },
+  "arxiv:1805.07009v3": {
+   "mapped": true,
+   "s2_title": "MDSSD: multi-scale deconvolutional single shot detector for small objects",
+   "year": 2018,
+   "citations": 146,
+   "n_refs": 47,
+   "n_refs_listed": 47,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1812.00124v1": {
+   "mapped": true,
+   "s2_title": "NOTE-RCNN: NOise Tolerant Ensemble RCNN for Semi-Supervised Object Detection",
+   "year": 2018,
+   "citations": 100,
+   "n_refs": 32,
+   "n_refs_listed": 32,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1805.08503v4": {
+   "mapped": true,
+   "s2_title": "Improved Person Detection on Omnidirectional Images with Non-maxima Supression",
+   "year": 2018,
+   "citations": 33,
+   "n_refs": 24,
+   "n_refs_listed": 24,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1811.05588v1": {
+   "mapped": true,
+   "s2_title": "YOLO-LITE: A Real-Time Object Detection Algorithm Optimized for Non-GPU Computers",
+   "year": 2018,
+   "citations": 577,
+   "n_refs": 24,
+   "n_refs_listed": 24,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1706.03646v2": {
+   "mapped": true,
+   "s2_title": "Point Linking Network for Object Detection",
+   "year": 2017,
+   "citations": 34,
+   "n_refs": 30,
+   "n_refs_listed": 30,
+   "internal_targets": [
+    "arxiv:1506.02640v5"
+   ]
+  },
+  "arxiv:1710.07735v2": {
+   "mapped": true,
+   "s2_title": "Adversarially Optimizing Intersection over Union for Object Localization Tasks",
+   "year": 2017,
+   "citations": 5,
+   "n_refs": 49,
+   "n_refs_listed": 49,
+   "internal_targets": []
+  },
+  "arxiv:1604.04693v3": {
+   "mapped": true,
+   "s2_title": "Subcategory-Aware Convolutional Neural Networks for Object Proposals and Detection",
+   "year": 2016,
+   "citations": 293,
+   "n_refs": 43,
+   "n_refs_listed": 43,
+   "internal_targets": []
+  },
+  "arxiv:1505.03597v2": {
+   "mapped": true,
+   "s2_title": "Multi-scale volumes for deep object detection and localization",
+   "year": 2015,
+   "citations": 38,
+   "n_refs": 61,
+   "n_refs_listed": 61,
+   "internal_targets": []
+  },
+  "arxiv:1510.02949v1": {
+   "mapped": true,
+   "s2_title": "Spatial Semantic Regularisation for Large Scale Object Detection",
+   "year": 2015,
+   "citations": 25,
+   "n_refs": 30,
+   "n_refs_listed": 30,
+   "internal_targets": []
+  },
+  "arxiv:1506.02640v5": {
+   "mapped": true,
+   "s2_title": "You Only Look Once: Unified, Real-Time Object Detection",
+   "year": 2015,
+   "citations": 49485,
+   "n_refs": 40,
+   "n_refs_listed": 40,
+   "internal_targets": []
+  }
+ },
+ "internal_edges": [
+  {
+   "from": "arxiv:2603.06917v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2609.39467v1",
+   "to": "arxiv:1904.03629v1"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2605.25860",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2507.12727v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2512.11683v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2504.19574v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2510.03858v1",
+   "to": "doi:10.48550/arxiv.2401.17270"
+  },
+  {
+   "from": "arxiv:2510.03858v1",
+   "to": "doi:10.48550/arxiv.2306.09683"
+  },
+  {
+   "from": "arxiv:2510.03858v1",
+   "to": "arxiv:2203.12976v1"
+  },
+  {
+   "from": "arxiv:2510.03858v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2507.10844v2",
+   "to": "doi:10.48550/arxiv.2401.17270"
+  },
+  {
+   "from": "arxiv:2507.10844v2",
+   "to": "doi:10.48550/arxiv.2306.09683"
+  },
+  {
+   "from": "arxiv:2507.10844v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2509.22365v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2504.11995v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2507.12087v2",
+   "to": "arxiv:1906.11172v1"
+  },
+  {
+   "from": "arxiv:2412.10453v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2412.10453v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2407.18137v2",
+   "to": "doi:10.48550/arxiv.2401.17270"
+  },
+  {
+   "from": "arxiv:2407.18137v2",
+   "to": "doi:10.48550/arxiv.2306.09683"
+  },
+  {
+   "from": "arxiv:2410.13565v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2401.08056v1",
+   "to": "arxiv:2003.01285v1"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2409.09412",
+   "to": "arxiv:2003.01285v1"
+  },
+  {
+   "from": "arxiv:2404.01819v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2406.11739v1",
+   "to": "arxiv:2304.03752v2"
+  },
+  {
+   "from": "arxiv:2406.19407v8",
+   "to": "arxiv:2304.00501v7"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2401.17270",
+   "to": "doi:10.48550/arxiv.2306.09683"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2401.17270",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2411.15620v1",
+   "to": "doi:10.48550/arxiv.2401.17270"
+  },
+  {
+   "from": "arxiv:2411.15620v1",
+   "to": "doi:10.48550/arxiv.2306.09683"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2308.14772",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2311.11646v4",
+   "to": "doi:10.48550/arxiv.2401.17270"
+  },
+  {
+   "from": "arxiv:2311.11646v4",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2304.03752v2",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2306.09683",
+   "to": "doi:10.48550/arxiv.2104.01318"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2306.09683",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2312.12437",
+   "to": "doi:10.48550/arxiv.2011.09315"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2312.12437",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2304.00501v7",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2304.00501v7",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2304.06925v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2307.04816v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2304.07705v3",
+   "to": "doi:10.48550/arxiv.1909.06826"
+  },
+  {
+   "from": "arxiv:2304.07705v3",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2312.05745v1",
+   "to": "doi:10.48550/arxiv.2306.09683"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2202.02489",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2212.02809v3",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2210.03686v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2212.03863v2",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2212.03863v2",
+   "to": "doi:10.48550/arxiv.2212.03863"
+  },
+  {
+   "from": "arxiv:2209.13899v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2206.15134v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "arxiv:2206.07634v2",
+   "to": "arxiv:2004.01643v2"
+  },
+  {
+   "from": "arxiv:2207.14172v2",
+   "to": "doi:10.48550/arxiv.2104.01318"
+  },
+  {
+   "from": "arxiv:2207.14172v2",
+   "to": "doi:10.48550/arxiv.2207.14172"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2202.09048",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2110.00470v1",
+   "to": "doi:10.48550/arxiv.2012.07177"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2108.12118",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2106.02426",
+   "to": "doi:10.48550/arxiv.2003.12729"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2106.02426",
+   "to": "doi:10.48550/arxiv.1909.06826"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2106.02426",
+   "to": "arxiv:1904.03629v1"
+  },
+  {
+   "from": "arxiv:2103.13886v2",
+   "to": "arxiv:1906.11172v1"
+  },
+  {
+   "from": "arxiv:2103.13886v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2104.01318v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2012.03265",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2012.07177v2",
+   "to": "arxiv:1906.11172v1"
+  },
+  {
+   "from": "arxiv:2003.01285v1",
+   "to": "arxiv:1812.00124v1"
+  },
+  {
+   "from": "arxiv:2003.03644v2",
+   "to": "arxiv:1903.03838v2"
+  },
+  {
+   "from": "doi:10.48550/arxiv.2012.12195",
+   "to": "arxiv:1903.03838v2"
+  },
+  {
+   "from": "arxiv:2002.07662v2",
+   "to": "arxiv:1904.03629v1"
+  },
+  {
+   "from": "arxiv:2002.07662v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2011.09315v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2003.12729v2",
+   "to": "arxiv:1904.03629v1"
+  },
+  {
+   "from": "arxiv:2003.12729v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:2008.09993v2",
+   "to": "doi:10.48550/arxiv.2003.12729"
+  },
+  {
+   "from": "arxiv:2008.09993v2",
+   "to": "arxiv:1904.03629v1"
+  },
+  {
+   "from": "arxiv:2008.09993v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1908.07323v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1904.12619v2",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1904.03629v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1906.11172v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1910.09188v2",
+   "to": "arxiv:1904.03629v1"
+  },
+  {
+   "from": "arxiv:1805.07009v3",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1812.00124v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1805.08503v4",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1811.05588v1",
+   "to": "arxiv:1506.02640v5"
+  },
+  {
+   "from": "arxiv:1706.03646v2",
+   "to": "arxiv:1506.02640v5"
+  }
+ ],
+ "external_classics": [
+  {
+   "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+   "cited_by_corpus": 64
+  },
+  {
+   "title": "Microsoft COCO: Common Objects in Context",
+   "cited_by_corpus": 61
+  },
+  {
+   "title": "Deep Residual Learning for Image Recognition",
+   "cited_by_corpus": 48
+  },
+  {
+   "title": "Focal Loss for Dense Object Detection",
+   "cited_by_corpus": 46
+  },
+  {
+   "title": "SSD: Single Shot MultiBox Detector",
+   "cited_by_corpus": 37
+  },
+  {
+   "title": "Feature Pyramid Networks for Object Detection",
+   "cited_by_corpus": 37
+  },
+  {
+   "title": "Mask R-CNN",
+   "cited_by_corpus": 32
+  },
+  {
+   "title": "Fast R-CNN",
+   "cited_by_corpus": 32
+  },
+  {
+   "title": "End-to-End Object Detection with Transformers",
+   "cited_by_corpus": 28
+  },
+  {
+   "title": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation",
+   "cited_by_corpus": 27
+  },
+  {
+   "title": "YOLO9000: Better, Faster, Stronger",
+   "cited_by_corpus": 25
+  },
+  {
+   "title": "ImageNet Large Scale Visual Recognition Challenge",
+   "cited_by_corpus": 23
+  },
+  {
+   "title": "Learning Transferable Visual Models From Natural Language Supervision",
+   "cited_by_corpus": 22
+  },
+  {
+   "title": "YOLOv3: An Incremental Improvement",
+   "cited_by_corpus": 21
+  },
+  {
+   "title": "International Journal of Computer Vision manuscript No. (will be inserted by the editor) The PASCAL Visual Object Classes (VOC) Challenge",
+   "cited_by_corpus": 20
+  },
+  {
+   "title": "ImageNet: A large-scale hierarchical image database",
+   "cited_by_corpus": 19
+  },
+  {
+   "title": "Deformable DETR: Deformable Transformers for End-to-End Object Detection",
+   "cited_by_corpus": 18
+  },
+  {
+   "title": "FCOS: Fully Convolutional One-Stage Object Detection",
+   "cited_by_corpus": 18
+  },
+  {
+   "title": "Soft-NMS — Improving Object Detection with One Line of Code",
+   "cited_by_corpus": 17
+  },
+  {
+   "title": "Attention is All you Need",
+   "cited_by_corpus": 17
+  },
+  {
+   "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+   "cited_by_corpus": 17
+  },
+  {
+   "title": "MMDetection: Open MMLab Detection Toolbox and Benchmark",
+   "cited_by_corpus": 16
+  },
+  {
+   "title": "LVIS: A Dataset for Large Vocabulary Instance Segmentation",
+   "cited_by_corpus": 15
+  },
+  {
+   "title": "Detecting Twenty-thousand Classes using Image-level Supervision",
+   "cited_by_corpus": 14
+  },
+  {
+   "title": "mixup: Beyond Empirical Risk Minimization",
+   "cited_by_corpus": 14
+  },
+  {
+   "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+   "cited_by_corpus": 13
+  },
+  {
+   "title": "YOLOv4: Optimal Speed and Accuracy of Object Detection",
+   "cited_by_corpus": 13
+  },
+  {
+   "title": "Segment Anything",
+   "cited_by_corpus": 13
+  },
+  {
+   "title": "Open-vocabulary Object Detection via Vision and Language Knowledge Distillation",
+   "cited_by_corpus": 13
+  },
+  {
+   "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+   "cited_by_corpus": 13
+  },
+  {
+   "title": "Decoupled Weight Decay Regularization",
+   "cited_by_corpus": 12
+  },
+  {
+   "title": "Grounded Language-Image Pre-training",
+   "cited_by_corpus": 12
+  },
+  {
+   "title": "Are we ready for autonomous driving? The KITTI vision benchmark suite",
+   "cited_by_corpus": 12
+  },
+  {
+   "title": "Edinburgh Research Explorer The PASCAL Visual Object Classes (VOC) Challenge",
+   "cited_by_corpus": 12
+  },
+  {
+   "title": "RegionCLIP: Region-based Language-Image Pretraining",
+   "cited_by_corpus": 11
+  },
+  {
+   "title": "Open-Vocabulary Object Detection Using Captions",
+   "cited_by_corpus": 11
+  },
+  {
+   "title": "Generalized Intersection Over Union: A Metric and a Loss for Bounding Box Regression",
+   "cited_by_corpus": 11
+  },
+  {
+   "title": "R-FCN: Object Detection via Region-based Fully Convolutional Networks",
+   "cited_by_corpus": 11
+  },
+  {
+   "title": "Object Detection with Discriminatively Trained Part Based Models",
+   "cited_by_corpus": 11
+  },
+  {
+   "title": "Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
+   "cited_by_corpus": 10
+  }
+ ]
+}

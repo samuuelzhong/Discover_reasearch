@@ -1,0 +1,634 @@
+{
+ "HM5-1": [
+  {
+   "query": "adaptive physics loss weighting",
+   "hits": [
+    {
+     "cite_id": "arxiv:2509.25262v1",
+     "year": "2025",
+     "title": "AW-EL-PINNs: A Multi-Task Learning Physics-Informed Neural Network for"
+    },
+    {
+     "cite_id": "arxiv:2609.22185v1",
+     "year": "2026",
+     "title": "Adaptive Physics-Informed Neural Networks for the Blasius Boundary-Lay"
+    },
+    {
+     "cite_id": "arxiv:2506.19805v2",
+     "year": "2025",
+     "title": "Convolution-weighting method for the physics-informed neural network:"
+    },
+    {
+     "cite_id": "arxiv:2104.06217v1",
+     "year": "2021",
+     "title": "Self-adaptive loss balanced Physics-informed neural networks for the i"
+    },
+    {
+     "cite_id": "arxiv:2610.05127v1",
+     "year": "2026",
+     "title": "Component-Level Evaluation of Adaptive PINN Training for CFD-Oriented"
+    },
+    {
+     "cite_id": "arxiv:2306.01204v2",
+     "year": "2023",
+     "title": "Physics-informed UNets for Discovering Hidden Elasticity in Heterogene"
+    },
+    {
+     "cite_id": "doi:10.14464/gammas.v7i1.813",
+     "year": "2025",
+     "title": "Experiences with Physics-Informed Neural Networks for Optimal Control"
+    },
+    {
+     "cite_id": "doi:10.3929/ethz-c-000786947",
+     "year": "2025",
+     "title": "Self-adaptive physics-informed parallel neural networks for creep dama"
+    },
+    {
+     "cite_id": "doi:10.48448/23px-bf04",
+     "year": "2026",
+     "title": "1186 - A Multi-Objective Optimization Framework for Adaptive Weighting"
+    },
+    {
+     "cite_id": "doi:10.48448/snv2-jp83",
+     "year": "2026",
+     "title": "A Multi-Objective Optimization Framework for Adaptive Weighting in Phy"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2509.25262",
+     "year": "2025",
+     "title": "AW-EL-PINNs: A Multi-Task Learning Physics-Informed Neural Network for"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21852143",
+     "year": "2026",
+     "title": "SDF-Aware Weighting: Adaptive Eikonal Regularisation for Three-Dimensi"
+    }
+   ]
+  },
+  {
+   "query": "basin-wise loss weighting LSTM",
+   "hits": []
+  }
+ ],
+ "HM5-2": [
+  {
+   "query": "Mamba training efficiency",
+   "hits": [
+    {
+     "cite_id": "arxiv:2412.14354v3",
+     "year": "2024",
+     "title": "State Space Models are Strong Text Rerankers"
+    },
+    {
+     "cite_id": "arxiv:2409.09808v3",
+     "year": "2024",
+     "title": "Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion"
+    },
+    {
+     "cite_id": "arxiv:2407.08333v1",
+     "year": "2024",
+     "title": "SR-Mamba: Effective Surgical Phase Recognition with State Space Model"
+    },
+    {
+     "cite_id": "arxiv:2406.07537v1",
+     "year": "2024",
+     "title": "Autoregressive Pretraining with Mamba in Vision"
+    },
+    {
+     "cite_id": "arxiv:2411.11843v2",
+     "year": "2024",
+     "title": "Bi-Mamba: Towards Accurate 1-Bit State Space Models"
+    },
+    {
+     "cite_id": "arxiv:2404.19394v1",
+     "year": "2024",
+     "title": "CLIP-Mamba: CLIP Pretrained Mamba Models with OOD and Hessian Evaluati"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2409.09808",
+     "year": "2024",
+     "title": "Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2407.08333",
+     "year": "2024",
+     "title": "SR-Mamba: Effective Surgical Phase Recognition with State Space Model"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2412.14354",
+     "year": "2024",
+     "title": "State Space Models are Strong Text Rerankers"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.18690579",
+     "year": "2026",
+     "title": "SSD-CM: Few-Step Generation via Consistency Distillation on Mamba-2 Di"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.18690580",
+     "year": "2026",
+     "title": "SSD-CM: Few-Step Generation via Consistency Distillation on Mamba-2 Di"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2506.18999",
+     "year": "2025",
+     "title": "Diffusion Transformer-to-Mamba Distillation for High-Resolution Image"
+    }
+   ]
+  },
+  {
+   "query": "S4 state space efficiency benchmark",
+   "hits": [
+    {
+     "cite_id": "arxiv:1803.07055v1",
+     "year": "2018",
+     "title": "Simple random search provides a competitive approach to reinforcement"
+    },
+    {
+     "cite_id": "arxiv:2410.01746v3",
+     "year": "2024",
+     "title": "Leray-Schauder Mappings for Operator Learning"
+    },
+    {
+     "cite_id": "arxiv:2512.03111v1",
+     "year": "2025",
+     "title": "PanFoMa: A Lightweight Foundation Model and Benchmark for Pan-Cancer"
+    },
+    {
+     "cite_id": "arxiv:2306.05637v1",
+     "year": "2023",
+     "title": "On the Importance of Feature Decorrelation for Unsupervised Representa"
+    },
+    {
+     "cite_id": "arxiv:1906.03978v1",
+     "year": "2019",
+     "title": "STAMINA: STochastic Approximate Model-checker for INfinite-state Analy"
+    },
+    {
+     "cite_id": "arxiv:2208.04933v3",
+     "year": "2022",
+     "title": "Simplified State Space Layers for Sequence Modeling"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2208.04933",
+     "year": "2022",
+     "title": "Simplified State Space Layers for Sequence Modeling"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2402.15290",
+     "year": "2024",
+     "title": "Efficient State Space Model via Fast Tensor Convolution and Block Diag"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2310.01698",
+     "year": "2023",
+     "title": "Robustifying State-space Models for Long Sequences via Approximate Dia"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2606.18096",
+     "year": "2026",
+     "title": "S4oP: Operator-level Pruning of Structured State Space Models for Reso"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2402.15761",
+     "year": "2024",
+     "title": "Res-VMamba: Fine-Grained Food Category Visual Classification Using Sel"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.23809728",
+     "year": "2026",
+     "title": "Eleven Core Constitutive Equations of Six-Dimensional Global Spin-Tors"
+    }
+   ]
+  }
+ ],
+ "HM5-4": [
+  {
+   "query": "GRACE data assimilation runoff",
+   "hits": [
+    {
+     "cite_id": "doi:10.5285/75b4aa5b-c389-42e5-aa4a-bcb8584b8300",
+     "year": "2019",
+     "title": "GRACE, GLDAS and piezometric data for Makutapora and Limpopo Basins"
+    },
+    {
+     "cite_id": "doi:10.26153/tsw/44496",
+     "year": "2021",
+     "title": "Advancing the application of remote sensing to improve land surface mo"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.12818755",
+     "year": "2024",
+     "title": "Total water storage anomalies (TWSA) and streamflow in the Mississippi"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.13254811",
+     "year": "2024",
+     "title": "Total water storage anomalies (TWSA) and streamflow in the Mississippi"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.12818756",
+     "year": "2024",
+     "title": "Total water storage anomalies (TWSA) and streamflow in the Mississippi"
+    },
+    {
+     "cite_id": "doi:10.13016/jqes-ssni",
+     "year": "2020",
+     "title": "Estimation of Terrestrial Water Storage in the Western United States U"
+    }
+   ]
+  },
+  {
+   "query": "satellite observations streamflow benchmark LSTM",
+   "hits": []
+  }
+ ],
+ "HM5-6": [
+  {
+   "query": "tipping points hydrology early warning",
+   "hits": [
+    {
+     "cite_id": "doi:10.5281/zenodo.21574415",
+     "year": "2026",
+     "title": "Stratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21574416",
+     "year": "2026",
+     "title": "Stratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21705778",
+     "year": "2026",
+     "title": "STRAIOCD - Forecasting based on tens of thousands of patterns before h"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21705777",
+     "year": "2026",
+     "title": "STRAIOCD - Forecasting based on tens of thousands of patterns before h"
+    }
+   ]
+  },
+  {
+   "query": "critical slowing down water systems",
+   "hits": [
+    {
+     "cite_id": "arxiv:1507.06198v1",
+     "year": "2015",
+     "title": "Dynamic wettability alteration in immiscible two-phase flow in porous"
+    },
+    {
+     "cite_id": "arxiv:2401.05139v1",
+     "year": "2024",
+     "title": "Directional drying of a colloidal dispersion: quantitative description"
+    },
+    {
+     "cite_id": "arxiv:2405.10181v1",
+     "year": "2024",
+     "title": "Phase behavior of metastable water from large-scale simulations of a q"
+    },
+    {
+     "cite_id": "arxiv:2112.08473v1",
+     "year": "2021",
+     "title": "IoT Security and Safety Testing Toolkits for Water Distribution System"
+    },
+    {
+     "cite_id": "arxiv:cond-mat/0605395v1",
+     "year": "2006",
+     "title": "Solvent control of crack dynamics in a reversible hydrogel"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.19484321",
+     "year": "2026",
+     "title": "CRTI: A Structure–Dynamics Composite Early-Warning Indicator Tested in"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.19484320",
+     "year": "2026",
+     "title": "CRTI: A Structure–Dynamics Composite Early-Warning Indicator Tested in"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21523224",
+     "year": "2026",
+     "title": "Agricultural Critical Transition Science: Non-linear Bifurcation Mecha"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21523223",
+     "year": "2026",
+     "title": "Agricultural Critical Transition Science: Non-linear Bifurcation Mecha"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2401.05139",
+     "year": "2024",
+     "title": "Directional drying of a colloidal dispersion: quantitative description"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.19915718",
+     "year": "2026",
+     "title": "ISC Analytics — Variance-AR1 Coupling Analysis Code and Processed Resu"
+    }
+   ]
+  }
+ ],
+ "HM5-7": [
+  {
+   "query": "data-driven equation discovery environmental",
+   "hits": [
+    {
+     "cite_id": "arxiv:2601.08116v3",
+     "year": "2026",
+     "title": "Learning a Stochastic Differential Equation Model of Tropical Cyclone"
+    },
+    {
+     "cite_id": "arxiv:2212.06303v1",
+     "year": "2022",
+     "title": "MAntRA: A framework for model agnostic reliability analysis"
+    },
+    {
+     "cite_id": "arxiv:2509.19588v2",
+     "year": "2025",
+     "title": "Discovery of Sustainable Refrigerants through Physics-Informed RL Fine"
+    },
+    {
+     "cite_id": "arxiv:2606.27614v1",
+     "year": "2026",
+     "title": "Structural Change Detection in Dynamic Systems"
+    },
+    {
+     "cite_id": "arxiv:2601.12635v2",
+     "year": "2026",
+     "title": "Equation-Free Discovery of Open Quantum Systems via Paraconsistent Neu"
+    },
+    {
+     "cite_id": "arxiv:2505.06784v2",
+     "year": "2025",
+     "title": "Hillclimb-Causal Inference: A Data-Driven Approach to Identify Causal"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2601.08116",
+     "year": "2026",
+     "title": "Learning a Stochastic Differential Equation Model of Tropical Cyclone"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2212.06303",
+     "year": "2022",
+     "title": "MAntRA: A framework for model agnostic reliability analysis"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2601.12635",
+     "year": "2026",
+     "title": "Equation-Free Discovery of Open Quantum Systems via Paraconsistent Neu"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2505.06784",
+     "year": "2025",
+     "title": "Hillclimb-Causal Inference: A Data-Driven Approach to Identify Causal"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.23108714",
+     "year": "2026",
+     "title": "THE ALMERÍA MIRACLE AND ITS LIMITS Groundwater and the Efficiency Para"
+    },
+    {
+     "cite_id": "doi:10.7939/r3-yny8-3712",
+     "year": "2024",
+     "title": "Risk and reliability analysis for oil and gas pipelines using data-dri"
+    }
+   ]
+  },
+  {
+   "query": "process-based model discovery hydrology",
+   "hits": [
+    {
+     "cite_id": "doi:10.13021/mars/6923",
+     "year": "2010",
+     "title": "Automated Data Discovery, Reasoning and Ranking in Support of Building"
+    },
+    {
+     "cite_id": "doi:10.4211/hs.d66ef2686787403698bac5368a29b056",
+     "year": "2020",
+     "title": "PEARC20 submitted paper: \"Scientific Data Annotation and Dissemination"
+    },
+    {
+     "cite_id": "doi:10.6084/m9.figshare.c.3294479.v1",
+     "year": "2016",
+     "title": "Soil development and establishment of carbon-based properties in creat"
+    },
+    {
+     "cite_id": "doi:10.6084/m9.figshare.c.3294479",
+     "year": "2016",
+     "title": "Soil development and establishment of carbon-based properties in creat"
+    },
+    {
+     "cite_id": "doi:10.7916/d8-csc5-gg11",
+     "year": "2021",
+     "title": "Ice-Shelf Stability: New Insights into Rivers and Estuaries using Remo"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.17693780",
+     "year": "2024",
+     "title": "Terrestrial Ecosystem Observatories"
+    }
+   ]
+  }
+ ],
+ "H6-a": [
+  {
+   "query": "prediction interval skill catchment",
+   "hits": [
+    {
+     "cite_id": "doi:10.14288/1.0456603",
+     "year": "2026",
+     "title": "Expecting surprise : towards information-based streamflow monitoring n"
+    },
+    {
+     "cite_id": "doi:10.6084/m9.figshare.34863183.v1",
+     "year": "2026",
+     "title": "Enhanced model parameter transferability to ungauged catchments throug"
+    },
+    {
+     "cite_id": "doi:10.6084/m9.figshare.34863183",
+     "year": "2026",
+     "title": "Enhanced model parameter transferability to ungauged catchments throug"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.21393563",
+     "year": "2026",
+     "title": "A 1-km Gridded Decadal (2016–2024) Inland Water Quality Dataset for So"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.18502401",
+     "year": "2026",
+     "title": "A 1-km Gridded Decadal (2016–2024) Inland Water Quality Dataset for So"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.23750573",
+     "year": "2026",
+     "title": "A 1-km Gridded Decadal (2016–2024) Inland Water Quality Dataset for So"
+    }
+   ]
+  },
+  {
+   "query": "uncertainty quantification poorly gauged basins",
+   "hits": []
+  }
+ ],
+ "H6-b": [
+  {
+   "query": "snowmelt deep learning physical constraint",
+   "hits": []
+  },
+  {
+   "query": "flow regime physics-informed machine learning",
+   "hits": [
+    {
+     "cite_id": "arxiv:2507.10241v2",
+     "year": "2025",
+     "title": "Kernel-Adaptive PI-ELMs for Forward and Inverse Problems in PDEs with"
+    },
+    {
+     "cite_id": "arxiv:2603.07740v1",
+     "year": "2026",
+     "title": "Meta-PINNs: Meta-Learning Enhanced Physics-Informed Machine Learning F"
+    },
+    {
+     "cite_id": "arxiv:2604.23946v2",
+     "year": "2026",
+     "title": "Learning subgrid interfacial area in two-phase flows with regime-depen"
+    },
+    {
+     "cite_id": "arxiv:2309.17345v3",
+     "year": "2023",
+     "title": "Physics-Informed Neural Network for the Transient Diffusivity Equation"
+    },
+    {
+     "cite_id": "arxiv:2507.09621v4",
+     "year": "2025",
+     "title": "Lagrangian-Eulerian learning of flow field and trajectories with Traje"
+    },
+    {
+     "cite_id": "arxiv:2602.15592v1",
+     "year": "2026",
+     "title": "Uni-Flow: a unified autoregressive-diffusion model for complex multisc"
+    },
+    {
+     "cite_id": "doi:10.17863/cam.132597",
+     "year": "2026",
+     "title": "Machine Learning for Modelling Hyperbolic Conservation Laws and Predic"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2210.16215",
+     "year": "2022",
+     "title": "Physics-Informed Convolutional Neural Networks for Corruption Removal"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2604.23767",
+     "year": "2026",
+     "title": "WISE-FM:Operation-Aware, Engineering-Informed Foundation Model for Mul"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2605.26358",
+     "year": "2026",
+     "title": "Deep Learning-based Algebraic Reynolds Stress Closures for RANS Simula"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.1911.07943",
+     "year": "2019",
+     "title": "Machine-Learning for Nonintrusive Model Order Reduction of the Paramet"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2602.10451",
+     "year": "2026",
+     "title": "A Multimodal Conditional Mixture Model with Distribution-Level Physics"
+    }
+   ]
+  }
+ ],
+ "H6-c": [
+  {
+   "query": "automated detection critical slowing down",
+   "hits": [
+    {
+     "cite_id": "arxiv:2112.08473v1",
+     "year": "2021",
+     "title": "IoT Security and Safety Testing Toolkits for Water Distribution System"
+    },
+    {
+     "cite_id": "arxiv:2511.07719v2",
+     "year": "2025",
+     "title": "Operational machine learning for remote spectroscopic detection of CH$"
+    },
+    {
+     "cite_id": "arxiv:1903.00661v2",
+     "year": "2019",
+     "title": "DeepGini: Prioritizing Massive Tests to Enhance the Robustness of Deep"
+    },
+    {
+     "cite_id": "doi:10.48550/arxiv.2112.08473",
+     "year": "2021",
+     "title": "IoT Security and Safety Testing Toolkits for Water Distribution System"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.22283469",
+     "year": "2026",
+     "title": "Systemic Risk Indicators and Early Warning Frameworks"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.22283470",
+     "year": "2026",
+     "title": "Systemic Risk Indicators and Early Warning Frameworks"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.15804838",
+     "year": "2025",
+     "title": "DevSecOps: The Future of Secure DevOps Implementation"
+    },
+    {
+     "cite_id": "doi:10.18725/oparu-60870",
+     "year": "2026",
+     "title": "Sleep inertia in automated driving : how circadian and homeostatic fac"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.19145704",
+     "year": "2026",
+     "title": "The CDR Sweep Architecture A Seven-Stage Detection and Intervention Pr"
+    }
+   ]
+  },
+  {
+   "query": "data-driven early warning signals discovery",
+   "hits": [
+    {
+     "cite_id": "doi:10.25934/pr00013332",
+     "year": "2026",
+     "title": "Data Challenge: Early Warning of Emerging Multidrug Antifungal Resista"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.19646778",
+     "year": "2026",
+     "title": "From Descriptive Decay to Dynamical Coherence: A WSINDy-Based Nonlinea"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.19646779",
+     "year": "2026",
+     "title": "From Descriptive Decay to Dynamical Coherence: A WSINDy-Based Nonlinea"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.17271199",
+     "year": "2025",
+     "title": "QUANTUM CAREER OPTIMIZATION: A MULTIDIMENSIONAL VISUALIZATION FRAMEWOR"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.17271200",
+     "year": "2025",
+     "title": "QUANTUM CAREER OPTIMIZATION: A MULTIDIMENSIONAL VISUALIZATION FRAMEWOR"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.17618800",
+     "year": "2025",
+     "title": "UTAC v2.0: Domain-Specific Universality in Threshold Activation Critic"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+  "source": "synthetic (calibration only)",
+  "basins": {
+    "syn-0": {
+      "aridity": 0.9,
+      "snowiness": 0.72
+    },
+    "syn-1": {
+      "aridity": 0.95,
+      "snowiness": 0.08
+    },
+    "syn-2": {
+      "aridity": 0.55,
+      "snowiness": 0.02
+    },
+    "syn-3": {
+      "aridity": 0.4,
+      "snowiness": 0.48
+    },
+    "syn-4": {
+      "aridity": 1.18,
+      "snowiness": 0.33
+    },
+    "syn-5": {
+      "aridity": 0.91,
+      "snowiness": 0.63
+    }
+  },
+  "truth": {
+    "syn-4": {
+      "regime_shift_at": "55% of record",
+      "elasticity_after": 1.9
+    },
+    "syn-5": {
+      "regime_shift_at": "55% of record",
+      "elasticity_after": 1.9
+    }
+  }
+}

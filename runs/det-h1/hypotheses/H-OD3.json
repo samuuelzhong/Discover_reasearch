@@ -1,0 +1,45 @@
+{
+  "hid": "H-OD3",
+  "branch": "accuracy",
+  "claim": "在拥挤人群检测基准上，密度自适应 NMS 相对固定阈值 NMS 使 AP 增量大于 0，且 log-average miss rate（MR^-2）增量小于 0。",
+  "plan": {
+    "data": "CrowdHuman val 与 CityPersons val（拥挤人群基准，含遮挡标注）",
+    "method": "同一检测器仅替换 NMS 模块：固定 IoU 阈值 NMS vs 密度自适应 NMS，各 3 个随机种子；报告 AP 与 MR^-2，并分遮挡程度子集报告",
+    "cost_estimate": 48,
+    "cost_unit": "GPU·h"
+  },
+  "decision_criteria": [
+    {
+      "metric": "crowded_AP_delta",
+      "direction": ">",
+      "threshold": 0.0,
+      "supports": "密度自适应抑制在拥挤场景优于固定阈值抑制",
+      "weakens": "自适应 NMS 无增益"
+    },
+    {
+      "metric": "MR_minus2_delta",
+      "direction": "<",
+      "threshold": 0.0,
+      "supports": "漏检率同步下降（不是靠多出框抬 AP）",
+      "weakens": "MR^-2 上升，说明增益以更多误检为代价"
+    }
+  ],
+  "alternatives": [
+    "增益来自密度子网络引入的额外监督/正则效应，而非 NMS 阈值自适应本身（需把密度分支只训不用的对照组）",
+    "拥挤子集的增益被非拥挤图像上的退化抵消，整体 AP 不变"
+  ],
+  "citations": [
+    {
+      "cite_id": "arxiv:1904.03629v1",
+      "quote": "The contributions are threefold: (1) we propose adaptive-NMS, which applies a dynamic suppression threshold to an instance, according to the target density; (2) we design an efficient subnetwork to learn density scores, which can be conveniently embedded into both the single-stage and two-stage detectors; and (3) we achieve state of the art results on the CityPersons and CrowdHuman benchmarks."
+    },
+    {
+      "cite_id": "doi:10.48550/arxiv.2106.02426",
+      "quote": "Non-Maximum Suppression (NMS) is essential for object detection and affects the evaluation results by incorporating False Positives (FP) and False Negatives (FN), especially in crowd occlusion scenes."
+    }
+  ],
+  "author": "boss",
+  "created_at": "2026-10-30T15:14:46+00:00",
+  "gate_status": "pass",
+  "gate_reasons": []
+}

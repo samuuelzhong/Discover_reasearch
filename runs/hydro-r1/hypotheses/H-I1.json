@@ -1,0 +1,39 @@
+{
+  "hid": "H-I1",
+  "branch": "interpretation",
+  "claim": "在多数流域（≥60%），年径流对年降水的弹性大于 1，即径流放大而非缓冲降水的年际变化。",
+  "plan": {
+    "data": "usgs_mini: USGS 日均径流(00060) + ERA5-Land 点位强迫",
+    "method": "年度 log Q ~ log P 的 OLS 斜率；跨流域统计弹性>1 的比例",
+    "cost_estimate": 0,
+    "runtime": "< 1 min"
+  },
+  "decision_criteria": [
+    {
+      "metric": "elasticity",
+      "direction": ">",
+      "threshold": 1.0,
+      "min_frac": 0.6,
+      "supports": "≥60% 流域弹性>1",
+      "weakens": "≤40% 流域弹性>1 → 弹性≈1，符合线性水库预期"
+    }
+  ],
+  "alternatives": [
+    "弹性>1 可能来自降水与潜在蒸散发的共同趋势造成的伪回归",
+    "ERA5 点位降水低估山地降水，压缩 logP 方差并放大斜率"
+  ],
+  "citations": [
+    {
+      "cite_id": "doi:10.5167/uzh-204382",
+      "quote": "The study catchments represent a spectrum of different hydrological regimes, from pluvial–nival to nivo-glacial, as well as distinct topographies and land forms, characterizing different elevation zones across the eastern Alps to provide a comprehensive picture of future runoff changes."
+    },
+    {
+      "cite_id": "arxiv:1911.07249v3",
+      "quote": "We feed the models meteorological observations disseminated with the CAMELS dataset, and individually restrict the training period length, number of training basins, and input sequence length."
+    }
+  ],
+  "author": "boss",
+  "created_at": "2026-10-27T10:34:21+00:00",
+  "gate_status": "pass",
+  "gate_reasons": []
+}

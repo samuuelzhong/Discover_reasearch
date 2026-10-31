@@ -1,0 +1,64 @@
+{"ts": "2026-10-31T07:57:22+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "adaptive physics loss weighting", "n": 6}}
+{"ts": "2026-10-31T07:57:24+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "adaptive physics loss weighting", "n": 6}}
+{"ts": "2026-10-31T07:57:25+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "basin-wise loss weighting LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:26+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "basin-wise loss weighting LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:27+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "Mamba training efficiency", "n": 6}}
+{"ts": "2026-10-31T07:57:29+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "Mamba training efficiency", "n": 6}}
+{"ts": "2026-10-31T07:57:30+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "S4 state space efficiency benchmark", "n": 6}}
+{"ts": "2026-10-31T07:57:32+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "S4 state space efficiency benchmark", "n": 6}}
+{"ts": "2026-10-31T07:57:33+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "GRACE data assimilation runoff", "n": 0}}
+{"ts": "2026-10-31T07:57:35+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "GRACE data assimilation runoff", "n": 6}}
+{"ts": "2026-10-31T07:57:35+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "satellite observations streamflow benchmark LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:36+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "satellite observations streamflow benchmark LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:38+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "tipping points hydrology early warning", "n": 0}}
+{"ts": "2026-10-31T07:57:40+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "tipping points hydrology early warning", "n": 4}}
+{"ts": "2026-10-31T07:57:41+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "critical slowing down water systems", "n": 5}}
+{"ts": "2026-10-31T07:57:43+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "critical slowing down water systems", "n": 6}}
+{"ts": "2026-10-31T07:57:44+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "data-driven equation discovery environmental", "n": 6}}
+{"ts": "2026-10-31T07:57:45+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "adaptive physics loss weighting", "n": 6}}
+{"ts": "2026-10-31T07:57:46+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "data-driven equation discovery environmental", "n": 6}}
+{"ts": "2026-10-31T07:57:46+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "adaptive physics loss weighting", "n": 6}}
+{"ts": "2026-10-31T07:57:47+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "process-based model discovery hydrology", "n": 0}}
+{"ts": "2026-10-31T07:57:47+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "basin-wise loss weighting LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:48+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "basin-wise loss weighting LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:48+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "process-based model discovery hydrology", "n": 6}}
+{"ts": "2026-10-31T07:57:49+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "Mamba training efficiency", "n": 6}}
+{"ts": "2026-10-31T07:57:49+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "prediction interval skill catchment", "n": 0}}
+{"ts": "2026-10-31T07:57:50+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "Mamba training efficiency", "n": 6}}
+{"ts": "2026-10-31T07:57:51+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "prediction interval skill catchment", "n": 6}}
+{"ts": "2026-10-31T07:57:51+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "S4 state space efficiency benchmark", "n": 6}}
+{"ts": "2026-10-31T07:57:52+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "uncertainty quantification poorly gauged basins", "n": 0}}
+{"ts": "2026-10-31T07:57:53+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "uncertainty quantification poorly gauged basins", "n": 0}}
+{"ts": "2026-10-31T07:57:53+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "S4 state space efficiency benchmark", "n": 6}}
+{"ts": "2026-10-31T07:57:54+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "GRACE data assimilation runoff", "n": 0}}
+{"ts": "2026-10-31T07:57:54+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "snowmelt deep learning physical constraint", "n": 0}}
+{"ts": "2026-10-31T07:57:56+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "snowmelt deep learning physical constraint", "n": 0}}
+{"ts": "2026-10-31T07:57:56+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "GRACE data assimilation runoff", "n": 6}}
+{"ts": "2026-10-31T07:57:56+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "satellite observations streamflow benchmark LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:57+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "flow regime physics-informed machine learning", "n": 6}}
+{"ts": "2026-10-31T07:57:57+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "satellite observations streamflow benchmark LSTM", "n": 0}}
+{"ts": "2026-10-31T07:57:58+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "tipping points hydrology early warning", "n": 0}}
+{"ts": "2026-10-31T07:57:59+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "flow regime physics-informed machine learning", "n": 6}}
+{"ts": "2026-10-31T07:58:00+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "automated detection critical slowing down", "n": 3}}
+{"ts": "2026-10-31T07:58:00+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "tipping points hydrology early warning", "n": 4}}
+{"ts": "2026-10-31T07:58:01+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "critical slowing down water systems", "n": 5}}
+{"ts": "2026-10-31T07:58:01+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "automated detection critical slowing down", "n": 6}}
+{"ts": "2026-10-31T07:58:02+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "data-driven early warning signals discovery", "n": 0}}
+{"ts": "2026-10-31T07:58:03+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "critical slowing down water systems", "n": 6}}
+{"ts": "2026-10-31T07:58:03+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "data-driven equation discovery environmental", "n": 6}}
+{"ts": "2026-10-31T07:58:04+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "data-driven early warning signals discovery", "n": 6}}
+{"ts": "2026-10-31T07:58:05+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "data-driven equation discovery environmental", "n": 6}}
+{"ts": "2026-10-31T07:58:06+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "process-based model discovery hydrology", "n": 0}}
+{"ts": "2026-10-31T07:58:08+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "process-based model discovery hydrology", "n": 6}}
+{"ts": "2026-10-31T07:58:08+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "prediction interval skill catchment", "n": 0}}
+{"ts": "2026-10-31T07:58:10+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "prediction interval skill catchment", "n": 6}}
+{"ts": "2026-10-31T07:58:11+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "uncertainty quantification poorly gauged basins", "n": 0}}
+{"ts": "2026-10-31T07:58:12+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "uncertainty quantification poorly gauged basins", "n": 0}}
+{"ts": "2026-10-31T07:58:12+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "snowmelt deep learning physical constraint", "n": 0}}
+{"ts": "2026-10-31T07:58:14+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "snowmelt deep learning physical constraint", "n": 0}}
+{"ts": "2026-10-31T07:58:14+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "flow regime physics-informed machine learning", "n": 6}}
+{"ts": "2026-10-31T07:58:16+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "flow regime physics-informed machine learning", "n": 6}}
+{"ts": "2026-10-31T07:58:17+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "automated detection critical slowing down", "n": 3}}
+{"ts": "2026-10-31T07:58:18+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "automated detection critical slowing down", "n": 6}}
+{"ts": "2026-10-31T07:58:19+00:00", "stage": "scout", "kind": "search", "payload": {"source": "arxiv", "query": "data-driven early warning signals discovery", "n": 0}}
+{"ts": "2026-10-31T07:58:21+00:00", "stage": "scout", "kind": "search", "payload": {"source": "datacite", "query": "data-driven early warning signals discovery", "n": 6}}

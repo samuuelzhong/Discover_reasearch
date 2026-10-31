@@ -1,0 +1,208 @@
+{
+  "ok": true,
+  "metric_split": "test",
+  "score_median": 0.46011262278348125,
+  "score_mean": 0.42852330066153793,
+  "test_median": 0.46011262278348125,
+  "kge_test_median": 0.4669154054341389,
+  "n_basins": 24,
+  "n_features": 7,
+  "neg_basins": 1,
+  "seconds": 0.21,
+  "code_sha": "eabec30a0c4f",
+  "failures": [],
+  "per_basin": [
+    {
+      "basin": "usgs-01011000",
+      "nse_val": 0.4031,
+      "kge_val": 0.5012,
+      "nse_test": 0.4398,
+      "kge_test": 0.4366,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-01017000",
+      "nse_val": 0.3686,
+      "kge_val": 0.4773,
+      "nse_test": 0.4049,
+      "kge_test": 0.4205,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-01021000",
+      "nse_val": 0.4442,
+      "kge_val": 0.4859,
+      "nse_test": 0.4732,
+      "kge_test": 0.4493,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-01030500",
+      "nse_val": 0.4168,
+      "kge_val": 0.5099,
+      "nse_test": 0.447,
+      "kge_test": 0.4845,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-01042500",
+      "nse_val": 0.2775,
+      "kge_val": 0.2943,
+      "nse_test": 0.2942,
+      "kge_test": 0.2479,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-01054500",
+      "nse_val": 0.4697,
+      "kge_val": 0.5195,
+      "nse_test": 0.4463,
+      "kge_test": 0.4297,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-02083500",
+      "nse_val": 0.3887,
+      "kge_val": 0.5588,
+      "nse_test": 0.5705,
+      "kge_test": 0.6046,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-02089000",
+      "nse_val": 0.6067,
+      "kge_val": 0.6641,
+      "nse_test": 0.564,
+      "kge_test": 0.7248,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-02098206",
+      "nse_val": -0.0194,
+      "kge_val": 0.1332,
+      "nse_test": 0.2327,
+      "kge_test": 0.3147,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-02115360",
+      "nse_val": 0.6295,
+      "kge_val": 0.6588,
+      "nse_test": 0.6124,
+      "kge_test": 0.6908,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-02116500",
+      "nse_val": 0.5877,
+      "kge_val": 0.592,
+      "nse_test": 0.5292,
+      "kge_test": 0.576,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-03454500",
+      "nse_val": 0.5038,
+      "kge_val": 0.7009,
+      "nse_test": 0.5584,
+      "kge_test": 0.6293,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-06701900",
+      "nse_val": 0.2723,
+      "kge_val": 0.2457,
+      "nse_test": 0.1586,
+      "kge_test": 0.2617,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-07094500",
+      "nse_val": 0.3749,
+      "kge_val": 0.3816,
+      "nse_test": 0.4454,
+      "kge_test": 0.4233,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-09058000",
+      "nse_val": 0.2232,
+      "kge_val": 0.2142,
+      "nse_test": 0.4295,
+      "kge_test": 0.4224,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-09169500",
+      "nse_val": -1.7028,
+      "kge_val": -0.535,
+      "nse_test": 0.1017,
+      "kge_test": 0.1161,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-09171100",
+      "nse_val": -1.7942,
+      "kge_val": -0.6081,
+      "nse_test": 0.1079,
+      "kge_test": 0.1091,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-09247600",
+      "nse_val": 0.6053,
+      "kge_val": 0.6722,
+      "nse_test": 0.6759,
+      "kge_test": 0.5295,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-12401500",
+      "nse_val": 0.604,
+      "kge_val": 0.6192,
+      "nse_test": 0.5949,
+      "kge_test": 0.5859,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-12449950",
+      "nse_val": 0.5027,
+      "kge_val": 0.5475,
+      "nse_test": 0.5396,
+      "kge_test": 0.5748,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-12467000",
+      "nse_val": -2.021,
+      "kge_val": -0.0501,
+      "nse_test": -0.1742,
+      "kge_test": 0.1989,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-13351000",
+      "nse_val": 0.532,
+      "kge_val": 0.5508,
+      "nse_test": 0.5282,
+      "kge_test": 0.5467,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-14018500",
+      "nse_val": 0.6241,
+      "kge_val": 0.6455,
+      "nse_test": 0.5105,
+      "kge_test": 0.5251,
+      "n_features": 7
+    },
+    {
+      "basin": "usgs-14243000",
+      "nse_val": 0.6987,
+      "kge_val": 0.8268,
+      "nse_test": 0.7941,
+      "kge_test": 0.8475,
+      "n_features": 7
+    }
+  ]
+}

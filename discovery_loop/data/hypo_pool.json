@@ -1,0 +1,448 @@
+[
+ {
+  "hid": "HM5-1",
+  "claim": "按闭合误差分档差异化物理约束（软/严格）提升低闭合流域泛化",
+  "status": "refined",
+  "verification_status": "partially_tested",
+  "delta": "adaptive loss weighting 是 PINN/CFD 成熟机制（12 命中全非水文），basin-wise 加权 0 命中——delta 精化为：将 PINN 自适应加权思想迁移到水文闭合约束的流域分档（大样本 LSTM 场景空白）",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2002.10253v1",
+    "year": "2020",
+    "title": "Physics-Informed Multi-LSTM Networks for Metamodeling of Nonlinear Str",
+    "note": "round1 q=physics constraint LSTM"
+   },
+   {
+    "cite_id": "arxiv:2606.04143v1",
+    "year": "2026",
+    "title": "Physics-Informed Machine Learning for Short-Term Flood Prediction",
+    "note": "round1 q=physics constraint LSTM"
+   },
+   {
+    "cite_id": "arxiv:2511.21276v2",
+    "year": "2025",
+    "title": "A physics-informed U-Net-LSTM network for nonlinear structural respons",
+    "note": "round1 q=physics constraint LSTM"
+   },
+   {
+    "cite_id": "arxiv:2104.06217",
+    "title": "Self-adaptive loss balanced PINNs",
+    "year": "2021",
+    "note": "adaptive weighting 在 PINN 成熟；无水文应用"
+   },
+   {
+    "cite_id": "arxiv:2509.25262",
+    "title": "AW-EL-PINNs multi-task adaptive weighting",
+    "year": "2025",
+    "note": "加权机制工具箱"
+   }
+  ],
+  "novelty_queries": [
+   "closure error constraint",
+   "physics constraint LSTM",
+   "stratified constraint closure"
+  ],
+  "blank_queries": 2,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "检索判读：adaptive weighting 邻域密集但水文×LSTM 空白，delta 收窄且方法路径明确"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_cleanup",
+    "note": "dropped=[] kept=5 | 2002.10253 为水文 PIML 直接先例（重要，此前未记 note）；结构工程 U-Net-LSTM 降为方法参考"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal resource_gap=None"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal",
+  "resource_gap": null
+ },
+ {
+  "hid": "HM5-2",
+  "claim": "SSM 主干的训练/推理效率优势（精度已被 S4D 论文回答）",
+  "status": "refined",
+  "verification_status": "partially_tested",
+  "delta": "效率维度双 prior 全文级确认空白：S4D（区域 CAMELS）只答精度，RiverMamba（全球）只报自身算力（16xA100x3d）无 LSTM 对比——水文 SSM×LSTM 训练/推理效率对照确认无人做过",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2501.14980",
+    "title": "Deep State Space Model for Rainfall-Runoff (S4D)",
+    "year": "2025",
+    "note": "全文级确认：无效率测量（paperqa_cited）"
+   },
+   {
+    "cite_id": "arxiv:2505.22535",
+    "title": "RiverMamba",
+    "year": "2025",
+    "note": "全文级确认：无 LSTM 效率对比，非 CAMELS（paperqa_cited）"
+   }
+  ],
+  "novelty_queries": [
+   "training efficiency comparison"
+  ],
+  "blank_queries": 1,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "RiverMamba 全文级查询后效率 delta 双确认，文献层无可再挖"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=mamba-env（SSM 训练环境未建，工程缺口）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "mamba-env（SSM 训练环境未建，工程缺口）"
+ },
+ {
+  "hid": "HM5-3",
+  "claim": "MARRMoT 概念模型与 LSTM 的对照诊断",
+  "status": "downgraded",
+  "verification_status": "replication",
+  "delta": "conceptual vs LSTM 成熟先例，降级为对照臂",
+  "nearest_prior": [],
+  "novelty_queries": [],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   }
+  ],
+  "gate": {}
+ },
+ {
+  "hid": "HM5-4",
+  "claim": "GRACE 卫星数据作为对照源的大样本基准",
+  "status": "novelty_probed",
+  "verification_status": "partially_tested",
+  "delta": "GRACE+DL 融合成熟，对照角度待确认",
+  "nearest_prior": [],
+  "novelty_queries": [
+   "GRACE satellite streamflow"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_cleanup",
+    "note": "dropped=['doi:10.5281/zenodo.12818756', 'doi:10.5281/zenodo.12818755', 'doi:10.5281/zenodo.13254811'] kept=0 | 三条全是数据集记录（Mississippi TWSA 数据）非方法先例——转入 resource_gap 证据（数据可得性素材）"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=grace-data（资源环 deferred 在案）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "grace-data（资源环 deferred 在案）"
+ },
+ {
+  "hid": "HM5-5",
+  "claim": "conformal 预测区间逐流域覆盖审计",
+  "status": "downgraded",
+  "verification_status": "replication",
+  "delta": "Alsafari 2026 六百流域 8 方法已完整覆盖，降级为对照臂",
+  "nearest_prior": [],
+  "novelty_queries": [],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   }
+  ],
+  "gate": {}
+ },
+ {
+  "hid": "HM5-6",
+  "claim": "临界慢化前兆统计用于非平稳水文系统",
+  "status": "novelty_probed",
+  "verification_status": "novel",
+  "delta": "第二话语系（tipping points/CSD water）复扫：CSD 存在于水物理/多孔介质领域，水文 streamflow 非平稳场景空白保持",
+  "nearest_prior": [
+   {
+    "cite_id": "doi:10.5281/zenodo.22801744",
+    "year": "2024",
+    "title": "Drought Propagation Mechanisms Across Hydrological Systems in Semi-Ari",
+    "note": "round1 q=early warning signals streamflow"
+   }
+  ],
+  "novelty_queries": [
+   "early warning signals streamflow"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "prior_found",
+    "note": "Drought Propagation Mechanisms Across Hydrological Systems i; Drought Propagation Mechanisms Across Hydrological Systems i"
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "话语系切换后 novel 判定二次确认，置信度提升"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_cleanup",
+    "note": "dropped=['doi:10.5281/zenodo.22801743'] kept=1 | drought propagation 为弱邻域（水文非平稳但非 CSD 前兆），去重保留 1 条标弱相关"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal resource_gap=None"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_fix",
+    "note": "round1 判读为 novel，机械版污染未在 commit 脚本回写，此处修正"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal",
+  "resource_gap": null
+ },
+ {
+  "hid": "HM5-7",
+  "claim": "SINDy 稀疏回归从水文数据中恢复控制方程",
+  "status": "novelty_probed",
+  "verification_status": "novel",
+  "delta": "novel 判定保持：环境邻域有 SDE 发现先例（方法可迁移），水文径流控制方程 SINDy 空白",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2410.17934v2",
+    "year": "2024",
+    "title": "Retrieving snow depth distribution by downscaling ERA5 Reanalysis with",
+    "note": "round1 q=sparse regression hydrology"
+   },
+   {
+    "cite_id": "arxiv:2601.08116",
+    "title": "Learning a Stochastic DE Model of Tropical Cyclone Intensity",
+    "year": "2026",
+    "note": "环境系统 SDE 数据驱动发现的方法先例（非水文）"
+   }
+  ],
+  "novelty_queries": [
+   "sparse regression hydrology"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "prior_found",
+    "note": "Retrieving snow depth distribution by downscaling ERA5 Reana; Hydrological Characterization Of A Watershed For Streamflow "
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "获得邻域方法先例，novel 维持且路径更清晰"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_cleanup",
+    "note": "dropped=['doi:10.5281/zenodo.1130568', 'doi:10.5281/zenodo.1130569'] kept=2 | snow depth 降尺度与 watershed 表征数据集与方程发现机制无关，机械匹配噪声"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal resource_gap=None"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_fix",
+    "note": "round1 判读为 novel，机械版污染未在 commit 脚本回写，此处修正"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal",
+  "resource_gap": null
+ },
+ {
+  "hid": "H6-a",
+  "claim": "预测区间覆盖误差与流域闭合误差正相关（低闭合流域区间系统性失准）",
+  "status": "novelty_probed",
+  "verification_status": "novel",
+  "delta": "两查询命中无覆盖×闭合关联工作，空白保持",
+  "nearest_prior": [],
+  "novelty_queries": [
+   "closure error constraint",
+   "prediction interval coverage"
+  ],
+  "blank_queries": 2,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "空白确认，且 HM5-1 残差即将可检验"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal resource_gap=None"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal",
+  "resource_gap": null
+ },
+ {
+  "hid": "H6-b",
+  "claim": "物理约束价值随水文 regime 系统变化（融雪/间歇收益最大）",
+  "status": "novelty_probed",
+  "verification_status": "partially_tested",
+  "delta": "regime-dependent 语义存在于两相流（2026），水文 regime×约束空白保持",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2002.10253v1",
+    "year": "2020",
+    "title": "Physics-Informed Multi-LSTM Networks for Metamodeling of Nonlinear Str",
+    "note": "round1 q=physics constraint LSTM"
+   },
+   {
+    "cite_id": "arxiv:2606.04143v1",
+    "year": "2026",
+    "title": "Physics-Informed Machine Learning for Short-Term Flood Prediction",
+    "note": "round1 q=physics constraint LSTM"
+   },
+   {
+    "cite_id": "arxiv:2511.21276v2",
+    "year": "2025",
+    "title": "A physics-informed U-Net-LSTM network for nonlinear structural respons",
+    "note": "round1 q=physics constraint LSTM"
+   }
+  ],
+  "novelty_queries": [
+   "physics constraint LSTM"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "prior_found",
+    "note": "Physics-Informed Multi-LSTM Networks for Metamodeling of Non; Physics-Informed Machine Learning for Short-Term Flood Predi"
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "空白确认"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_cleanup",
+    "note": "dropped=[] kept=3 | 与 HM5-1 共享 PIML 水文先例（姊妹假设）；结构工程条删除"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal resource_gap=None"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal",
+  "resource_gap": null
+ },
+ {
+  "hid": "H6-c",
+  "claim": "临界慢化前兆统计可由稀疏回归自动发现",
+  "status": "novelty_probed",
+  "verification_status": "novel",
+  "delta": "WSINDy 命中为伪科学库噪声；EWS×SINDy 交叉空白保持",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2410.17934v2",
+    "year": "2024",
+    "title": "Retrieving snow depth distribution by downscaling ERA5 Reanalysis with",
+    "note": "round1 q=sparse regression hydrology"
+   }
+  ],
+  "novelty_queries": [
+   "early warning signals streamflow",
+   "sparse regression hydrology"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from novelty_audit.md (manual round)"
+   },
+   {
+    "round": 1,
+    "action": "prior_found",
+    "note": "Drought Propagation Mechanisms Across Hydrological Systems i; Drought Propagation Mechanisms Across Hydrological Systems i"
+   },
+   {
+    "round": 1,
+    "action": "agent_judgment",
+    "note": "空白确认"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_cleanup",
+    "note": "dropped=['doi:10.5281/zenodo.22801744', 'doi:10.5281/zenodo.22801743', 'doi:10.5281/zenodo.1130568', 'doi:10.5281/zenodo.1130569'] kept=1 | 5 条全为机械版污染（drought 弱相关/数据集记录），EWS×SINDy 交叉维持零先例"
+   },
+   {
+    "round": "cleanup",
+    "action": "formal_mark",
+    "note": "formal_status=formal resource_gap=None"
+   },
+   {
+    "round": "cleanup",
+    "action": "agent_fix",
+    "note": "round1 判读为 novel，机械版污染未在 commit 脚本回写，此处修正"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal",
+  "resource_gap": null
+ }
+]

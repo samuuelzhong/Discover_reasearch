@@ -1,0 +1,23 @@
+{
+  "hid": "H-I2b",
+  "claim": "融雪主导流域（snow_fraction≥0.15）的流量质心在 1990–2022 前移，且前移速率中位数比非融雪流域快至少 0.2 天/年。",
+  "criteria": [
+    {
+      "metric": "centroid_advance",
+      "direction": "group>",
+      "group_by": "snow_class",
+      "group_a": "snow",
+      "group_b": "non_snow",
+      "threshold": 0.2,
+      "supports": "融雪型质心前移比非融雪型快 ≥0.2 d/yr",
+      "weakens": "差值 ≤0.2 或为负",
+      "value": 0.682,
+      "n_a": 13,
+      "n_b": 8,
+      "median_a": 0.348,
+      "median_b": -0.335,
+      "verdict": "supports"
+    }
+  ],
+  "overall": "supports"
+}

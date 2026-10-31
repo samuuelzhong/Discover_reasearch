@@ -1,0 +1,33 @@
+{
+  "hid": "H-A1",
+  "branch": "accuracy",
+  "claim": "加入雪储记忆项（snow_ewm + melt）只在融雪主导流域提升 val NSE，降雨主导流域无同等提升，组间差值 ≥0.01。",
+  "plan": {
+    "data": "usgs_mini",
+    "method": "消融：specA=P记忆+雪储 vs specB=P记忆；逐流域 val NSE 差值，按 regime 分组取中位数",
+    "cost_estimate": 0
+  },
+  "decision_criteria": [
+    {
+      "metric": "median_delta_snow_minus_rain",
+      "direction": ">",
+      "threshold": 0.01,
+      "supports": "融雪型增益 - 降雨型增益 ≥0.01",
+      "weakens": "<0.01"
+    }
+  ],
+  "alternatives": [
+    "增益差异可能来自融雪区样本量少、NSE 方差大",
+    "雪储项其实在两类流域都起作用，只是融雪区基线低、增益空间大"
+  ],
+  "citations": [
+    {
+      "cite_id": "arxiv:1911.07249v3",
+      "quote": "We feed the models meteorological observations disseminated with the CAMELS dataset, and individually restrict the training period length, number of training basins, and input sequence length."
+    }
+  ],
+  "author": "boss",
+  "created_at": "2026-10-27T10:34:21+00:00",
+  "gate_status": "pass",
+  "gate_reasons": []
+}

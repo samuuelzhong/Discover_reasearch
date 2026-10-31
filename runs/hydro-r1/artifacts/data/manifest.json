@@ -1,0 +1,227 @@
+{
+  "source": "USGS NWIS dv 00060 (mean daily cfs) + NASA POWER daily forcing (PRECTOTCORR/PRECSNO/T2M/T2M_MAX/T2M_MIN; PET=Hargreaves)",
+  "period": [
+    "1990-01-01",
+    "2022-12-31"
+  ],
+  "basins": {
+    "usgs-01054500": {
+      "state": "ME",
+      "area_mi2": 2067.0,
+      "lat": 44.5519,
+      "lon": -70.5442,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "Androscoggin River at Rumford, Maine"
+    },
+    "usgs-01017000": {
+      "state": "ME",
+      "area_mi2": 1653.0,
+      "lat": 46.7772,
+      "lon": -68.1572,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "Aroostook River at Washburn, Maine"
+    },
+    "usgs-01042500": {
+      "state": "ME",
+      "area_mi2": 1590.0,
+      "lat": 45.3397,
+      "lon": -69.9619,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "Kennebec River at The Forks, Maine"
+    },
+    "usgs-01011000": {
+      "state": "ME",
+      "area_mi2": 1478.0,
+      "lat": 47.0697,
+      "lon": -69.0794,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "Allagash River near Allagash, Maine"
+    },
+    "usgs-01030500": {
+      "state": "ME",
+      "area_mi2": 1419.0,
+      "lat": 45.5011,
+      "lon": -68.3058,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "Mattawamkeag River near Mattawamkeag, Maine"
+    },
+    "usgs-01021000": {
+      "state": "ME",
+      "area_mi2": 1366.0,
+      "lat": 45.1369,
+      "lon": -67.3181,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "St. Croix River at Baring, Maine"
+    },
+    "usgs-02089000": {
+      "state": "NC",
+      "area_mi2": 2399.0,
+      "lat": 35.3375,
+      "lon": -77.9975,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "NEUSE RIVER NEAR GOLDSBORO, NC"
+    },
+    "usgs-02116500": {
+      "state": "NC",
+      "area_mi2": 2280.0,
+      "lat": 35.8567,
+      "lon": -80.3869,
+      "days": 12047,
+      "coverage": 1.0,
+      "name": "YADKIN RIVER AT YADKIN COLLEGE, NC"
+    },
+    "usgs-02083500": {
+      "state": "NC",
+      "area_mi2": 2183.0,
+      "lat": 35.8944,
+      "lon": -77.5331,
+      "days": 12050,
+      "coverage": 1.0,
+      "name": "TAR RIVER AT TARBORO, NC"
+    },
+    "usgs-02115360": {
+      "state": "NC",
+      "area_mi2": 1694.0,
+      "lat": 36.1329,
+      "lon": -80.4453,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "YADKIN RIVER AT ENON, NC"
+    },
+    "usgs-02098206": {
+      "state": "NC",
+      "area_mi2": 1691.0,
+      "lat": 35.6322,
+      "lon": -79.06,
+      "days": 4068,
+      "coverage": 1.0,
+      "name": "HAW RIVER NEAR MONCURE, NC"
+    },
+    "usgs-03454500": {
+      "state": "NC",
+      "area_mi2": 1567.0,
+      "lat": 35.8899,
+      "lon": -82.821,
+      "days": 4168,
+      "coverage": 1.0,
+      "name": "FRENCH BROAD RIVER AT HOT SPRINGS, NC"
+    },
+    "usgs-07094500": {
+      "state": "CO",
+      "area_mi2": 2459.0,
+      "lat": 38.4872,
+      "lon": -105.3731,
+      "days": 6982,
+      "coverage": 1.0,
+      "name": "ARKANSAS RIVER AT PARKDALE, CO."
+    },
+    "usgs-09058000": {
+      "state": "CO",
+      "area_mi2": 2379.0,
+      "lat": 40.0367,
+      "lon": -106.4394,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "COLORADO RIVER NEAR KREMMLING, CO"
+    },
+    "usgs-09171100": {
+      "state": "CO",
+      "area_mi2": 2147.0,
+      "lat": 38.3569,
+      "lon": -108.8335,
+      "days": 12052,
+      "coverage": 1.0,
+      "name": "DOLORES RIVER NEAR BEDROCK, CO."
+    },
+    "usgs-09247600": {
+      "state": "CO",
+      "area_mi2": 2128.0,
+      "lat": 40.4808,
+      "lon": -107.6143,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "YAMPA RIVER BELOW CRAIG, CO."
+    },
+    "usgs-06701900": {
+      "state": "CO",
+      "area_mi2": 2028.0,
+      "lat": 39.26,
+      "lon": -105.2219,
+      "days": 7471,
+      "coverage": 1.0,
+      "name": "SOUTH PLATTE RIVER BLW BRUSH CRK NEAR TRUMBULL, CO"
+    },
+    "usgs-09169500": {
+      "state": "CO",
+      "area_mi2": 2025.0,
+      "lat": 38.3103,
+      "lon": -108.8854,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "DOLORES RIVER AT BEDROCK, CO"
+    },
+    "usgs-13351000": {
+      "state": "WA",
+      "area_mi2": 2500.0,
+      "lat": 46.7585,
+      "lon": -118.1488,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "PALOUSE RIVER AT HOOPER, WA"
+    },
+    "usgs-14243000": {
+      "state": "WA",
+      "area_mi2": 2238.0,
+      "lat": 46.2748,
+      "lon": -122.9146,
+      "days": 10062,
+      "coverage": 1.0,
+      "name": "COWLITZ RIVER AT CASTLE ROCK, WA"
+    },
+    "usgs-12467000": {
+      "state": "WA",
+      "area_mi2": 2228.0,
+      "lat": 47.1893,
+      "lon": -119.2659,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "CRAB CREEK NEAR MOSES LAKE, WA"
+    },
+    "usgs-12401500": {
+      "state": "WA",
+      "area_mi2": 2200.0,
+      "lat": 48.9813,
+      "lon": -118.7664,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "KETTLE RIVER NEAR FERRY, WA"
+    },
+    "usgs-12449950": {
+      "state": "WA",
+      "area_mi2": 1772.0,
+      "lat": 48.0774,
+      "lon": -119.9851,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "METHOW RIVER NEAR PATEROS, WA"
+    },
+    "usgs-14018500": {
+      "state": "WA",
+      "area_mi2": 1657.0,
+      "lat": 46.0276,
+      "lon": -118.7297,
+      "days": 12053,
+      "coverage": 1.0,
+      "name": "WALLA WALLA RIVER NEAR TOUCHET, WA"
+    }
+  },
+  "urls": [],
+  "selection": "area 80-2500 mi2, coverage>=0.85, >=10 yr, 6 per state; states ME NC CO WA"
+}

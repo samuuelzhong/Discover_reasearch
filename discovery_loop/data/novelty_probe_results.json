@@ -1,0 +1,325 @@
+{
+ "HM5-1": {
+  "claim": "按闭合误差分档差异化物理约束（软/严格）提升低闭合流域泛化",
+  "results": [
+   {
+    "query": "physics-constrained LSTM streamflow",
+    "n_raw": 5,
+    "hits": [
+     "arxiv:2607.26492v1\t2026\tFrom Conceptual Hydrologic Models to Conceptually Interpretable Neural",
+     "doi:10.48550/arxiv.2203.14827\t2022\tDifferentiable, learnable, regionalized process-based models with phys",
+     "doi:10.18419/opus-17618\t2025\tEvaluation and enhancement of data-driven hydrological models using in",
+     "doi:10.5281/zenodo.19497132\t2026\tDataset and Code for: A Benford's Law-Inspired Deep Learning Model for",
+     "doi:10.5281/zenodo.19497131\t2026\tDataset and Code for: A Benford's Law-Inspired Deep Learning Model for"
+    ]
+   },
+   {
+    "query": "mass balance constraint deep learning",
+    "n_raw": 11,
+    "hits": [
+     "arxiv:2210.02095v1\t2022\tChemAlgebra: Algebraic Reasoning on Chemical Reactions",
+     "arxiv:2506.13678v4\t2025\tA Gravity-informed Spatiotemporal Transformer for Human Activity Inten",
+     "arxiv:2605.16383v1\t2026\tA neurosymbolic Approach with Epistemic Deep Learning for Hierarchical",
+     "doi:10.48550/arxiv.2506.13678\t2025\tA Gravity-informed Spatiotemporal Transformer for Human Activity Inten",
+     "doi:10.3929/ethz-b-000659838\t2024\tWhere the White Continent Is Blue: Deep Learning Locates Bare Ice in A",
+     "doi:10.5281/zenodo.19477169\t2026\tStructural Sovereignty and the Realization of the Isomorphic Organism:",
+     "doi:10.5281/zenodo.19477170\t2026\tStructural Sovereignty and the Realization of the Isomorphic Organism:",
+     "doi:10.5281/zenodo.19636614\t2026\tTriplicate Proof and Sovereign Initialization: Planetary Engine Overha"
+    ]
+   },
+   {
+    "query": "water balance constraint runoff prediction",
+    "n_raw": 2,
+    "hits": [
+     "arxiv:2510.18535v1\t2025\tPhysics-guided Emulators Reveal Resilience and Fragility under Operati",
+     "doi:10.48550/arxiv.2510.18535\t2025\tPhysics-guided Emulators Reveal Resilience and Fragility under Operati"
+    ]
+   },
+   {
+    "query": "physics loss poorly gauged basins",
+    "n_raw": 0,
+    "hits": []
+   },
+   {
+    "query": "consistency constraint hydrologic deep learning",
+    "n_raw": 4,
+    "hits": [
+     "arxiv:2601.06941v1\t2026\tTowards Operational Streamflow Forecasting in the Limpopo River Basin",
+     "arxiv:2606.04143v1\t2026\tPhysics-Informed Machine Learning for Short-Term Flood Prediction",
+     "arxiv:2605.24106v1\t2026\tOvercoming \"Physics Shock\" in Earth Observation A Heteroscedastic Unce",
+     "arxiv:2609.19516v1\t2026\tContinental-scale probabilistic resistivity imaging of Australia using"
+    ]
+   }
+  ]
+ },
+ "HM5-2": {
+  "claim": "SSM（状态空间/Mamba）主干对比 LSTM 的水文建模效率",
+  "results": [
+   {
+    "query": "Mamba rainfall-runoff",
+    "n_raw": 2,
+    "hits": [
+     "doi:10.5281/zenodo.23087718\t2026\tCan Mamba match LSTM for daily streamflow prediction? A parameter- and",
+     "doi:10.5281/zenodo.23087719\t2026\tCan Mamba match LSTM for daily streamflow prediction? A parameter- and"
+    ]
+   },
+   {
+    "query": "state space model streamflow",
+    "n_raw": 10,
+    "hits": [
+     "arxiv:2512.12183v1\t2025\tHydroDiffusion: Diffusion-Based Probabilistic Streamflow Forecasting w",
+     "arxiv:2604.00407v3\t2026\tA Musielak-Orlicz approach for modeling uncertainties in long-memory p",
+     "doi:10.6084/m9.figshare.25714847\t2024\tBudyko-based past and future disaggregation of climate and catchment e",
+     "doi:10.6084/m9.figshare.25714847.v1\t2024\tBudyko-based past and future disaggregation of climate and catchment e",
+     "doi:10.3929/ethz-c-000802568\t2026\tStreamflow Spatial Correlation Length Increases During Storms and Its",
+     "doi:10.25820/etd.008197\t2025\tBridging hydrological modeling and AI",
+     "doi:10.48550/arxiv.2512.12183\t2025\tHydroDiffusion: Diffusion-Based Probabilistic Streamflow Forecasting w",
+     "doi:10.14288/1.0062573\t2010\tKalman filter and its application to flow forecasting"
+    ]
+   },
+   {
+    "query": "Mamba hydrology",
+    "n_raw": 5,
+    "hits": [
+     "arxiv:2505.22535v3\t2025\tRiverMamba: A State Space Model for Global River Discharge and Flood F",
+     "doi:10.5281/zenodo.19367139\t2026\tMamba-Transformer for Multi-Step Streamflow Prediction",
+     "doi:10.5281/zenodo.19367140\t2026\tMamba-Transformer for Multi-Step Streamflow Prediction",
+     "doi:10.48550/arxiv.2505.22535\t2025\tRiverMamba: A State Space Model for Global River Discharge and Flood F",
+     "doi:10.5281/zenodo.14752926\t2025\tMPAS-Dev/compass: v1.2.0"
+    ]
+   },
+   {
+    "query": "state space model rainfall runoff",
+    "n_raw": 11,
+    "hits": [
+     "arxiv:2501.14980v1\t2025\tA Deep State Space Model for Rainfall-Runoff Simulations",
+     "arxiv:1903.07903v2\t2019\tNeuralHydrology -- Interpreting LSTMs in Hydrology",
+     "arxiv:2603.05740v2\t2026\tExploring Uncertainty Propagation in Coupled Hydrologic and Hydrodynam",
+     "doi:10.5281/zenodo.16988503\t2025\tA Deep State Space Model for Rainfall-Runoff Simulations",
+     "doi:10.48550/arxiv.2501.14980\t2025\tA Deep State Space Model for Rainfall-Runoff Simulations",
+     "doi:10.5281/zenodo.16988502\t2025\tA Deep State Space Model for Rainfall-Runoff Simulations",
+     "doi:10.5281/zenodo.22735365\t2026\tMechanism-Dependent Value of Physical Constraints for Flood Prediction",
+     "doi:10.5281/zenodo.22735366\t2026\tMechanism-Dependent Value of Physical Constraints for Flood Prediction"
+    ]
+   }
+  ]
+ },
+ "HM5-3": {
+  "claim": "MARRMoT 概念模型与 LSTM 的对照诊断",
+  "results": [
+   {
+    "query": "MARRMoT benchmark",
+    "n_raw": 2,
+    "hits": [
+     "doi:10.5281/zenodo.15676822\t2026\tHYdrological Prediction with multi-model Ensemble and Reservoir comput",
+     "doi:10.5281/zenodo.20307854\t2026\tHYdrological Prediction with multi-model Ensemble and Reservoir comput"
+    ]
+   },
+   {
+    "query": "MARRMoT machine learning",
+    "n_raw": 0,
+    "hits": []
+   },
+   {
+    "query": "conceptual model LSTM comparison",
+    "n_raw": 10,
+    "hits": [
+     "arxiv:2201.06774v1\t2022\tHierarchical Neural Network Approaches for Long Document Classificatio",
+     "arxiv:2510.02605v2\t2025\tTowards CONUS-Wide ML-Augmented Conceptually-Interpretable Modeling of",
+     "doi:10.5281/zenodo.21256682\t2026\tCAMELS-KR: Catchment attributes, meteorology, and reconstructed stream",
+     "doi:10.5281/zenodo.21930882\t2026\tCAMELS-KR: Catchment attributes, meteorology, and reconstructed stream",
+     "doi:10.5287/ora-zrz5ojz2x\t2022\tDeep learning for hydrological modelling: from benchmarking to concept",
+     "doi:10.5281/zenodo.21256681\t2026\tCAMELS-KR: Catchment attributes, meteorology, and streamflow for large",
+     "doi:10.5281/zenodo.23549490\t2026\tCAMELS-KR: Catchment attributes, meteorology, and streamflow for large",
+     "doi:10.5281/zenodo.20311209\t2026\tTLMM v5.2: Longitudinal Adaptive Resilience Twins with External Valida"
+    ]
+   },
+   {
+    "query": "conceptual versus deep learning hydrology",
+    "n_raw": 0,
+    "hits": []
+   }
+  ]
+ },
+ "HM5-4": {
+  "claim": "GRACE 卫星数据作为驱动/对照源的水文建模",
+  "results": [
+   {
+    "query": "GRACE terrestrial water storage",
+    "n_raw": 15,
+    "hits": [
+     "arxiv:1902.01933v1\t2019\tCombining Physically-Based Modeling and Deep Learning for Fusing GRACE",
+     "arxiv:1011.4352v1\t2010\tRecent La Plata basin drought conditions observed by satellite gravime",
+     "arxiv:2101.09361v2\t2021\tImproving prediction of the terrestrial water storage anomalies during",
+     "arxiv:2605.00652v1\t2026\tD-SHIFT: Transferring High Spatial Information from GRACE Monthly TWSA",
+     "arxiv:2606.23833v1\t2026\tReconstructing GRACE Terrestrial Water Storage with Spatio-Temporal Gr",
+     "arxiv:2010.12175v1\t2020\tEstimation of Groundwater Storage Variations in Indus River Basin usin",
+     "arxiv:2609.34226v1\t2026\tLow latency global carbon budget reveals strong land sink recovery in",
+     "doi:10.5281/zenodo.14587191\t2025\tDeclining Groundwater Storage in the Indus basin Revealed Using GRACE"
+    ]
+   },
+   {
+    "query": "GRACE satellite streamflow",
+    "n_raw": 8,
+    "hits": [
+     "doi:10.5281/zenodo.12818756\t2024\tTotal water storage anomalies (TWSA) and streamflow in the Mississippi",
+     "doi:10.5281/zenodo.12818755\t2024\tTotal water storage anomalies (TWSA) and streamflow in the Mississippi",
+     "doi:10.5281/zenodo.13254811\t2024\tTotal water storage anomalies (TWSA) and streamflow in the Mississippi",
+     "doi:10.3929/ethz-c-000035132\t2005\tTotal basin discharge for the Amazon and Mississippi River basins from",
+     "doi:10.7892/boris.141969\t2020\tImproving the Predictive Skill of a Distributed Hydrological Model by",
+     "doi:10.5281/zenodo.3887120\t2020\tSignificant baseflow reduction in the Sao Francisco River Basin, Brazi",
+     "doi:10.48350/151290\t2020\tPotential of satellite and reanalysis evaporation datasets for hydrolo",
+     "doi:10.5281/zenodo.3887119\t2020\tSignificant baseflow reduction in the Sao Francisco River Basin, Brazi"
+    ]
+   },
+   {
+    "query": "GRACE LSTM runoff",
+    "n_raw": 3,
+    "hits": [
+     "arxiv:2606.23833v1\t2026\tReconstructing GRACE Terrestrial Water Storage with Spatio-Temporal Gr",
+     "doi:10.5281/zenodo.19664592\t2026\tHiGNN_LSTM: Dataset for training and evaluating TWSA forecasts",
+     "doi:10.5281/zenodo.19664591\t2026\tHiGNN_LSTM: Dataset for training and evaluating TWSA forecasts"
+    ]
+   }
+  ]
+ },
+ "HM5-5": {
+  "claim": "conformal 预测区间逐流域覆盖审计",
+  "results": [
+   {
+    "query": "conformal prediction streamflow",
+    "n_raw": 8,
+    "hits": [
+     "doi:10.5281/zenodo.22054161\t2026\tData Scarcity in Deep Learning Streamflow Forecasting: Prediction Skil",
+     "doi:10.5281/zenodo.21256955\t2026\tData Scarcity in Deep Learning Streamflow Forecasting: Prediction Skil",
+     "doi:10.5281/zenodo.20578811\t2026\tQuantDiviner/Reliability-Control-Streamflow-CP: v1.0.0: Replication Pa",
+     "doi:10.5281/zenodo.20578810\t2026\tQuantDiviner/Reliability-Control-Streamflow-CP: v1.0.0: Replication Pa",
+     "doi:10.5281/zenodo.23443077\t2026\tConformal prediction intervals for multi-day LSTM streamflow forecasts",
+     "doi:10.5281/zenodo.21925950\t2026\tConformal prediction intervals for multi-day LSTM streamflow forecasts",
+     "doi:10.5281/zenodo.21925951\t2026\tConformal Prediction for Deep Learning Streamflow Forecasting — Code a",
+     "doi:10.5281/zenodo.20587508\t2026\tQuantDiviner/Reliability-Control-Streamflow: v1.0.0: Replication Packa"
+    ]
+   },
+   {
+    "query": "conformal prediction hydrology",
+    "n_raw": 9,
+    "hits": [
+     "arxiv:2605.00126v3\t2026\tSPLICE: Latent Diffusion over JEPA Embeddings for Conformal Time-Serie",
+     "doi:10.5281/zenodo.22054161\t2026\tData Scarcity in Deep Learning Streamflow Forecasting: Prediction Skil",
+     "doi:10.5281/zenodo.21256955\t2026\tData Scarcity in Deep Learning Streamflow Forecasting: Prediction Skil",
+     "doi:10.5281/zenodo.17848220\t2025\tGeoRiskAI: A Global-to-Local Flood Risk Forecasting Architecture from",
+     "doi:10.5281/zenodo.17848219\t2025\tGeoRiskAI: A Global-to-Local Flood Risk Forecasting Architecture from",
+     "doi:10.5281/zenodo.17903279\t2025\tGeoRiskAI: A Global-to-Local Flood Risk Forecasting Architecture from",
+     "doi:10.5281/zenodo.19684103\t2026\tFibonacci Causal Loop Theory: The Complete Series — Manuscripts 1–51",
+     "doi:10.5281/zenodo.19652707\t2026\tFibonacci Causal Loop Theory: The Complete Series — Papers 1–50"
+    ]
+   },
+   {
+    "query": "conformal prediction CAMELS",
+    "n_raw": 9,
+    "hits": [
+     "arxiv:2005.00749v1\t2020\tSmart, Adaptive Energy Optimization for Mobile Web Interactions",
+     "doi:10.5281/zenodo.22054161\t2026\tData Scarcity in Deep Learning Streamflow Forecasting: Prediction Skil",
+     "doi:10.5281/zenodo.21256955\t2026\tData Scarcity in Deep Learning Streamflow Forecasting: Prediction Skil",
+     "doi:10.5281/zenodo.20578810\t2026\tQuantDiviner/Reliability-Control-Streamflow-CP: v1.0.0: Replication Pa",
+     "doi:10.5281/zenodo.20578811\t2026\tQuantDiviner/Reliability-Control-Streamflow-CP: v1.0.0: Replication Pa",
+     "doi:10.5281/zenodo.21925950\t2026\tConformal prediction intervals for multi-day LSTM streamflow forecasts",
+     "doi:10.5281/zenodo.23443077\t2026\tConformal prediction intervals for multi-day LSTM streamflow forecasts",
+     "doi:10.5281/zenodo.21925951\t2026\tConformal Prediction for Deep Learning Streamflow Forecasting — Code a"
+    ]
+   },
+   {
+    "query": "prediction interval coverage rainfall runoff",
+    "n_raw": 0,
+    "hits": []
+   }
+  ]
+ },
+ "HM5-6": {
+  "claim": "临界慢化前兆统计（EWS）用于非平稳水文系统",
+  "results": [
+   {
+    "query": "early warning signals hydrology",
+    "n_raw": 6,
+    "hits": [
+     "doi:10.5281/zenodo.18334943\t2026\tThe Architecture of Durability: A Global Analysis of Constraint-First",
+     "doi:10.5281/zenodo.18334944\t2026\tThe Architecture of Durability: A Global Analysis of Constraint-First",
+     "doi:10.5281/zenodo.21574415\t2026\tStratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation",
+     "doi:10.5281/zenodo.21574416\t2026\tStratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation",
+     "doi:10.5281/zenodo.21705777\t2026\tSTRAIOCD - Forecasting based on tens of thousands of patterns before h",
+     "doi:10.5281/zenodo.21705778\t2026\tSTRAIOCD - Forecasting based on tens of thousands of patterns before h"
+    ]
+   },
+   {
+    "query": "critical slowing down streamflow",
+    "n_raw": 0,
+    "hits": []
+   },
+   {
+    "query": "critical slowing down catchment",
+    "n_raw": 4,
+    "hits": [
+     "doi:10.60692/5axhh-87s53\t2018\tChanging the retention properties of catchments and their influence on",
+     "doi:10.60692/t4q6g-eym29\t2018\tChanging the retention properties of catchments and their influence on",
+     "doi:10.5281/zenodo.18334944\t2026\tThe Architecture of Durability: A Global Analysis of Constraint-First",
+     "doi:10.5281/zenodo.18334943\t2026\tThe Architecture of Durability: A Global Analysis of Constraint-First"
+    ]
+   },
+   {
+    "query": "regime shift early warning hydrological",
+    "n_raw": 4,
+    "hits": [
+     "doi:10.25740/vr862zx5273\t2025\tEvaluating Regime Shifts and Shifting Environmental Policy in the  Ark",
+     "doi:10.5281/zenodo.19038957\t2026\t📜 N‑K MODEL AMOC WARNING: COMPLETE FULFILLMENT REPORT     First-Princi",
+     "doi:10.5281/zenodo.19038956\t2026\t📜 N‑K MODEL AMOC WARNING: COMPLETE FULFILLMENT REPORT     First-Princi",
+     "doi:10.5281/zenodo.15468858\t2025\tUnified Model of Planetary Instability: Integration of Fluid Redistrib"
+    ]
+   }
+  ]
+ },
+ "HM5-7": {
+  "claim": "SINDy 稀疏回归从水文数据中恢复控制方程",
+  "results": [
+   {
+    "query": "SINDy hydrology",
+    "n_raw": 2,
+    "hits": [
+     "doi:10.25394/pgs.28904861\t2025\t<b>Modeling Material Flow Dynamics in Industrial-Natural Systems: Mach",
+     "doi:10.25394/pgs.28904861.v1\t2025\t<b>Modeling Material Flow Dynamics in Industrial-Natural Systems: Mach"
+    ]
+   },
+   {
+    "query": "sparse identification hydrology",
+    "n_raw": 8,
+    "hits": [
+     "doi:10.48550/arxiv.2105.10068\t2021\tModel selection of chaotic systems from data with hidden variables usi",
+     "doi:10.25394/pgs.28904861\t2025\t<b>Modeling Material Flow Dynamics in Industrial-Natural Systems: Mach",
+     "doi:10.25394/pgs.28904861.v1\t2025\t<b>Modeling Material Flow Dynamics in Industrial-Natural Systems: Mach",
+     "doi:10.25394/pgs.8015165.v1\t2019\tEco-Hydrological Analysis of Wetlandscapes",
+     "doi:10.25394/pgs.8015165\t2019\tEco-Hydrological Analysis of Wetlandscapes",
+     "doi:10.24400/527896/a03-2025.4273\t2025\tHydrographic Mapping of Chile: SWOT-Based Characterization of National",
+     "doi:10.17605/osf.io/fwnh8\t2026\tThe Forgotten Climate Gateway: A Systematic Review of Guiana Shield At",
+     "doi:10.5281/zenodo.1097043\t2014\tTrends In Extreme Rainfall Events In Tasmania, Australia"
+    ]
+   },
+   {
+    "query": "symbolic regression rainfall runoff",
+    "n_raw": 2,
+    "hits": [
+     "doi:10.5281/zenodo.1092872\t2014\tGenetic Programming: Principles, Applications And Opportunities For Hy",
+     "doi:10.5281/zenodo.1092871\t2014\tGenetic Programming: Principles, Applications And Opportunities For Hy"
+    ]
+   },
+   {
+    "query": "equation discovery catchment dynamics",
+    "n_raw": 4,
+    "hits": [
+     "doi:10.5281/zenodo.21705777\t2026\tSTRAIOCD - Forecasting based on tens of thousands of patterns before h",
+     "doi:10.5281/zenodo.21705778\t2026\tSTRAIOCD - Forecasting based on tens of thousands of patterns before h",
+     "doi:10.5281/zenodo.21574415\t2026\tStratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation",
+     "doi:10.5281/zenodo.21574416\t2026\tStratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation"
+    ]
+   }
+  ]
+ }
+}

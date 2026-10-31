@@ -1,0 +1,184 @@
+{
+ "X1-regime-closure-constraint": {
+  "rationale": "机制依赖的约束价值（2026 命中）×闭合/regime 条件化约束注入——分档思想向 regime/闭合条件扩展",
+  "results": [
+   {
+    "query": "closure error basin conditioning",
+    "hits": [
+     "doi:10.5281/zenodo.19232929\t2026\tThe Unified Substrate: Inverting the Universe as a Closed-Loop Transis",
+     "doi:10.5281/zenodo.16331466\t2025\tALGO",
+     "doi:10.5281/zenodo.21574416\t2026\tStratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation",
+     "doi:10.5281/zenodo.21574415\t2026\tStratospheric Signatures in Monsoon Cloud Composition: A Re-evaluation",
+     "doi:10.5281/zenodo.16330081\t2025\tALGO",
+     "doi:10.5281/zenodo.16321810\t2025\tRecursive Architectogenesis: Ultra-Recursive Cognition and the Emergen"
+    ]
+   },
+   {
+    "query": "regime dependent physical constraint",
+    "hits": [
+     "arxiv:1403.6532v1\t2014\tMinimax Optimal Rates for Poisson Inverse Problems with Physical Const",
+     "arxiv:2610.08705v1\t2026\tA nonlinear rod linkage model: zero-energy chains and continuum consis",
+     "arxiv:hep-ph/0210395v1\t2002\tNew Constraints on the running-mass inflation model",
+     "arxiv:1412.6447v1\t2014\tVon Zeipel's theorem for a magnetized circular flow around a compact o",
+     "arxiv:2604.17165v1\t2026\tOn the Unification of Optimal Current Reference Theory for Wound Rotor",
+     "arxiv:2606.27222v1\t2026\tCausality and the Equivalence Principle for Higher Energy Scattering",
+     "doi:10.5281/zenodo.19636059\t2026\tThe Saturation Model: A Constraint Emergence Framework for Dynamical S",
+     "doi:10.5281/zenodo.19636058\t2026\tThe Saturation Model: A Constraint Emergence Framework for Dynamical S",
+     "doi:10.5281/zenodo.18337741\t2026\tThe Law of Observation as Irreversible Constraint Pruning: From Probab",
+     "doi:10.5281/zenodo.18120264\t2026\tMathematical Formalization of Necessitated Update Activity (NUA) withi",
+     "doi:10.5281/zenodo.18116550\t2026\tMathematical Formalization of Necessitated Update Activity (NUA) withi",
+     "doi:10.5281/zenodo.18116549\t2026\tMathematical Formalization of Necessitated Update Activity (NUA) withi"
+    ]
+   },
+   {
+    "query": "water balance residual conditioning LSTM",
+    "hits": [
+     "arxiv:2609.21381v1\t2026\tKnowledge-Graph-Augmented Chronos-2 for HEC-RAS Surrogate Forecasting",
+     "doi:10.5281/zenodo.16226660\t2025\tALGO Mobility Systems",
+     "doi:10.5281/zenodo.16376539\t2025\tALGO Mobility Systems",
+     "doi:10.5281/zenodo.16331466\t2025\tALGO",
+     "doi:10.5281/zenodo.17790676\t2025\tChronotopic Theory of Matter and Time"
+    ]
+   },
+   {
+    "query": "adaptive constraint closure error",
+    "hits": [
+     "arxiv:2609.32516v1\t2026\tREFINE: A Resilient Evolution Framework for Intelligent Enterprise Ale",
+     "arxiv:2409.20111v1\t2024\tRobust Gaussian Splatting SLAM by Leveraging Loop Closure",
+     "arxiv:2302.07945v3\t2023\tAn implicit unified gas-kinetic wave-particle method for radiative tra",
+     "doi:10.5281/zenodo.19444575\t2026\tThe Loop Framework: A Constraint-Based Model of Meaning, Time, and Sys",
+     "doi:10.5281/zenodo.19444312\t2026\tThe Loop Framework: A Constraint-Based Model of Meaning, Time, and Sys",
+     "doi:10.5281/zenodo.19444313\t2026\tThe Loop Framework: A Constraint-Based Model of Meaning, Time, and Sys",
+     "doi:10.5281/zenodo.18702054\t2026\tA Constructive Algebraic Framework for Inverse Variational Topology: F",
+     "doi:10.5281/zenodo.18702053\t2026\tA Constructive Algebraic Framework for Inverse Variational Topology: F",
+     "doi:10.5281/zenodo.19882782\t2026\tPost-Complex Systems A: The Generative Mathematical Foundation of Comp"
+    ]
+   },
+   {
+    "query": "error stratified physics constraint",
+    "hits": [
+     "arxiv:2506.14236v1\t2025\tPhysics-Informed Neural Networks for the Korteweg-de Vries Equation fo",
+     "arxiv:2512.07248v2\t2025\tDistinguishing Imitation Error from Intrinsic Motion Learning Difficul",
+     "arxiv:2603.28545v2\t2026\tManipArena: Comprehensive Real-world Evaluation of Reasoning-Oriented",
+     "arxiv:2603.07805v3\t2026\tMachine Learning for Electrode Materials: Property Prediction via Comp",
+     "doi:10.5281/zenodo.16764103\t2025\tPure Time Theory – from Intuition to Genesis : Ontological Foundations",
+     "doi:10.5281/zenodo.21474740\t2026\tDigital twin-enabled real-time holographic communication in virtual en",
+     "doi:10.5281/zenodo.21474739\t2026\tDigital twin-enabled real-time holographic communication in virtual en",
+     "doi:10.5281/zenodo.21286334\t2026\tThe Theory of Readability Constraint Geometry, Observer-Relative Resol",
+     "doi:10.5281/zenodo.19210687\t2026\tThe Nexus -Geometry Formalization of SHA-256: Resolving the 48-Round B",
+     "doi:10.5281/zenodo.19559858\t2026\tShell structure, a Wigner-energy feature and the role of network capac"
+    ]
+   }
+  ]
+ },
+ "X2-coverage-closure": {
+  "rationale": "Alsafari per-basin coverage × 闭合误差关联——覆盖异质性是否由闭合质量驱动",
+  "results": [
+   {
+    "query": "coverage water balance error",
+    "hits": [
+     "doi:10.5281/zenodo.5680660\t2021\tGeodetic mass balance of glaciers in the Manaslu region of Nepal 1970",
+     "doi:10.5281/zenodo.5700932\t2021\tGeodetic mass balance of glaciers in the Manaslu region of Nepal 1970",
+     "doi:10.5281/zenodo.5680659\t2021\tGeodetic mass balance of glaciers in the Manaslu region of Nepal 1970",
+     "doi:10.6084/m9.figshare.10000229.v1\t2019\tThe assessment of different vegetation indices for spatial disaggregat",
+     "doi:10.6084/m9.figshare.10000229\t2019\tThe assessment of different vegetation indices for spatial disaggregat",
+     "doi:10.5285/0df5d4e9-2fcd-4420-b403-24d76848a5a5\t2024\tSubglacial water flow paths beneath Whillans Ice Plain, West Antarctic"
+    ]
+   },
+   {
+    "query": "prediction interval closure quality",
+    "hits": [
+     "doi:10.5281/zenodo.23809057\t2026\tDIGITAL TWINS AND QUALITY CONTROL FOR SMART MASK MANUFACTURING AT THE",
+     "doi:10.5281/zenodo.23809056\t2026\tDIGITAL TWINS AND QUALITY CONTROL FOR SMART MASK MANUFACTURING AT THE",
+     "doi:10.25405/ncl.34604907\t2026\tA physically based model of rebound in South Crofty tin mine, Cornwall",
+     "doi:10.25405/ncl.34604907.v1\t2026\tA physically based model of rebound in South Crofty tin mine, Cornwall",
+     "doi:10.5281/zenodo.17115270\t2026\tWILL Relational Geometry Open Research: April 2026 Release",
+     "doi:10.5281/zenodo.19521296\t2026\tWILL Relational Geometry Open Research: April 2026 Release"
+    ]
+   },
+   {
+    "query": "coverage stratified catchment attributes",
+    "hits": []
+   },
+   {
+    "query": "uncertainty closure error hydrology",
+    "hits": [
+     "arxiv:2511.18564v1\t2025\tPhysically Informed Bayesian Retrieval of SWE and Snow Depth in Forest",
+     "doi:10.48550/arxiv.2511.18564\t2025\tPhysically Informed Bayesian Retrieval of SWE and Snow Depth in Forest",
+     "doi:10.5281/zenodo.14028867\t2024\tStageIV-IRC – A High-resolution Dataset of Extreme Orographic Quantita",
+     "doi:10.5281/zenodo.16747858\t2025\tStageIV-IRC – A High-resolution Dataset of Extreme Orographic Quantita",
+     "doi:10.5281/zenodo.17633855\t2025\tStageIV-IRC – A High-resolution Dataset of Extreme Orographic Quantita",
+     "doi:10.5281/zenodo.14028866\t2025\tStageIV-IRC – A High-resolution Dataset of Extreme Orographic Quantita",
+     "doi:10.25675/10217/200629\t2006\tUncertainty in mass-balance calculations of non-point source loads to"
+    ]
+   },
+   {
+    "query": "interval width basin closure",
+    "hits": [
+     "doi:10.5281/zenodo.20043547\t2026\tESCT-CSI v1.6: From Mathematical Closure to Phenomenological Engineeri",
+     "doi:10.5281/zenodo.20043548\t2026\tESCT-CSI v1.6: From Mathematical Closure to Phenomenological Engineeri",
+     "doi:10.5281/zenodo.15309847\t2025\tGoniatites amarensis Korn & Ebbighausen, 2025, sp. nov.",
+     "doi:10.5281/zenodo.15309848\t2025\tGoniatites amarensis Korn & Ebbighausen, 2025, sp. nov.",
+     "doi:10.6084/m9.figshare.29149982.v1\t2025\tData Availability for Barrier Island Response to Energetic Storms: a G",
+     "doi:10.6084/m9.figshare.29149982.v2\t2026\tData Availability for Barrier Island Response to Energetic Storms: a G"
+    ]
+   }
+  ]
+ },
+ "X3-ews-sindy": {
+  "rationale": "两条 novel 线交叉：临界慢化前兆统计的稀疏回归自动发现",
+  "results": [
+   {
+    "query": "early warning sparse regression",
+    "hits": [
+     "arxiv:2604.10328v1\t2026\tA Diffusion-Contrastive Graph Neural Network with Virtual Nodes for Wi",
+     "arxiv:2605.18911v2\t2026\tDoes Your Wildfire Prediction Model Actually Work, or Just Score Well?",
+     "doi:10.5281/zenodo.17166724\t2025\tComparative Analysis of Artificial Neural Networks and Regression Mode",
+     "doi:10.5281/zenodo.17166723\t2025\tComparative Analysis of Artificial Neural Networks and Regression Mode",
+     "doi:10.5281/zenodo.17169935\t2025\tPredictive Modelling of Water Surface Elevation Variations Using Multi",
+     "doi:10.5281/zenodo.17169936\t2025\tPredictive Modelling of Water Surface Elevation Variations Using Multi",
+     "doi:10.48550/arxiv.2604.10328\t2026\tA Diffusion-Contrastive Graph Neural Network with Virtual Nodes for Wi",
+     "doi:10.48550/arxiv.2605.18911\t2026\tDoes Your Wildfire Prediction Model Actually Work, or Just Score Well?"
+    ]
+   },
+   {
+    "query": "critical transition equation discovery",
+    "hits": [
+     "arxiv:2002.07322v1\t2020\tCritical fluctuations in a dynamically expanding heavy-ion collision",
+     "arxiv:1805.12196v3\t2018\tLow Dimensional Dynamics of the Kuramoto Model with Rational Frequency",
+     "arxiv:1210.3688v2\t2012\tTidal interactions and principle of corresponding states: from micro t",
+     "arxiv:1411.0937v2\t2014\tIn-plane magnetic field vs. temperature phase diagram of a quasi-2D fr",
+     "arxiv:2106.11848v2\t2021\tDistribution of the order parameter in strongly disordered superconduc",
+     "arxiv:1607.01487v3\t2016\tChallenges in QCD matter physics - The Compressed Baryonic Matter expe",
+     "doi:10.48550/arxiv.2002.07322\t2020\tCritical fluctuations in a dynamically expanding heavy-ion collision",
+     "doi:10.5281/zenodo.21781633\t2026\tExact Cosmological Solution of the Information–Einstein Equations — A",
+     "doi:10.5281/zenodo.21781632\t2026\tExact Cosmological Solution of the Information–Einstein Equations — A",
+     "doi:10.5281/zenodo.17424498\t2025\tThe Breathing Dynamics Equation: A Data-Driven Model Unifying Stable C",
+     "doi:10.5281/zenodo.17424499\t2025\tThe Breathing Dynamics Equation: A Data-Driven Model Unifying Stable C",
+     "doi:10.5281/zenodo.21941740\t2026\tComputational Knowledge Singularity Theory (CKST-3)"
+    ]
+   },
+   {
+    "query": "SINDy early warning",
+    "hits": [
+     "doi:10.26153/tsw/63153\t2025\tAutonomous steering and event detection : modeling, estimation, and co"
+    ]
+   },
+   {
+    "query": "sparse regression regime shift detection",
+    "hits": [
+     "doi:10.5281/zenodo.21009763\t2026\tWhich Coupling Changed? Regime-Change Attribution by Coefficient Drift",
+     "doi:10.5281/zenodo.21009764\t2026\tWhich Coupling Changed? Regime-Change Attribution by Coefficient Drift",
+     "doi:10.5281/zenodo.21087007\t2026\tGeometric Field Framework for Wildfire Mitigation via Adaptive Materia",
+     "doi:10.5281/zenodo.21177674\t2026\tGeometric Field Framework for Wildfire Mitigation via Adaptive Materia",
+     "doi:10.5281/zenodo.21180430\t2026\tGeometric Field Framework for Wildfire Mitigation via Adaptive Materia",
+     "doi:10.5281/zenodo.15653473\t2026\tBig Bang Simulator with a Closed-Loop Fractal Correction Engine: Recon"
+    ]
+   },
+   {
+    "query": "automated precursor discovery hydrology",
+    "hits": []
+   }
+  ]
+ }
+}

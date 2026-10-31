@@ -1,0 +1,20 @@
+{
+  "n_truth": 3,
+  "n_flagged": 5,
+  "recall": 1.0,
+  "precision": 0.6,
+  "flagged": [
+    "syn-0",
+    "syn-2",
+    "syn-5",
+    "syn-6",
+    "syn-7"
+  ],
+  "missed": [],
+  "setup": {
+    "basins": 8,
+    "years": 30,
+    "injected_shift_basins": 3,
+    "injected_metric": "P-Q elasticity step change"
+  }
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "hid": "H-I1",
+    "branch": "interpretation",
+    "claim": "在多数流域（≥60%），年径流对年降水的弹性大于 1，即径流放大而非缓冲降水的年际变化。",
+    "plan": {
+      "data": "usgs_mini: USGS 日均径流(00060) + ERA5-Land 点位强迫",
+      "method": "年度 log Q ~ log P 的 OLS 斜率；跨流域统计弹性>1 的比例",
+      "cost_estimate": 0,
+      "runtime": "< 1 min"
+    },
+    "decision_criteria": [
+      {
+        "metric": "elasticity",
+        "direction": ">",
+        "threshold": 1.0,
+        "min_frac": 0.6,
+        "supports": "≥60% 流域弹性>1",
+        "weakens": "≤40% 流域弹性>1 → 弹性≈1，符合线性水库预期"
+      }
+    ],
+    "alternatives": [
+      "弹性>1 可能来自降水与潜在蒸散发的共同趋势造成的伪回归",
+      "ERA5 点位降水低估山地降水，压缩 logP 方差并放大斜率"
+    ],
+    "citations": [
+      {
+        "cite_id": "doi:10.5167/uzh-204382",
+        "quote": "The study catchments represent a spectrum of different hydrological regimes, from pluvial–nival to nivo-glacial, as well as distinct topographies and land forms, characterizing different elevation zones across the eastern Alps to provide a comprehensive picture of future runoff changes."
+      },
+      {
+        "cite_id": "arxiv:1911.07249v3",
+        "quote": "We feed the models meteorological observations disseminated with the CAMELS dataset, and individually restrict the training period length, number of training basins, and input sequence length."
+      }
+    ]
+  },
+  {
+    "hid": "H-I2",
+    "branch": "interpretation",
+    "claim": "融雪主导流域的流量质心在 1985–2022 期间前移，且前移速率中位数比降雨主导流域快至少 0.2 天/年。",
+    "plan": {
+      "data": "usgs_mini 日径流",
+      "method": "径流加权圆形质心日（逐年）+ Theil-Sen；regime 由 snow_fraction>0.15 判定；组间中位数差",
+      "cost_estimate": 0
+    },
+    "decision_criteria": [
+      {
+        "metric": "centroid_advance",
+        "direction": "group>",
+        "group_by": "regime",
+        "group_a": "snow",
+        "group_b": "rain",
+        "threshold": 0.2,
+        "supports": "融雪型质心前移比降雨型快 ≥0.2 d/yr",
+        "weakens": "差值 ≤0.2 或为负"
+      }
+    ],
+    "alternatives": [
+      "质心前移可能来自融雪径流占比下降，而非雪季本身提前",
+      "水库调度改变季节分配，与气候信号混淆"
+    ],
+    "citations": [
+      {
+        "cite_id": "doi:10.13021/mars/5016",
+        "quote": "The annual snowmelt runoff timing shift was identified using ‘Center Time (CT)’ and ‘Spring Pulse Onset (SPO)’ methods, jointly with the analysis of monthly average and fractional streamflow from January to June, which is the time period covering later snow accumulation and snow melting."
+      }
+    ]
+  },
+  {
+    "hid": "H-I3",
+    "branch": "interpretation",
+    "claim": "越干旱的流域径流比下降趋势越强：aridity(PET/P) 与 rr_trend 的相关系数小于 -0.2。",
+    "plan": {
+      "data": "usgs_mini",
+      "method": "逐年径流比 Theil-Sen 斜率 vs 流域干旱度；Pearson r",
+      "cost_estimate": 0
+    },
+    "decision_criteria": [
+      {
+        "metric": "aridity",
+        "direction": "corr<",
+        "metric_b": "rr_trend",
+        "threshold": -0.2,
+        "supports": "r < -0.2，干旱区径流比下降更快",
+        "weakens": "r ≥ -0.2"
+      }
+    ],
+    "alternatives": [
+      "相关可能由流域面积/高程共变造成，而非气候敏感性差异",
+      "干旱区取用水变化更强，rr_trend 混入人类用水信号"
+    ],
+    "citations": [
+      {
+        "cite_id": "doi:10.5445/ir/1000149060",
+        "quote": "As the model performance was “good” (NSE &gt; 0.7) during “wet” periods using parameters from a long-term calibration, “wet” parameters were not recommended for the Berg River catchment, but could play a large role in tropical climates."
+      }
+    ]
+  },
+  {
+    "hid": "H-I4",
+    "branch": "interpretation",
+    "claim": "多数流域后半段（约 2004–2022）的 P–Q 弹性低于前半段（1985–2003），径流对降水的敏感性在减弱。",
+    "plan": {
+      "data": "usgs_mini",
+      "method": "按记录中位年切分，分别拟合 logQ~logP；Δ=后-前；跨流域中位数 + bootstrap CI",
+      "cost_estimate": 0
+    },
+    "decision_criteria": [
+      {
+        "metric": "neg_delta_elast",
+        "direction": "median>",
+        "threshold": 0.0,
+        "supports": "Δ弹性中位数 < 0",
+        "weakens": "Δ弹性中位数 ≥ 0"
+      }
+    ],
+    "alternatives": [
+      "弹性下降源于土壤蓄水/地下水缓冲增强，非气候强迫变化",
+      "切分点选择造成的伪影（用前后 10 年窗口复核）"
+    ],
+    "citations": [
+      {
+        "cite_id": "doi:10.5167/uzh-204382",
+        "quote": "This study investigates the effects of climate change on runoff patterns in six contrasting Alpine catchments in Austria using a process-based, semi-distributed hydrological model and projections from 14 regional and global climate model combinations for two representative concentration pathways, namely RCP4.5 and RCP8.5."
+      }
+    ]
+  },
+  {
+    "hid": "H-A1",
+    "branch": "accuracy",
+    "claim": "加入雪储记忆项（snow_ewm + melt）只在融雪主导流域提升 val NSE，降雨主导流域无同等提升，组间差值 ≥0.01。",
+    "plan": {
+      "data": "usgs_mini",
+      "method": "消融：specA=P记忆+雪储 vs specB=P记忆；逐流域 val NSE 差值，按 regime 分组取中位数",
+      "cost_estimate": 0
+    },
+    "decision_criteria": [
+      {
+        "metric": "median_delta_snow_minus_rain",
+        "direction": ">",
+        "threshold": 0.01,
+        "supports": "融雪型增益 - 降雨型增益 ≥0.01",
+        "weakens": "<0.01"
+      }
+    ],
+    "alternatives": [
+      "增益差异可能来自融雪区样本量少、NSE 方差大",
+      "雪储项其实在两类流域都起作用，只是融雪区基线低、增益空间大"
+    ],
+    "citations": [
+      {
+        "cite_id": "arxiv:1911.07249v3",
+        "quote": "We feed the models meteorological observations disseminated with the CAMELS dataset, and individually restrict the training period length, number of training basins, and input sequence length."
+      }
+    ]
+  }
+]

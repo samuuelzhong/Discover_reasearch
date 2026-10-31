@@ -1,0 +1,36 @@
+{
+  "hid": "H-I2",
+  "branch": "interpretation",
+  "claim": "融雪主导流域的流量质心在 1985–2022 期间前移，且前移速率中位数比降雨主导流域快至少 0.2 天/年。",
+  "plan": {
+    "data": "usgs_mini 日径流",
+    "method": "径流加权圆形质心日（逐年）+ Theil-Sen；regime 由 snow_fraction>0.15 判定；组间中位数差",
+    "cost_estimate": 0
+  },
+  "decision_criteria": [
+    {
+      "metric": "centroid_advance",
+      "direction": "group>",
+      "group_by": "regime",
+      "group_a": "snow",
+      "group_b": "rain",
+      "threshold": 0.2,
+      "supports": "融雪型质心前移比降雨型快 ≥0.2 d/yr",
+      "weakens": "差值 ≤0.2 或为负"
+    }
+  ],
+  "alternatives": [
+    "质心前移可能来自融雪径流占比下降，而非雪季本身提前",
+    "水库调度改变季节分配，与气候信号混淆"
+  ],
+  "citations": [
+    {
+      "cite_id": "doi:10.13021/mars/5016",
+      "quote": "The annual snowmelt runoff timing shift was identified using ‘Center Time (CT)’ and ‘Spring Pulse Onset (SPO)’ methods, jointly with the analysis of monthly average and fractional streamflow from January to June, which is the time period covering later snow accumulation and snow melting."
+    }
+  ],
+  "author": "boss",
+  "created_at": "2026-10-27T10:34:21+00:00",
+  "gate_status": "pass",
+  "gate_reasons": []
+}

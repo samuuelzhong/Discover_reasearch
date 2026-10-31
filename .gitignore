@@ -1,0 +1,19 @@
+# ===== 白名单模式：默认忽略一切，只放行项目自有内容 =====
+/*
+!/.gitignore
+!/README.md
+!/discovery_loop/
+!/docs/
+!/runs/
+
+# ===== Python 产物 =====
+__pycache__/
+*.pyc
+
+# ===== 394MB 下载缓存（discharge/forcing JSON，可用 cli 重新拉取）=====
+discovery_loop/discovery_loop/
+
+# ===== 运行期临时文件 =====
+*.log
+.DS_Store
+Thumbs.db

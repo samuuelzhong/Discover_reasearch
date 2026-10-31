@@ -1,0 +1,19 @@
+﻿系统,机构,公开时间,能力层级,架构范式,裁判/验证方式,是否开源,关键结果,证据等级
+Co-Scientist,Google DeepMind/Research/Cloud,2026-05 (Nature),L2 多智能体,Supervisor + Generation/Proximity/Reflection/Ranking/Evolution/Meta-review 六类 agent + Elo 锦标赛,专家评审 + 体外湿实验,否 (产品实验性开放),AML 药物重定位体外验证;肝纤维化新靶点;AMR 机制复现,A
+AlphaEvolve,Google DeepMind,2025-05,L4 自我改进,Prompt Sampler + LLM 集成 + Evaluator Pool + Program Database 进化搜索,外部精确评分器 (可执行程序),否,4x4 复矩阵 48 次乘法;50+ 数学问题中 20% 改进;Borg 省 0.7% 算力,A/B
+FunSearch,Google DeepMind,2024 (Nature 625),L4 自我改进,LLM 提议 + 自动评估器 + 程序数据库,外部精确评分器,是,cap set 问题上界改进;装箱启发式,A
+The AI Scientist,Sakana AI + UBC + Oxford,2026-03 (Nature),L2 多智能体,线性流水线 + agentic tree search + 自评审委员会,人类盲审 (ICLR workshop) + Automated Reviewer,是,1/3 论文过 workshop 盲审 (6.33);成本 <$15/篇,A
+Robin,FutureHouse,2026-05 (Nature),L2 多智能体,Crow/Falcon (文献) + Finch (数据分析) 三 agent 编排,湿实验验证 (RPE 细胞),部分开源 (Apache 2.0),ripasudil + KL001 用于干性 AMD;ABCA1 机制,A
+Virtual Lab,Stanford + CZ Biohub,2025-07 (Nature 646),L2 多智能体,PI agent + 专家 agent + Scientific Critic,湿实验验证,否,92 个纳米抗体;2 个结合 JN.1/KP.3,A
+Coscientist,CMU,2023 (Nature),L1/L3 闭环,单 LLM + 工具 + 机器人 API,真实化学实验,部分开源,自主设计并执行化学实验,A
+A-Lab,LBNL,2023 (Nature),L3 闭环,ML 配方推荐 + 机器人 + 主动学习,真实材料合成 (XRD),否,17 天从 57 目标合成 36 种材料,A
+Kosmos,Edison Scientific (FutureHouse 衍生),2025,L2 多智能体,长程自主分析 agent,自评 + 专家抽检,否,宣称一天完成六个月研究;自评 80% 正确,C
+Tongyi DeepResearch,阿里巴巴通义实验室,2025-10 (arXiv 2510.24701),L1 单体 + 多 agent 并行,IterResearch 回合式工作区重构 + Research-Synthesis 并行,检索类基准,是,30.5B/3.3B 激活;WebWalkerQA 72.2;BrowseComp 43.4,B
+DeerFlow,字节跳动,2025-05 起 / 2.0 于 2026-02,L1-L2 runtime,Lead agent + 子 agent 委派 + 线程隔离沙箱 + 持久记忆,工具执行/人工,是 (MIT),约 8.4 万星;GitHub Trending 第一,C
+Seed-Prover / Seed-Evolving,字节跳动 Seed,2026-09,L4 自我改进,Agent-Team 大规模并发形式化,Lean 编译器 (100% 可验),部分,三维粘性挂谷猜想形式化;约 180 万行 Lean 中 90% 由模型生成,A/B
+Hyra-1.0,腾讯混元,2026-07,L4 自我改进,Context Agent (经验银行) + 多 Proposal Agent + 双层循环(改解 + 改评估器),沙箱评分器 (可自造),否,AI for AI / AI for Science / AI for Fun 十余场景 demo,C
+Youtu-Agent,腾讯优图,2025-12 (arXiv 2512.24615),L1-L2 框架,三层解耦 + YAML 配置 + Meta-Agent 自动生成 + Training-free GRPO / Agent RL,基准评测,是,WebWalkerQA 71.47;GAIA 72.8;工具合成成功率 >81%,B
+书生·端砚 / Intern-Discovery,上海人工智能实验室,2026-07 (WAIC),L3 闭环,算力-数据-模型-智能体-自主实验五层贯通;SCP 科学上下文协议,干湿实验闭环 (宣称),平台服务,覆盖生命科学/材料/半导体/核聚变/量子/气象六大领域;Intern-S2-Preview-397B,C
+GPT-Rosalind,OpenAI,2026,L1 领域模型,生命科学专用推理模型 + 50+ 科学工具/数据库,内部评测 + 客户案例,否,面向药物发现与转化医学的 trusted-access 产品,C
+PaperBench,OpenAI,2025-04,评测基准,20 篇 ICML 2024 论文 / 8316 rubric 叶子节点,LLM judge + 人类博士基线,是,最佳 agent 21.0% vs 人类博士 41.4%,B
+MAST (Why Do Multi-Agent LLM Systems Fail),UC Berkeley 等,2025 (NeurIPS D&B),评测/分析,1600+ 执行轨迹 + 14 种失败模式 + 3 大类,专家标注 (kappa 0.88),是,框架失败率 41%-86.7%;规格 42% / 协调 37% / 验证 21%,A
