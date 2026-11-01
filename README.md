@@ -31,6 +31,9 @@ discovery_loop/     核心框架（9 模块，约 2000 行）
   analysis.py       签名表 / 假设判定 / 异常 / 归因
   boss.py           汇总报告
   cli.py            命令行入口（new/data/papers/ask/hyp/evolve/report/…）
+  pipeline.py       可执行主线（冷启动+阶段门槛：文献→综合/发散→假设环→实验→p2a）
+  hypo_evolve.py    假设池工具层（池按域隔离：hypo_pool_<域>.json）
+  agent_round.py    假设环检索执行器（自带主线门槛 guard）
   data/hydro.py     USGS 径流 + NASA POWER/Open-Meteo 气象，磁盘缓存
 runs/               8 轮运行台账（state.db + 判定 JSON + 报告）
 docs/               调研报告、精读、方案评审、立项叙事、流水线清单
@@ -38,10 +41,46 @@ docs/               调研报告、精读、方案评审、立项叙事、流水
 
 ## 快速开始
 
+**新领域从零**走可执行主线（强制顺序：文献 → 综合/发散 → 假设环 STOP → 实验 → p2a，禁止跳步）：
+
+```bash
+python discovery_loop/pipeline.py newdomain <域>            # 冷启动：路线台账+按域空池（拒绝覆盖已有域）
+python -m discovery_loop.scout --run <run> search <query>   # ① 文献检索入库（默认 openalex+arxiv+s2 源）
+python discovery_loop/pipeline.py done <域> s1_scout "证据：run_id/查询数/入库数"
+python -m discovery_loop.fieldmap --run <run> --domain <域>   # ①b 流派图谱 + ② 跨域发散（类比域抓回入库）
+python discovery_loop/pipeline.py done <域> s1b_synthesize "机制图谱要点"
+python discovery_loop/pipeline.py done <域> s2_xdomain "类比域与回收动作"
+python discovery_loop/agent_round.py r1 --domain <域>       # ③ 假设环：agent 设计计划→真检索→语义判读写回池→三辩证问题 STOP
+                                                            #    （自带 guard：s1 未完成则拒绝执行；判读写回一律带 domain=<域>）
+python discovery_loop/pipeline.py done <域> s3_hypothesis "STOP 理由见 hypo_evolve_log_<域>.jsonl"
+python discovery_loop/pipeline.py gate <域> "三层基线登记"  # ④ 前置门禁：消融臂/SOTA基座(内化来源)/sanity（见下节）
+python discovery_loop/pipeline.py done <域> s4_experiment "…"
+# ⑤ p2a 内化：SP 类假设前置于实验作基座；SC/SW 类可实验后沉淀资产
+```
+
+**基础链条 ≠ 检索边界**：六阶段只是"首次覆盖"的最低门槛（guard 只拦跳步）。
+文献检索/跨域发散/引文回调是**全阶段常驻服务**——知识综合、假设优化、实验
+验证与分析的任何时刻都可以再调研、换角度补查、回调源论文。假设环每轮本身就是
+新的检索计划；循环之外的补查用 `pipeline.py refine <域> "为何补查/换了什么角度"`
+登记入台账（status 可见补查历史），留痕可审计。
+
+**实验门禁与基座纪律**（2026-11-01 用户裁决，防误判基础设施——实验不得在无基座/基线时开展）：
+
+- **基座门禁**：`guard s4` 要求台账已 `gate` 登记三层基线，缺一不可——
+  消融基线（证明机制存在，对照臂来自假设环锁定的 nearest_prior）、
+  SOTA 外部基线（证明性能领先，**内化自关键论文复现，含完整评测协议**）、
+  sanity 基线（climatology/线性回归，防所有臂都不比 chance 好）。
+- **为什么**：不内化基座则增益与种子/协议抖动统计不可分（LSTM 在 CAMELS 上种子间 NSE ±0.01-0.02，与多数真实改进同量级）；评测协议细节（分割年份/warm-up/标准化/流域子集）可制造 0.05 级假差异——内化基座 = 内化完整协议，不是只搬模型权重；半合成实验必须用真实论文的过程模型注入信号，自建模型注入 = 循环验证。
+- **p2a 按假设类型分裂**：性能声明类（"超越主流"）必须先 p2a 内化基座再实验；反演/计量类可先轻量试错、幸存者再内化沉淀。
+- **假设→实验设计五总则**：(1) 拆分断言，每条独立可证伪；(2) 对照即 delta——claim 声称"X 优于 Y"，Y 必须是真实对照臂；(3) claim 中的限定词（"集中于尾部""在气候位移段"）直接转为分层评估维度；(4) 归因/反演类先在真值已知的半合成数据上验证；(5) 预注册失败判据（含效应量阈值与混杂控制），禁止事后解释。
+- **领域无关（通用性声明）**：本节纪律不绑定径流/CAMELS——迁移到任何领域时，把"SOTA 基座"换成该领域的公认主流（医学影像 nnU-Net、NLP 任务榜模型、物理仿真标准求解器等），把"种子/协议抖动"换成该领域的复现噪声源（随机种子/超参搜索/数据版本/标注者差异），门禁逻辑、三层基线与五总则原样适用。
+
+**遗留 CAMELS 单任务路径**（历史 runs 台账，`--domain hydro` 时假设环警告放行）：
+
 ```bash
 python discovery_loop/cli.py new --run runs/demo
+python discovery_loop/cli.py papers --run runs/demo      # 文献检索与入库（在数据之前——README 明文规矩）
 python discovery_loop/cli.py data --run runs/demo        # 拉取 24 流域数据
-python discovery_loop/cli.py papers --run runs/demo      # 文献检索与入库
 python discovery_loop/cli.py evolve --run runs/demo      # 算子进化搜索
 python discovery_loop/cli.py analyze --run runs/demo     # 签名 + 假设判定 + 异常
 python discovery_loop/cli.py report --run runs/demo      # 生成 REPORT.md

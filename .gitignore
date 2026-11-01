@@ -1,17 +1,23 @@
-# ===== 白名单模式：默认忽略一切，只放行项目自有内容 =====
+# ===== 白名单模式：默认忽略一切，只放行框架内容 =====
 /*
 !/.gitignore
 !/README.md
 !/discovery_loop/
 !/docs/
-!/runs/
 
 # ===== Python 产物 =====
 __pycache__/
 *.pyc
 
-# ===== 394MB 下载缓存（discharge/forcing JSON，可用 cli 重新拉取）=====
-discovery_loop/discovery_loop/
+# ===== 具体研究产物（不推送，本地保留）=====
+# runs/：实验运行输出（1.6G，含 .pt 模型等）
+# 根目录的 HYPOTHESIS_REPORT_*.md / EXPERIMENT_DESIGN_*.md 研究报告
+# 以上均被白名单排除
+discovery_loop/data/hypo_evolve_log*.jsonl
+
+# ===== docs 中的具体研究稿（假设谱系 / 收敛稿）=====
+docs/假设谱系-*.md
+docs/径流假设循环-*.md
 
 # ===== 运行期临时文件 =====
 *.log
