@@ -29,7 +29,7 @@ from .core import Run, norm_ws
 
 UA = "HydroDiscoveryLoop/0.1 (research prototype; mailto:research@example.org)"
 PDF_SCRIPT = Path(
-    r"D:\workbuddy\resources\app.asar.unpacked\resources\plugins\workbuddy-builtin\skills\workbuddy-pdf\scripts\run.sh"
+    r"D:\\workbuddy\\resources\\app.asar.unpacked\\resources\\plugins\\workbuddy-builtin\\skills\\workbuddy-pdf\\scripts\\run.sh"
 )
 
 
@@ -47,6 +47,10 @@ def _get(url: str, timeout: int = 30, retries: int = 4) -> bytes:
         except urllib.error.HTTPError as e:
             last = e
             if e.code in (429, 500, 502, 503, 504):
+                # 预算耗尽类 429（Retry-After 为小时级）重试无意义——当天必然失败，立即放弃
+                ra = e.headers.get("Retry-After") if e.headers else None
+                if ra and ra.strip().isdigit() and int(ra) > 600:
+                    raise RuntimeError(f"budget exhausted (Retry-After {int(ra)//3600}h): {url}") from e
                 time.sleep(4 * (i + 1))
                 continue
             raise
@@ -68,7 +72,8 @@ def _rebuild_abstract(inv: dict | None) -> str:
 
 
 def search_openalex(query: str, n: int = 10, from_year: int | None = None) -> list[dict]:
-    filt = f'title_and_abstract.search:"{query}"'
+    # 注意：加引号=精确短语匹配（词序敏感，长查询恒 0 命中）；裸词=词 AND/相关性排序。
+    filt = f"title_and_abstract.search:{query}"
     if from_year:
         filt += f",from_publication_date:{from_year}-01-01"
     params = {
@@ -156,6 +161,180 @@ def search_s2(query: str, n: int = 10) -> list[dict]:
             "cited_by": w.get("citationCount"),
         })
     return out
+
+
+S2_PAPER_FIELDS = "title,abstract,year,venue,authors,externalIds,citationCount"
+
+
+def _oaf_node(x, *path):
+    """Walk OpenAIRE's XML-in-JSON tree; return last node or {} (fields may be dict/list/str)."""
+    cur = x
+    for key in path:
+        if not isinstance(cur, dict):
+            return {}
+        cur = cur.get(key)
+        if cur is None:
+            return {}
+    return cur if cur is not None else {}
+
+
+def _oaf_text(x) -> str:
+    """Scalar/text out of dict{'$':..} | list[dict{'$':..}] | str."""
+    if isinstance(x, dict):
+        return str(x.get("$") or "")
+    if isinstance(x, list):
+        return " ".join(_oaf_text(i) for i in x).strip()
+    return str(x or "")
+
+
+def search_openaire(query: str, n: int = 10) -> list[dict]:
+    """OpenAIRE API — openalex/s2 日预算耗尽时的替补源（Crossref 聚合，含 DOI）。"""
+    url = ("https://api.openaire.eu/search/publications?"
+           + urllib.parse.urlencode({"keywords": query, "size": str(n), "format": "json", "page": "1"}))
+    data = json.loads(_get(url))
+    out = []
+    results = _oaf_node(data, "response", "results", "result")
+    results = results if isinstance(results, list) else [results]
+    for res in results:
+        r = _oaf_node(res, "metadata", "oaf:entity", "oaf:result")
+        title = _oaf_text(r.get("title")).strip()
+        if not title:
+            continue
+        doi = ""
+        pid = r.get("pid")
+        pid = pid if isinstance(pid, list) else [pid] if pid else []
+        for p in pid:
+            if isinstance(p, dict) and p.get("@classid") == "doi":
+                doi = _oaf_text(p).replace("https://doi.org/", "")
+                break
+        year = None
+        da = _oaf_text(r.get("dateofacceptance"))
+        if da[:4].isdigit():
+            year = int(da[:4])
+        desc = r.get("description")
+        if isinstance(desc, dict):
+            desc = desc.get("$")
+        elif isinstance(desc, list):
+            desc = " ".join(_oaf_text(x) for x in desc)
+        creators = r.get("creator")
+        creators = creators if isinstance(creators, list) else [creators] if creators else []
+        journal = r.get("journal")
+        venue = (_oaf_text(journal) or "OpenAIRE")
+        oid = _oaf_text(_oaf_node(res, "header", "dri:objIdentifier"))
+        out.append({
+            "cite_id": f"doi:{doi}" if doi else f"openaire:{oid[:16]}",
+            "source": "openaire",
+            "doi": doi,
+            "title": title,
+            "year": year,
+            "venue": venue,
+            "authors": ", ".join(_oaf_text(c) for c in creators[:6]),
+            "abstract": (desc or "").strip(),
+            "url": f"https://doi.org/{doi}" if doi else "",
+            "cited_by": None,
+        })
+    return out
+
+
+def _s2_paper_rec(p: dict) -> dict:
+    """Normalize an S2 paper object to the scout record shape (same rules as search_s2)."""
+    ext = p.get("externalIds") or {}
+    doi, aid = ext.get("DOI", ""), ext.get("ArXiv", "")
+    return {
+        "cite_id": f"doi:{doi}" if doi else (f"arxiv:{aid}" if aid else f"s2:{p.get('paperId','')[:12]}"),
+        "source": "semanticscholar",
+        "doi": doi,
+        "arxiv_id": aid,
+        "title": (p.get("title") or "").strip(),
+        "year": p.get("year"),
+        "venue": p.get("venue") or "Semantic Scholar",
+        "authors": ", ".join(a.get("name", "") for a in (p.get("authors") or [])[:6]),
+        "abstract": (p.get("abstract") or "").strip(),
+        "url": f"https://doi.org/{doi}" if doi else f"https://arxiv.org/abs/{aid}" if aid else "",
+        "cited_by": p.get("citationCount"),
+    }
+
+
+def _post_json_s2(url: str, payload: dict, retries: int = 3) -> list | dict:
+    """POST JSON with backoff. 只重试 429/5xx/网络错误；4xx（如 404）立即失败不假死。"""
+    import time
+    import urllib.error
+    last: Exception | None = None
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(url, data=json.dumps(payload).encode(),
+                                         headers={"User-Agent": UA, "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504):
+                raise  # 404 等：端点/ID 问题，重试无意义
+            last = e
+            time.sleep(min(8 * (i + 1), 30))
+        except Exception as e:
+            last = e
+            time.sleep(min(8 * (i + 1), 30))
+    raise RuntimeError(f"S2 POST failed after {retries} tries: {url} :: {last}")
+
+
+def _s2_resolve(seed: str) -> str:
+    """Resolve external id (DOI:/ARXIV:/...) to S2 internal paperId.
+
+    recommendations 端点只认内部 paperId（DOI: 前缀会 404）；citations 端点两者皆收。
+    """
+    if not seed.startswith(("DOI:", "ARXIV:", "PMID:", "PMCID:", "ACL:", "MAG:", "CorpusId:")):
+        return seed
+    url = "https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId"
+    resp = _post_json_s2(url, {"ids": [seed]})
+    if isinstance(resp, list) and resp and resp[0] and resp[0].get("paperId"):
+        return resp[0]["paperId"]
+    raise RuntimeError(f"S2 cannot resolve seed to paperId: {seed}")
+
+
+def recommend_s2(seed: str, n: int = 8) -> list[dict]:
+    """S2 embedding-level recommendations from a seed paper.
+
+    关键词召回的盲区补偿：'词不匹配但任务同构'的工作（如时序基础模型之于水文）
+    靠语义相似度到达，不靠查询词。seed 格式：DOI:10.x/... 或 ARXIV:xxxx.xxxxx。
+    端点：/recommendations/v1/papers/forpaper/{id}（2026-11-01 实测；
+    /graph/v1/.../recommendations 已 404，batch 变体 405）。
+    """
+    url = ("https://api.semanticscholar.org/recommendations/v1/papers/forpaper/"
+           + seed
+           + "?" + urllib.parse.urlencode({"fields": S2_PAPER_FIELDS, "limit": str(n)}))
+    data = json.loads(_get(url))
+    return [_s2_paper_rec(p) for p in data.get("recommendedPapers", [])]
+
+
+def forward_citations_s2(seed: str, n: int = 50) -> list[dict]:
+    """S2 forward citations (谁引用了 seed) — 收束最新同域工作。
+
+    引文雪球的另一半：references 只能看过去，forward citations 把"先例之后
+    陆续跟进的工作"收进来，是发现最新先行工作（novelty 威胁）的主要通道。
+    """
+    url = ("https://api.semanticscholar.org/graph/v1/paper/"
+           + urllib.parse.quote(seed, safe="")
+           + "/citations?" + urllib.parse.urlencode({"fields": S2_PAPER_FIELDS, "limit": str(n)}))
+    data = json.loads(_get(url))
+    return [_s2_paper_rec(e.get("citingPaper") or {}) for e in data.get("data", [])]
+
+
+def store_channel(run: Run, recs: list[dict], channel: str, seed: str) -> list[str]:
+    """Store channel-retrieved records into the run DB (same provenance as search)."""
+    ids = []
+    for r in recs:
+        if not r.get("title"):
+            continue
+        run.add_paper(
+            cite_id=r["cite_id"], source=r["source"], title=r["title"],
+            abstract=r.get("abstract", ""), year=r.get("year"), venue=r.get("venue", ""),
+            authors=r.get("authors", ""), doi=r.get("doi", ""), arxiv_id=r.get("arxiv_id", ""),
+            url=r.get("url", ""), extra={"channel": channel, "seed": seed, "cited_by": r.get("cited_by")},
+        )
+        ids.append(r["cite_id"])
+    run.event("scout", channel, {"seed": seed, "n": len(ids)})
+    run.cost("scout", "api_calls", 1, "requests", f"{channel}:{seed[:40]}")
+    return ids
 
 
 def search_datacite(query: str, n: int = 10) -> list[dict]:
@@ -264,7 +443,7 @@ def search_and_store(run: Run, query: str, n: int = 10,
                      sources: tuple[str, ...] = ("arxiv", "datacite")) -> list[str]:
     ids: list[str] = []
     fn = {"openalex": search_openalex, "s2": search_s2, "arxiv": search_arxiv,
-          "datacite": search_datacite}
+          "datacite": search_datacite, "openaire": search_openaire}
     for src in sources:
         try:
             recs = fn[src](query, n)
@@ -371,6 +550,16 @@ def main(argv: list[str] | None = None) -> int:
     s = sub.add_parser("search")
     s.add_argument("query")
     s.add_argument("--n", type=int, default=10)
+    s.add_argument("--sources", default="openalex,arxiv,s2,openaire",
+                   help="comma-separated subset of: openalex,s2,arxiv,datacite")
+
+    # 引文/语义通道：不依赖查询词的第二、第三召回路径（雪球 forward + embedding 推荐）
+    s2r = sub.add_parser("s2rec")
+    s2r.add_argument("seed", help="S2 paper id: DOI:10.x/... 或 ARXIV:xxxx.xxxxx")
+    s2r.add_argument("--n", type=int, default=8)
+    s2c = sub.add_parser("s2cites")
+    s2c.add_argument("seed", help="S2 paper id: DOI:10.x/... 或 ARXIV:xxxx.xxxxx")
+    s2c.add_argument("--n", type=int, default=50)
 
     p = sub.add_parser("pdf")
     p.add_argument("path")
@@ -384,7 +573,15 @@ def main(argv: list[str] | None = None) -> int:
     a = ap.parse_args(argv)
     run = Run(a.run)
     if a.cmd == "search":
-        ids = search_and_store(run, a.query, a.n)
+        sources = tuple(s.strip() for s in a.sources.split(",") if s.strip())
+        ids = search_and_store(run, a.query, a.n, sources)
+        for cid in ids:
+            row = run.get_paper(cid)
+            print(f"{cid}\t{row['year']}\t{row['title'][:70]}")
+        return 0
+    if a.cmd in ("s2rec", "s2cites"):
+        recs = recommend_s2(a.seed, a.n) if a.cmd == "s2rec" else forward_citations_s2(a.seed, a.n)
+        ids = store_channel(run, recs, a.cmd, a.seed)
         for cid in ids:
             row = run.get_paper(cid)
             print(f"{cid}\t{row['year']}\t{row['title'][:70]}")
