@@ -1,0 +1,41 @@
+{
+ "domain": "runoff3",
+ "protocol": "cold-start-v1",
+ "created": "2026-11-01T17:01:55",
+ "stages": {
+  "s1_scout": {
+   "status": "done",
+   "note": "证据：run_id=runs/runoff3-s1；10 个首覆盖查询（性能线4/物理线3/威胁线3）；入库 53 条（arxiv+openaire 真实 API；openalex/s2/crossref 当日全局日预算耗尽，已加 openaire 替补源并留 search_failed 日志）",
+   "ts": "2026-11-01T17:18:57"
+  },
+  "s1b_synthesize": {
+   "status": "done",
+   "note": "证据：FIELDMAP.md@runs/runoff3-s1——5流派打标（纯DL 30%/归因威胁23%/机制21%/可微13%/区域化13%），前沿切片显示区域化+11%、纯DL+7%，范式读法已写入 profile_runoff3.json",
+   "ts": "2026-11-01T17:22:18"
+  },
+  "s2_xdomain": {
+   "status": "done",
+   "note": "证据：4条类比域计划全部落地抓回（NAS/进化计算19篇、系统辨识19篇、因果推断7篇、极值统计10篇，共55篇入本run库），每条带 grounding quote",
+   "ts": "2026-11-01T17:22:18"
+  },
+  "s3_hypothesis": {
+   "status": "done",
+   "note": "STOP@r4 裁决：边际信息单调塌缩（r3 击杀 0 命中），8 条假设四元组齐备；证据链见 hypo_evolve_log_runoff3.jsonl + agent_r1/r2/r3.json；终报 HYPOTHESIS_REPORT_runoff3.md",
+   "ts": "2026-11-01T17:50:57"
+  },
+  "s4_experiment": {
+   "status": "pending",
+   "note": null,
+   "ts": null
+  },
+  "s5_p2a": {
+   "status": "pending",
+   "note": null,
+   "ts": null
+  }
+ },
+ "baseline_gate": {
+  "ts": "2026-11-01T18:04:27",
+  "note": "消融臂: SP-1去调度模块混合模型/SP-2去分布外校准项/SC-1去补给机制分层(全池混训)/SC-2按路径误差分解vs整体NSE——均来自nearest_prior真实对照臂；SOTA基座(内化自 Kratzert et al. 2019 HESS doi:10.5194/hess-23-5089-2019 NeuralHydrology 完整CAMELS协议: 531流域/1980-10-01起365d warm-up/NSE+KGE/周期分割): SP线执行前p2a前置内化；sanity: climatology+流域均值线性回归防chance；SC/SW线p2a可实验后沉淀(用户裁决执行序: 先p2a后s4用于SP性能声明线)"
+ }
+}

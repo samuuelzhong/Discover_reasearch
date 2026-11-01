@@ -1,0 +1,37 @@
+{
+ "domain": "runoff",
+ "protocol": "cold-start-v1",
+ "created": "2026-11-01T10:58:54",
+ "stages": {
+  "s1_scout": {
+   "status": "done",
+   "note": "14 组关键词三源检索(修复OpenAlex引号bug)+4锚点s2cites(220)+s2rec(30)，383篇入runoff-s1池",
+   "ts": "2026-11-01T12:02:53"
+  },
+  "s1b_synthesize": {
+   "status": "done",
+   "note": "agent现场归纳profile_runoff.json(10流派，零预填)，fieldmap参数化建图",
+   "ts": "2026-11-01T12:02:53"
+  },
+  "s2_xdomain": {
+   "status": "done",
+   "note": "4条agent推导发散计划(Dunkelflaute/闭合残差/尾部机制切换/Goodhart)跨域抓取",
+   "ts": "2026-11-01T12:02:53"
+  },
+  "s3_hypothesis": {
+   "status": "done",
+   "note": "假设环 r1-r5 收敛：8 seed -> 5 存活(RP-1/RP-2/RU-1/RT-1/RT-2)+3 kill(RP-3/RU-2/RT-3)，对抗攻击通过，三辩证问题 STOP",
+   "ts": "2026-11-01T12:51:56"
+  },
+  "s4_experiment": {
+   "status": "pending",
+   "note": null,
+   "ts": null
+  },
+  "s5_p2a": {
+   "status": "pending",
+   "note": null,
+   "ts": null
+  }
+ }
+}

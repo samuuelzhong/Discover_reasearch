@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "domain": "runoff",
+    "generated_by": "agent (runoff-s1, 2026-11-01)",
+    "basis": "从 runoff-s1 池 383 篇语料（14 组关键词检索 + 4 锚点 forward citations 220 篇 + S2 推荐 30 篇）的标题/摘要现场归纳；无代码预填",
+    "noise_notes": "已知误命中簇（不入流派，判读时剔除）：partial discharge（电气 GIS）/epileptiform discharge（脑电）、reservoir computing（量子计算）、concrete adiabatic、grapevine genes、Milpa diet 等"
+  },
+  "schools": {
+    "大规模DL序列模型": ["lstm", "transformer", "xlstm", "mamba", "sequence-to-sequence", "temporal fusion", "attention", "deep learning", "ungauged", "large sample", "large-sample", "data recency"],
+    "可微/混合建模": ["differentiable", "hybrid", "neural ode", "parameter learning", "process-based", "swat", "conceptual model", "residual neural", "embedded residual"],
+    "物理约束/守恒": ["mass conservation", "mass-conserving", "water balance", "physics-informed", "physics-guided", "physics-aware", "closure", "constrained"],
+    "归因/气候×人类": ["attribution", "climate change", "human activities", "human activity", "land use", "budyko", "elasticity", "contribution"],
+    "水库调度/人类调控": ["reservoir", "hydropower", " dam ", "damming", "regulated", "cascade", "ecological flow", "operation policies", "inter-basin"],
+    "复合极端/水安全": ["compound", "drought", "heatwave", "extreme", "water security", "water supply", "propagation", "synchronization"],
+    "可解释性/XAI": ["interpretab", "explainable", "shap", "xai", "causal", "causality", "decoding", "process understanding"],
+    "不确定性/基准": ["uncertainty", "ensemble", "benchmark", "probabilistic", "conformal", "parsimony", "comparison"],
+    "基础模型/迁移": ["foundation model", "pretrain", "llm", "multimodal", "prompt", "transfer", "downscaling", "weather model", "emulator"],
+    "遥感/冰雪/同化": ["grace", "satellite", "remote sensing", "snow", "glacier", "permafrost", "cryosphere", "assimilation"]
+  },
+  "xdomain_plans": [
+    {
+      "concern": "复合干旱下多供水源同时失效（语料缺口：compound drought 2025/2026 系列、inter-basin transfer drought risk 2025）",
+      "mechanism": "共享胁迫下独立系统的失效同步——各自局部理性避险导致全局相关性骤升",
+      "queries": ["energy drought Dunkelflaute variable renewable power system", "financial contagion overlapping portfolios correlation crisis"],
+      "analogue": "能源 Dunkelflaute（风光同时低出力）；金融共同持仓传染（相关性危机）",
+      "pick_keywords": ["dunkelflaute", "drought", "contagion", "correlation", "synchronization", "portfolio", "failure"]
+    },
+    {
+      "concern": "守恒闭合残差被当误差丢弃（语料缺口：water budget closure 2025、energy balance closure BERMS 2011、water balance constraint LSTM 2024）",
+      "mechanism": "守恒约束下残差的时空集中结构携带未建模过程的信息",
+      "queries": ["eddy covariance energy balance closure residual information", "residual based identification missing process dynamical system"],
+      "analogue": "涡度相关能量闭合残差的解释传统；动力系统残差驱动的未建模过程识别",
+      "pick_keywords": ["closure", "residual", "imbalance", "missing", "identification", "unmodeled"]
+    },
+    {
+      "concern": "变暖外推下响应饱和与机制切换（语料缺口：hybrid generalize better warmer climate 2026、snowmelt vs rainfall floods 2026、ensemble spread fails at extremes 2026）",
+      "mechanism": "分布尾部发生响应结构切换，训练分布内的平均响应结构失效",
+      "queries": ["dose response saturation pharmacodynamics extrapolation", "structural break regime switching detection hydrology time series"],
+      "analogue": "药理剂量-反应饱和建模；计量经济学结构突变/机制切换检测",
+      "pick_keywords": ["saturation", "extrapolation", "regime", "switch", "break", "tail", "nonstationary"]
+    },
+    {
+      "concern": "调度方作为隐藏对手扭曲径流统计与归因（语料缺口：reservoir-regulated attribution 系列、regime-aware reservoir forecasting 2026、differentiable reservoir modules 2026）",
+      "mechanism": "被预测系统内含针对预测/指标行为做优化的人类代理",
+      "queries": ["goodhart law forecasting indicator manipulation", "principal agent model common pool resource water operation"],
+      "analogue": "Goodhart 定律（指标被博弈）；委托-代理与公共池资源模型",
+      "pick_keywords": ["goodhart", "agent", "manipulation", "incentive", "game", "strategic"]
+    }
+  ],
+  "paradigm_note": "2024-2026 语料显示三股新浪潮叠加：(1) 基础模型/跨域迁移入场（Aurora 扩展、检索增强水位预测、LLM 落地水文建模）；(2) 可微混合建模从概念验证走向约束化与规模化（NoahPy、Inunda、多过程骨架约束）；(3) 人类调控（水库/跨流域调水）从外生干扰转为可学习/可反演模块。归因研究从二元气候/人类拆分走向时空交互与不确定性量化；XAI 大量出现但多为 SHAP 后验解释，机制级可解释仍稀缺。"
+}

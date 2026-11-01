@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "domain": "runoff2",
+    "generated_by": "agent (runoff2-s1, 2026-11-01, 从零循环)",
+    "basis": "从 runoff2-s1 池 150 篇语料（15 组关键词检索：crossref 119 + arxiv 25 + s2 6）的标题/摘要现场归纳；无代码预填",
+    "noise_notes": "已知误命中簇（不入流派，判读时剔除）：金融/经济 transformer 预测（2CAT 2025、Procedia 2026）、自然资源配置预测（2026）、政权更迭 regime change（白俄罗斯 2007、渔业 2013、荷兰洪水治理 2015）、'净水促进变暖'伪科学（2020×2）、磷肥农艺（2026）、水质分类（2026）、混沌系统模型选择（2021）、PDE 结构学习（2017）、非水文 G-PARC/量子 PINN（2026，仅边界参考）"
+  },
+  "schools": {
+    "可微/混合参数学习": ["differentiable", "parameter learning", "hybrid model", "surrogate-aided", "scaling effects", "time-varying parameters", "conceptual hydrologic", "first principles", "ml-augmented", "stream-lstm", "bigru"],
+    "DL序列模型与大样本": ["lstm", "transformer", "cnn", "deep learning", "large-sample", "large sample", "camels", "generative", "variational auto-encoder", "bayesian deep", "probabilistic streamflow", "recurrent", "attention"],
+    "PINN/物理约束": ["physics-informed", "physics informed", "pinn", "richards", "kinematic wave", "diffusive wave", "domain decomposition", "constrained", "graph neural network", "physics-aware"],
+    "产流机制/过程理解": ["runoff generation", "runoff thresholds", "threshold behavior", "subsurface stormflow", "isotopic", "chemograph", "headwater", "response time", "celerit", "hydrograph separation", "groundwater regime", "catchment-scale"],
+    "归因/气候×人类拆分": ["attribution", "attributing", "climate elasticity", "budyko", "land use", "land cover", "human activities", "anthropogenic", "trend", "change-point", "detection"],
+    "水库调度/流量改变": ["reservoir", " dam ", "dammed", "regulated", "cascade", "flow alteration", "flow regime alteration", "re-regulation", "hedging", "operating", "environmental flow", "paired-catchment"],
+    "复合干旱-热浪": ["compound", "drought-heatwave", "heatwave", "hot-dry", "water productivity", "socio-ecosystem", "crop loss"],
+    "雪冰/寒区供水": ["snowpack", "snow water", "snowmelt", "snowfall equivalent", "glacier", "ice melt", "glacio", "sierra", "alaska"],
+    "区域化/非测量流域": ["regionalization", "ungauged", "hydrological similarity", "hydrological signatures", "signature", "predictions in ungauged", "pub"],
+    "不确定性/集合/多模型": ["uncertainty", "ensemble", "multimodel", "multi-model", "bayesian", "limits-of-acceptability", "data assimilation", "weakly-constrained", "esp"]
+  },
+  "xdomain_plans": [
+    {
+      "concern": "干旱期水库群各自避险蓄水导致下游同步低流量放大（语料缺口：2024-2026 水库文献全部以单库/级联工程优化为视角，无'多主体避险行为同步化'视角；SW-2 种子的空白确认）",
+      "mechanism": "共享胁迫下独立主体的局部理性避险行为产生全局失效相关——相关性在危机中骤升",
+      "queries": ["energy drought Dunkelflaute variable renewable low wind solar", "financial contagion overlapping portfolios fire sale correlation"],
+      "analogue": "能源系统 Dunkelflaute（风光同低出力+备用共享枯竭）；金融抛售传染（共同持仓→相关性骤升）",
+      "pick_keywords": ["dunkelflaute", "drought", "contagion", "correlation", "synchronization", "fire sale", "shortage", "failure"]
+    },
+    {
+      "concern": "水量平衡闭合残差携带未建模过程信息（语料缺口：PINN 流派只把物理方程当约束求解器，无'守恒残差的时空结构=过程缺口指纹'研究；SC-2 种子的空白确认）",
+      "mechanism": "守恒框架下收支差不是噪声而是缺失过程的投影——残差的时空集中结构可反演缺失过程类型",
+      "queries": ["eddy covariance energy balance closure residual interpretation", "residual-based fault detection model structural error dynamical system"],
+      "analogue": "涡度相关能量闭合残差的归因传统；工业过程残差故障检测（结构误差指纹）",
+      "pick_keywords": ["closure", "residual", "imbalance", "fault", "detection", "unmodeled", "structural"]
+    },
+    {
+      "concern": "固定日历式调度规则/生态基流标准与气候位移的时序错配（语料缺口：2020 已有雪盖下降下的水库运行适应，但'规则校准基准失效的时滞窗口'无系统研究；SW-3 种子的空白确认）",
+      "mechanism": "按历史分布校准的规则/标准在分布位移下出现系统性失配——失配期先于规则更新期，构成风险窗口",
+      "queries": ["infrastructure design standards nonstationary climate obsolescence", "engineering design return period climate change outdated"],
+      "analogue": "工程设计标准（重现期/规范）在非平稳气候下的过时与更新时滞",
+      "pick_keywords": ["nonstationary", "design", "standard", "return period", "obsolescence", "outdated", "adaptation", "lag"]
+    },
+    {
+      "concern": "雪库消失使多类用水集中依赖人工水库的同步失效窗口（语料缺口：雪文献止步于雪量预测，水库文献止步于运行优化，'水源依赖结构集中化'无人做；SW-1 种子的空白确认）",
+      "mechanism": "冗余供给源（天然雪库时序+人工水库）退化为单点依赖——共因失效概率骤升",
+      "queries": ["common cause failure redundant system degradation reliability", "supply source concentration dependency shock critical infrastructure"],
+      "analogue": "可靠性工程共因失效（冗余退化）；基础设施供应链集中度冲击",
+      "pick_keywords": ["common cause", "redundancy", "concentration", "dependency", "cascading", "reliability", "single point"]
+    }
+  ],
+  "paradigm_note": "语料显示四股趋势：(1) 可微参数学习从概念验证（2020-2022 scaling effects/区域化）进入模块化落地期（2024-2026：时变参数、可微水库调度模块、数据同化融合、代理约束优化）——2026 JoH 'Differentiable parameter learning of reservoir operation modules' 表明调度模块可微化已成活跃前沿；(2) PINN 从单 PDE 求解器扩展到图网络/域分解/反演，但守恒残差的信息价值未被利用；(3) 归因研究从年径流拆分走向季节性/事件级（2026 洪水季节性归因 Nature 子刊级），人类活动侧仍以土地覆被为主、调度行为被当作外生边界；(4) 复合干旱-热浪 2023-2026 爆发式增长但全部聚焦农业/生态终端影响，水务系统调度响应缺位。产流机制与区域化两个传统流派在语料中基数大但 2023 后相对份额下降。"
+}

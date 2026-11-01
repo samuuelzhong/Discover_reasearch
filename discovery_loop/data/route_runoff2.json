@@ -1,0 +1,37 @@
+{
+ "domain": "runoff2",
+ "protocol": "cold-start-v1",
+ "created": "2026-11-01T13:21:47",
+ "stages": {
+  "s1_scout": {
+   "status": "done",
+   "note": "run=runoff2-s1：15 组查询三线覆盖（性能/物理认知/气候×人类威胁），入库 150 篇（crossref 119 + arxiv 25 + s2 6），2023 年后 71 篇；OpenAlex/S2 当日 IP 限流改走 Crossref+arXiv 通道，provenance 一致",
+   "ts": "2026-11-01T13:37:15"
+  },
+  "s1b_synthesize": {
+   "status": "done",
+   "note": "fieldmap 完成：150 篇语料 + S2 引文扩展 145/150 + 20 库内引文边；11 流派打标，前沿上升带=DL大样本(+18%)/复合干旱热浪(+16%)/可微参数学习(+13%)/PINN(+7%)；范式读法写入 profile_runoff2.json",
+   "ts": "2026-11-01T13:40:33"
+  },
+  "s2_xdomain": {
+   "status": "done",
+   "note": "4 条跨域计划：Dunkelflaute/金融传染(抓5篇)、涡度闭合残差/故障检测(抓11篇)、设计标准非平稳过时(0篇待补)、共因失效/冗余退化(抓13篇)；类比域论文已入 runoff2-s1",
+   "ts": "2026-11-01T13:40:40"
+  },
+  "s3_hypothesis": {
+   "status": "done",
+   "note": "STOP: 三轮假设环判读后文献边际信息塌缩(r3仅3个边缘新近邻/无新机制/无推翻/无新空白)，8条假设均满足预注册四元组形态，检索边际价值低于实验; 裁决细节见 hypo_evolve_log_runoff2.jsonl",
+   "ts": "2026-11-01T13:53:04"
+  },
+  "s4_experiment": {
+   "status": "pending",
+   "note": null,
+   "ts": null
+  },
+  "s5_p2a": {
+   "status": "pending",
+   "note": null,
+   "ts": null
+  }
+ }
+}

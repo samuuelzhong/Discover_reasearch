@@ -1,0 +1,43 @@
+{
+  "domain": "runoff3",
+  "created": "2026-11-01",
+  "note": "由 agent 从 runs/runoff3-s1 语料（53 条，arxiv+openaire 真实检索）现场归纳；无预填词表。五个流派按语料标题聚类；跨域计划按语料四大关切点设计。",
+  "paradigm_note": "语料读法：径流模拟处于『纯数据驱动性能派』与『过程可微混合派』的交汇点——纯 DL（LSTM/GNN/扩散/状态空间）已把 gauged 性能推到平台期，2022 起可微参数化（δModel/adjoint 梯度）把物理参数变成可学习对象并输出物理一致量；无资料流域区域化仍是部署缺口；机制侧（recession/storage-discharge）提供可阐述的物理认知锚点；威胁侧（气候+人类活动归因、水库调度改变、低流/干旱）是径流变化对人类影响的主要落点。性能线的高地：在协议严格的 CAMELS 类基准上超越 NeuralHydrology LSTM 系；认知线的高地：把黑箱增益翻译为可证伪的径流生成机制命题；威胁线的高地：发现此前未被识别的径流变化-人类系统耦合风险。",
+  "schools": {
+    "纯深度学习径流模拟": ["deep learning", "lstm", "long short-term", "neural network", "graph neural", "state space model", "diffusion", "foundation model", "machine learning", "random forest", "temporal convolution"],
+    "可微参数化与物理混合建模": ["differentiable", "process-based", "hybrid", "physics-informed", "physics-encoded", "adjoint", "learnable parameter", "gr4j", "hydrological model"],
+    "无资料流域与区域化": ["regionalization", "ungauged", "flow duration curve", "prediction in ungauged", "synthetic streamflow"],
+    "蓄满-出流关系与径流生成机制": ["recession", "storage", "baseflow", "runoff generation", "hillslope", "groundwater", "discharge relation", "snowmelt", "glaciation"],
+    "径流变化归因与人类水安全": ["climate change", "human activity", "attribution", "reservoir", "alteration", "environmental flow", "drought", "vulnerabilities", "adaptation", "water security", "land use", "urbanization"]
+  },
+  "xdomain_plans": [
+    {
+      "concern": "性能增益与种子/协议抖动统计不可分（基准协议决定结论）",
+      "mechanism": "随机搜索与进化算法中评估噪声与重复实验方差控制",
+      "queries": ["reproducibility variance random seeds deep learning benchmarks", "evolutionary search noisy evaluation selection"],
+      "analogue": "神经架构搜索 / 进化计算",
+      "pick_keywords": ["seed", "variance", "reproducib", "noise", "evaluation"]
+    },
+    {
+      "concern": "蓄满-出流非线性与滞后关系的可学习编码",
+      "mechanism": "非线性动力系统状态空间辨识与滞回建模",
+      "queries": ["nonlinear state space system identification hysteresis", "hysteresis modeling dynamic systems identification"],
+      "analogue": "控制论 / 系统辨识",
+      "pick_keywords": ["hysteresis", "state space", "identification", "nonlinear"]
+    },
+    {
+      "concern": "径流长期变化检测中的气候-人类活动混杂归因",
+      "mechanism": "因果推断中的识别策略与混杂控制",
+      "queries": ["detection attribution causal inference climate extremes", "natural experiment causal identification environmental change"],
+      "analogue": "计量经济学 / 因果推断",
+      "pick_keywords": ["causal", "attribution", "confound", "identification", "natural experiment"]
+    },
+    {
+      "concern": "极端径流（洪水/低流尾部）的分布外泛化",
+      "mechanism": "极值理论与重尾分布的稳健建模",
+      "queries": ["extreme value theory nonstationary flood frequency", "heavy tail neural network uncertainty extremes"],
+      "analogue": "极值统计 / 风险工程",
+      "pick_keywords": ["extreme value", "tail", "nonstationary", "uncertainty", "risk"]
+    }
+  ]
+}
