@@ -1,4 +1,0 @@
-[
- [["p_ewm", {"alpha": 0.05}], ["harm", {"k": 1}], ["snow_ewm", {"alpha": 0.05}], ["melt", {"scale": 1.0}]],
- [["p_ewm", {"alpha": 0.05}], ["harm", {"k": 1}]]
-]
