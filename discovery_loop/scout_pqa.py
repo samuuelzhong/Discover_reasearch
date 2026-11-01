@@ -27,7 +27,7 @@ from pathlib import Path
 
 # LLM 网关注入（litellm openai/ provider 读 OPENAI_API_BASE/OPENAI_API_KEY）
 _ENV_KEY = None
-for _line in Path(r"D:\Viloong\.env").read_text(encoding="utf-8").splitlines():
+for _line in Path(r"D:\\Viloong\\.env").read_text(encoding="utf-8").splitlines():
     if _line.startswith("ANTHROPIC_API_KEY="):
         _ENV_KEY = _line.split("=", 1)[1].strip()
         break

@@ -3,8 +3,8 @@ import json
 import time
 from pathlib import Path
 
-POOL = Path(r"E:\multiagent\discovery_loop\data\hypo_pool.json")
-LOG = Path(r"E:\multiagent\discovery_loop\data\hypo_evolve_log.jsonl")
+POOL = Path(r"E:\\multiagent\\discovery_loop\\data\\hypo_pool.json")
+LOG = Path(r"E:\\multiagent\\discovery_loop\\data\\hypo_evolve_log.jsonl")
 
 R1_JUDGMENTS = {
     "HM5-1": {

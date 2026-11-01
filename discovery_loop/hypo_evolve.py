@@ -34,36 +34,50 @@ ROOT = Path(__file__).resolve().parents[1]
 POOL_PATH = ROOT / "discovery_loop" / "data" / "hypo_pool.json"
 LOG_PATH = ROOT / "discovery_loop" / "data" / "hypo_evolve_log.jsonl"
 
-# 参考过滤（仅辅助 agent 预筛，不替代判读）
-DOMAIN_WORDS = {
-    "hydrolog", "streamflow", "runoff", "rainfall", "catchment", "basin",
-    "camels", "lstm", "discharge", "precipitation", "snow", "flood",
-    "water balance", "mass balance", "soil moisture", "evapotranspiration",
-}
+# 领域词表（DOMAIN_WORDS/relevance_hint）已于 2026-11-01 移除：用户裁决预填词表=作弊。
+# 命中是否相关由 agent 逐条语义判读，不用词表信号预筛。
 
 
-def load_pool() -> list[dict]:
-    if POOL_PATH.exists():
-        return json.loads(POOL_PATH.read_text(encoding="utf-8"))
+def pool_path(domain: str = "hydro") -> Path:
+    """池按域分文件（冷启动陷阱堵口）：新域拿到自己的空池，天然接不上旧域池。"""
+    return POOL_PATH if domain == "hydro" else POOL_PATH.with_name(f"hypo_pool_{domain}.json")
+
+
+def log_path(domain: str = "hydro") -> Path:
+    return LOG_PATH if domain == "hydro" else LOG_PATH.with_name(f"hypo_evolve_log_{domain}.jsonl")
+
+
+def load_pool(domain: str = "hydro") -> list[dict]:
+    p = pool_path(domain)
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
     return []
 
 
-def save_pool(pool: list[dict]) -> None:
-    POOL_PATH.parent.mkdir(parents=True, exist_ok=True)
-    POOL_PATH.write_text(json.dumps(pool, ensure_ascii=False, indent=1), encoding="utf-8")
+def save_pool(pool: list[dict], domain: str = "hydro") -> None:
+    p = pool_path(domain)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(pool, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-def log_event(ev: dict) -> None:
+def log_event(ev: dict, domain: str = "hydro") -> None:
     ev["ts"] = time.strftime("%Y-%m-%dT%H:%M:%S")
-    with LOG_PATH.open("a", encoding="utf-8") as f:
+    p = log_path(domain)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("a", encoding="utf-8") as f:
         f.write(json.dumps(ev, ensure_ascii=False) + "\n")
 
 
-def scout_search(query: str, run: str = "hypo-evolve", n: int = 6) -> list[dict]:
-    """真检索（scout TSV 解析）。返回结构化命中供 agent 语义判读。"""
+def scout_search(query: str, run: str = "hypo-evolve", n: int = 6,
+                 sources: str = "openalex,arxiv,s2") -> list[dict]:
+    """真检索（scout TSV 解析）。返回结构化命中供 agent 语义判读。
+
+    sources 默认含 openalex/s2：水文期刊（WRR/HESS/JoH）不在 arXiv，
+    仅 arxiv+datacite 会漏掉主流文献（round1 覆盖缺口的修正）。
+    """
     r = subprocess.run(
         [sys.executable, "-m", "discovery_loop.scout", "--run", run,
-         "search", query, "--n", str(n)],
+         "search", query, "--n", str(n), "--sources", sources],
         cwd=str(ROOT), capture_output=True, text=True, timeout=180,
         encoding="utf-8", errors="replace",
     )
@@ -76,12 +90,6 @@ def scout_search(query: str, run: str = "hypo-evolve", n: int = 6) -> list[dict]
                 if len(parts) >= 3:
                     hits.append({"cite_id": parts[0], "year": parts[1], "title": parts[2]})
     return hits
-
-
-def relevance_hint(title: str) -> int:
-    """领域词命中数——只是 agent 判读的参考信号，不是判定。"""
-    t = title.lower()
-    return sum(1 for w in DOMAIN_WORDS if w in t)
 
 
 def main():
