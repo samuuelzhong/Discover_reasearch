@@ -1,8 +1,0 @@
-{"ev": "hypo_evolve.init", "n": 10, "source": "novelty_audit.md", "ts": "2026-10-31T15:55:33"}
-{"ev": "hypo_evolve.round", "round": 1, "new_prior": 22, "delta_change": 0, "new_candidate": 0, "queries": 12, "ts": "2026-10-31T15:56:38"}
-{"ev": "hypo_evolve.check", "round": 1, "stop": false, "why": "T2 未满足：H6-a 空白证据 2<3", "ts": "2026-10-31T15:56:38"}
-{"ev": "hypo_evolve.round", "round": 2, "new_prior": 0, "delta_change": 0, "new_candidate": 0, "queries": 0, "ts": "2026-10-31T15:56:38"}
-{"ev": "hypo_evolve.check", "round": 2, "stop": false, "why": "T2 未满足：H6-a 空白证据 2<3", "ts": "2026-10-31T15:56:38"}
-{"ev": "hypo_evolve.round", "round": 3, "new_prior": 0, "delta_change": 0, "new_candidate": 0, "queries": 0, "ts": "2026-10-31T15:56:38"}
-{"ev": "hypo_evolve.check", "round": 3, "stop": true, "why": "T1 信息增益连续归零", "ts": "2026-10-31T15:56:38"}
-{"ev": "hypo_evolve.stop_verdict", "round": 1, "decision": "STOP 假设层 RSI，转入实验验证（R20）", "dialectic_reasoning": {"Q1_文献边际信息": "两轮语义判读+三次全文级后，池内新信息仅剩 HM5-1 的 PINN-weighting 具体设计——这属于实验设计阶段的方法调研（实验环内 align_probe 可回询），非假设层问题。连续判读产出均为'空白确认/邻域精化'，claim 层信息增量趋零。", "Q2_可检验形态": "HM5-1（CAMELS+NH 栈+MCP 工具全在库）✓；H6-a/b（搭 HM5-1 残差）✓；H6-c（合成原型+ews/sindy 在库）✓；HM5-6/7（残差首验）✓。HM5-2 缺 Mamba 环境（工程问题非文献问题）；HM5-4 缺 GRACE 数据（资源问题，deferred 在案）。", "Q3_边际价值对比": "继续检索的预期增量 < 实验产出：HM5-1 三档实验将生成残差与分档证据，直接反哺 H6-a/b 检验与 HM5-6/7 残差首验——下一波信息增益在实验侧而非文献侧。"}, "residual_risks": "OpenAlex 精确短语的书脊式漏检风险仍在；H6 空白判定为检索级（非全文级），正式 hyp.proposed 时需 blank_probe 升级。", "ts": "2026-10-31T16:03:41"}
