@@ -1,0 +1,365 @@
+[
+ {
+  "hid": "SP-1",
+  "claim": "可微参数化物理核心（可学习参数的过程模型）耦合学习式调度模块的混合模型，在严格同协议对照中超越纯 LSTM 基座；且增益集中于人为调度主导径流蓄泄的流域分层（对照自然流域分层不显著）",
+  "branch": "performance",
+  "delta": "先例（WRR 2025 doi:10.1029/2025wr041684）已把可微水库模块耦合进模型证明可行，但未回答『混合 vs 纯LSTM 的增益差在调度主导 vs 自然流域分层间的系统差异』；claim 中的限定词『调度主导分层』直接转为分层评估维度，实现零损耗进位",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "arxiv:2202.05714v1",
+   "doi:10.1016/j.ejrh.2026.103534",
+   "doi:10.1029/2025wr041684",
+   "doi:10.2166/nh.2021.016",
+   "doi:10.5194/egusphere-2025-2797",
+   "doi:10.5194/egusphere-egu25-16156",
+   "doi:10.5194/egusphere-egu25-5612",
+   "doi:10.5194/egusphere-egu26-2733",
+   "doi:10.5281/zenodo.4555820"
+  ],
+  "novelty_queries": [
+   "differentiable hydrological model outperforms LSTM",
+   "neuralhydrology LSTM benchmark CAMELS NSE"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从 fieldmap 综合第一性推导：可微派 vs 纯DL派交汇点+水库动力学语料命中，未复用本地任何既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "refine",
+    "note": "r1 判读：可微水库耦合已有直接先例（doi:10.1029/2025wr041684 + EGU26 同工作 egu26-2733）；GB 基准协议先例 zenodo.4555820 确认协议纪律。收窄为分层增益差命题——调度主导 vs 自然流域的对照空白保持",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：XAJ-LSTM 混合洪水预报先例(nh.2021.016)存在但无分层对照；Neural ODE/随机控制均为邻域。调度主导 vs 自然流域的分层增益差空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：调节流域建模先例密集(ejrh.2026.103534/s40899-026-01362-4)、知识引导水库LSTM(egu25-16156)与物理约束泄流学习(2202.05714)直接邻域——但均为建模可行性，无『同协议混合 vs 纯LSTM×调度主导分层』对照。收窄：对照臂锁定 NeuralHydrology 协议纯 LSTM",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SP-2",
+  "claim": "概率深度学习（扩散/分位集成）在『超越训练期最大值』的分布外极端段保持预测区间校准（coverage），优于确定性 LSTM 加事后不确定度层（如 conformal）；增益在低流尾部大于洪峰尾部",
+  "branch": "performance",
+  "delta": "先例（egusphere-2025-1509 'Beyond Observed Extremes'）问的是混合 DL 能否改进观测内极端，未回答分布外外推段的校准保持性与尾部分层差异；conformal 流域先例仅做静态区间覆盖",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "arxiv:2409.19157v2",
+   "arxiv:2412.11942v2",
+   "arxiv:2510.05453v1",
+   "arxiv:2510.08488v1",
+   "arxiv:2512.12183v1",
+   "doi:10.1175/jhm-d-20-0019.1",
+   "doi:10.5194/egusphere-2025-1509",
+   "doi:10.5194/egusphere-egu26-3440"
+  ],
+  "novelty_queries": [
+   "differentiable hydrological model outperforms LSTM"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（语料 2025 扩散类概率模型聚集+极值统计类比域抓回，未复用既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "refine",
+    "note": "r1 判读：扩散模型先例（2510.08488/2512.12183）确认概率化已是 2025 前沿，但均未做分布外校准保持对照；QDeepGR4J 分位集成邻域确认。分布外校准保持空白保持",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：DRUM 扩散径流先例(2411.11681v2)+概率洪水预警(egu26-3440)直接命中概率化本身；但『超训练最大值外推段的区间校准保持 vs 事后conformal层』对照空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：时序校准方法学丰富(2409.19157/2609.31960/DBCM 2610.32071)可作对照臂来源；水文后处理先例(jhm-d-20-0019.1)。径流域分布外校准保持无直接先例，空白保持",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SC-1",
+  "claim": "LSTM 门控状态编码的『有效蓄水』与 recession 分析导出的流域蓄水之间的滞回差异可量化，且该差异随流域补给机制（雨水主导/雪补给/融雪冻土复合）系统变化——即模型内部表征偏离真实蓄满-出流关系的方向有物理规律",
+  "branch": "cognition",
+  "delta": "NeuralHydrology 解释性先例证明门控状态与土壤水相关（arxiv:1903.07903），HESS 2024 可解释 LSTM 建模继续推进，但均未把内部表征与 recession 蓄水的『差异本身』作为对象、也未按补给机制分层——差异的物理规律性未被回答",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "arxiv:1903.07903v2",
+   "doi:10.1029/2008wr007658",
+   "doi:10.5194/egusphere-egu24-6656",
+   "doi:10.5194/egusphere-egu26-1897",
+   "doi:10.5194/hess-26-3079-2022",
+   "doi:10.5194/hess-28-945-2024"
+  ],
+  "novelty_queries": [
+   "LSTM internal states hydrological interpretable storage",
+   "hysteresis storage discharge machine learning streamflow"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（解释性流派+机制流派语料交叉，未复用既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "r1 判读：解释性先例确认（1903.07903 NeuralHydrology、hess-28-945-2024）；hysteresis+ML 检索命中水质噪声一篇，蓄满-出流滞回×DL 内部表征交叉空白保持",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：LSTM概念形成先例(hess-26-3079-2022)最强邻域——已证内部状态形成水文概念；新增邻域『Unreliable Narrator』(egu26-1897)提示内部状态复现性陷阱；内部表征 vs recession蓄水滞回差异按补给机制分层空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：HydroLSTM 区域化视角(egu24-6656)为内部状态利用邻域；滞回差异×补给机制分层无先例命中，空白保持",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SC-2",
+  "claim": "DL径流模型误差集中于慢径流/退水段（流域记忆路径）而非洪峰段（事件响应路径），误差占比与基流指数BFI单调正相关——支持『模型首先学到事件响应、流域记忆依赖先验输入编码』的机制解释",
+  "branch": "cognition",
+  "delta": "r1 检索 0 命中（查询词过长，OpenAIRE 词匹配差）；机制侧 recession 语料（2008wr007658、HYDRORECESSION）均未与 DL 误差分解交叉——待 r2 换短查询对抗确认",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1016/j.jhydrol.2019.06.006",
+   "doi:10.1029/2008wr007658",
+   "doi:10.1029/2022wr034118"
+  ],
+  "novelty_queries": [
+   "deep learning streamflow recession baseflow error",
+   "streamflow simulation error decomposition peak low flow"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（机制流派反推：若 DL 只学事件响应则其在长记忆流域失真——可证伪）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "r1 判读：两查询均 0 命中，无先例证据进入；降为 provisional，r2 用短查询重检索",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "refine",
+    "note": "r2 对抗判读：物理知情DL径流先例(2022wr034118)存在（PINN模拟径流），Benford基流DL为邻域；VMD/EEMD分解集成全为信号分解噪声。精化claim为『误差按事件响应/记忆路径分解×BFI单调』，空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：LSTM低流统计评估(jairo)与copula误差模型(2019.06.006)为邻域；误差按径流路径分解×BFI单调命题无先例，空白保持",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SW-1",
+  "claim": "水库调度改变极端径流的方向随调度目标演变而反转（防洪库容扩张→削峰持续、灌溉取水扩张→人为低流加剧），因此基于历史极值的频率分析与环境流基线在调蓄流域被系统性失效，失效方向不可由水文变量预测而需调度制度变量",
+  "branch": "threat",
+  "delta": "大样本水库改变极端流先例（ethz-c-000798591）证明改变存在，非平稳设计洪水先例（w13192687）做了气候+水库修正，但『调度目标演变→改变方向反转』的时间维制度变量未被作为解释变量——频率分析失效的方向性空白",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1016/j.jhydrol.2009.06.009",
+   "doi:10.1016/j.jhydrol.2015.08.001",
+   "doi:10.1016/j.jhydrol.2020.125472",
+   "doi:10.3390/w13192687",
+   "doi:10.3929/ethz-c-000798591"
+  ],
+  "novelty_queries": [
+   "reservoir regulation flood frequency nonstationarity design",
+   "dam operation streamflow regime shift stationarity"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（威胁线第一性推导：径流新威胁的最强杠杆是人类自己的调度制度，未复用既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "refine",
+    "note": "r1 判读：ETH 大样本先例（damming extreme river flow）+非平稳设计洪水先例（w13192687）命中，收窄到制度变量方向性；EvoBench（arxiv:2610.35464）为环境流诊断基准邻域，确认领域在向诊断工具转但未做制度反转",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：气候+水库联合影响先例(jhydrol.2020.125472)直接命中；hedging规则曲线为邻域。调度目标演变→改变方向反转的制度变量空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：IHA类流态改变评估先例(2015.08.001/si93-020.1)密集；调度目标演变→方向反转的制度变量解释无先例，空白保持",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SW-2",
+  "claim": "变暖下雪补给流域 peak-water 提前造成的供水-需求时间错位，被『夏初水库蓄满策略』放大——调度为抢蓄融水而提前蓄满，压缩了盛夏错位期的缓冲库容，使错位威胁大于纯气候效应预测",
+  "branch": "threat",
+  "delta": "r1 主查询 0 命中、备查询命中水库极端流先例（与 SW-1 共用）；气候-雪-调度三者耦合的放大效应属空白——待 r2 换短查询（peak water timing / snowmelt shift）对抗确认",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1007/s10584-009-9750-8",
+   "doi:10.1080/02626667.2011.637040",
+   "doi:10.5194/egusphere-egu26-6663"
+  ],
+  "novelty_queries": [
+   "snowmelt timing shift water supply mismatch warming",
+   "snow drought reservoir inflow timing change"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（雪线语料+Alpine shift 先例 2012 反推，未复用既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "r1 判读：主查询 0 命中；Alpine shift 先例（2012）只做气候单因素。气候×调度耦合放大空白保持，r2 重检索",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：非调节流域雪融提前先例(egu26-6663)明确排除调节流域；加州水电峰水先例(2009 Climatic Change/2014 JoH)证明气候-水电耦合被研究；『抢蓄提前蓄满→压缩错位期缓冲』放大机制空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：双查询0命中（词匹配限制）；r2 强邻域已足够（egu26-6663 明确排除调节流域）。气候×抢蓄放大机制空白保持",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SW-3",
+  "claim": "小流域洪水对不透水面积比例的响应存在阈值非线性（超过某不透水率后洪峰放大倍数跳变），且该阈值随降雨重现期移动——气候位移使更多流域越过阈值，构成此前未识别的『静默越阈』威胁",
+  "branch": "threat",
+  "delta": "r1 检索近零命中（ compound 查询仅命中学位论文类噪声）；阈值洪水响应+气候位移复合属空白——待 r2 换短查询（urban flood peak percentage impervious）对抗确认",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1029/2019gl083363",
+   "doi:10.1061/(asce)1084-0699(2009)14:4(303)",
+   "doi:10.3390/w17131918"
+  ],
+  "novelty_queries": [
+   "urbanization flood magnification threshold nonlinear response",
+   "compound climate urbanization flood risk small catchment"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（城市化洪水常识性关切转为可证伪阈值命题，未复用既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "r1 判读：0 真命中（一篇基础设施韧性学位论文=噪声）；r2 重检索",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：不透水面积-洪水响应经典先例(2009 JHE)与城市复合洪水放大(2026 SSRN)命中；阈值非线性+阈值随降雨重现期移动的『静默越阈』命题空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：设计排水失效概率(w17131918)为邻域；阈值跳变+降雨重现期移动的『静默越阈』无先例，空白保持",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ },
+ {
+  "hid": "SW-4",
+  "claim": "调蓄流域的低流再现期估计被系统性高估（设计低流偏乐观），高估幅度随流域调节度单调增长——环境流标准据此被系统性放松，构成干旱期生态与供水安全的隐性威胁",
+  "branch": "threat",
+  "delta": "r1 两查询 0 命中；环境流先例（rr.1477、jenvman.118261、IHA 2009）均未做『调节度→低流再现期偏差』的定量梯度——待 r2 换短查询对抗确认",
+  "status": "keep",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1002/rra.1477",
+   "doi:10.1007/s00477-014-0987-z",
+   "doi:10.1016/j.jenvman.2022.115680",
+   "doi:10.1016/j.jhydrol.2009.06.009",
+   "doi:10.1016/j.jhydrol.2019.124254",
+   "doi:10.1016/j.jhydrol.2021.127127",
+   "doi:10.1016/j.jhydrol.2024.130668"
+  ],
+  "novelty_queries": [
+   "low flow return period estimation regulated river bias",
+   "environmental flow underestimation regulated streamflow drought"
+  ],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（环境流流派+低流威胁第一性推导，未复用既有池）",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "r1 判读：0 真命中；环境流优化先例存在但无再现期偏差梯度命题。r2 重检索",
+    "ts": "2026-11-01T17:41:00"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "r2 对抗判读：调节+气候敏感性先例(jenvman.2022.115680)与水库-干旱传播系列(ejrh.2023.101604/egu25-18766)命中；均为减缓/传播视角，『低流再现期高估梯度×调节度』空白保持",
+    "ts": "2026-11-01T17:33:39"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "r3 击杀判读：水库调节干旱演变先例(s00477-014-0987-z/jhydrol.2021.127127)与低流趋势对照设计(jhydrol.2019.124254 人为影响vs参考流域)密集——但均做趋势/恢复关系，无『低流再现期估计偏差×调节度梯度』统计命题。收窄：对照设计借用 人为影响vs参考 流域配对框架",
+    "ts": "2026-11-01T17:50:04"
+   }
+  ]
+ }
+]

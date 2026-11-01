@@ -1,0 +1,328 @@
+[
+ {
+  "hid": "RP-1",
+  "claim": "过程一致性多出口联合训练（径流+ET+雪水当量）相对单出口主流的增益集中于干旱期与峰值尾部外推（非中位数精度），且动态过程一致性正则优于静态水文签名约束",
+  "branch": "performance",
+  "delta": "先例(2026 unified MTL/签名知情MTL/MTL+可微物理)已做'多任务'但未系统回答：一致性正则的增益是否集中在分布尾部（干旱/峰值）而非均值精度；签名路线用静态签名，动态过程一致性与其的正面对照缺失",
+  "status": "seed",
+  "verification_status": "untested",
+  "nearest_prior": [],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "refine",
+    "note": "先例密集：unified MTL transformer(2026)/签名知情MTL(WRR2026)/MTL+可微物理(2026)。差异化收窄到：过程一致性正则对干旱期与峰值尾部外推的特定增益，及与签名路线(静态签名 vs 动态过程一致性",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "精化后的尾部增益+动态一致性 vs 静态签名对照未见先例",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 4,
+    "action": "keep",
+    "note": "r4 无新先例，信息增量塌缩",
+    "ts": "2026-11-01T12:51:56"
+   }
+  ]
+ },
+ {
+  "hid": "RP-2",
+  "claim": "将时变气候状态指数（ENSO/PDO/大尺度海气模态+流域前期储量状态）作为 DL 大样本径流模型的动态条件输入，可改善非平稳期（气候位移段）的外推泛化，优于静态流域属性条件化与不含状态指数的动态输入",
+  "branch": "performance",
+  "delta": "先例边界：ENSO/PDO 条件化传统活在季节 ESP 重采样框架(1999 Columbia; 2016 HESS; 2026 AI 季节预测)；将其嵌入 DL 大样本降雨-径流区域化建模并检验气候位移段外推增益，未见系统研究",
+  "status": "seed",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1007/s00477-026-03256-5",
+   "doi:10.1016/j.jhydrol.2022.128153",
+   "doi:10.5194/hess-20-3277-2016"
+  ],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "仅邻域（动态指纹评估），条件化-外推主张存活",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "证据缺失（检索失败），非无先例",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 3,
+    "action": "refine",
+    "note": "先例边界=ENSO 条件化季节预报传统(1999/2016/2026)；差异化=时变气候状态条件化嵌入 DL 大样本径流模型的区域化/外推（非季节重采样）",
+    "ts": "2026-11-01T12:42:05"
+   },
+   {
+    "round": 4,
+    "action": "keep",
+    "note": "r4 无新先例，信息增量塌缩",
+    "ts": "2026-11-01T12:51:56"
+   }
+  ]
+ },
+ {
+  "hid": "RP-3",
+  "claim": "峰值/基流双端不对称损失（分位数或误差重加权）在对 NSE 类基准不牺牲中位数精度的前提下显著修正峰值低估",
+  "branch": "performance",
+  "delta": "NSE/均方误差目标与峰值评价错配是主流模型共性弱点；损失-评价目标对齐机制",
+  "status": "killed",
+  "verification_status": "untested",
+  "nearest_prior": [],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "本轮检索词失效无有效证据；主池 'Ranked Right, Sized Wrong'(2026) 为评价错配邻域",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "kill",
+    "note": "Peak Protection Selective Learning (doi:10.3390/w18151832, 2026) 非均匀优化修峰值直接覆盖核心主张；剩余差异（分位数损失 vs 选择性学习）为增量级",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 2,
+    "action": "kill",
+    "note": "Peak Protection Selective Learning (doi:10.3390/w18151832, 2026) 非均匀优化修峰值直接覆盖核心主张；剩余差异（分位数损失 vs 选择性学习）为增量级",
+    "ts": "2026-11-01T12:31:19"
+   }
+  ]
+ },
+ {
+  "hid": "RU-1",
+  "claim": "大样本网络上闭合残差的时空形态（而非单一 GRACE-model 失配）可分类指向缺失过程类型（地下水开采/融雪/冻土退化/灌溉回灌），构成跨过程'缺失过程探测器'",
+  "branch": "understanding",
+  "delta": "最近先例：GRACE+DL 学习欠表示过程(2019)、野火闭合破坏信号(2026 HESS)；差异化=多过程残差形态学的系统分类与跨域验证，此前均为单一目的研究",
+  "status": "seed",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "arxiv:1902.01933v1",
+   "doi:10.5194/hess-30-4367-2026"
+  ],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "闭合作数据产品（2026），残差探测器主张存活",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "证据缺失（检索失败）",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 3,
+    "action": "refine",
+    "note": "最近先例=GRACE-model 失配学习(2019)+闭合破坏信号(2026)；差异化=跨过程闭合残差形态学分类器（地下水开采/融雪/冻土/灌溉回灌），非单一数据流融合",
+    "ts": "2026-11-01T12:42:05"
+   },
+   {
+    "round": 4,
+    "action": "keep",
+    "note": "r4 无新先例，信息增量塌缩",
+    "ts": "2026-11-01T12:51:56"
+   }
+  ]
+ },
+ {
+  "hid": "RU-2",
+  "claim": "大样本高频径流上噪声稳健的稀疏符号回归可归纳储量-出流方程片段，并与过程模型对应模块逐项（参数+函数形式）对照，达到方程级机理可解释",
+  "branch": "understanding",
+  "delta": "SINDy 方法成熟(2015 PNAS; 2025 噪声影响)且 2026 出现水文 SR 应用（误差补偿方向）；差异化=面向存储-出流关系的方程归纳+与过程模型逐项对照，显式处理实测噪声",
+  "status": "killed",
+  "verification_status": "untested",
+  "nearest_prior": [],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "refine",
+    "note": "2026 已出现 dependency-guided SR 水文应用（误差补偿方向）。差异化：面向储量-出流方程片段的归纳+与过程模型逐项对照，并处理噪声稳健性（2025 噪声-SINDy 证据）",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "证据缺失（检索失败）",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 3,
+    "action": "kill",
+    "note": "S-D 非线性已系统表征(2009-2024)且 SR 已进入水文(2017 GP/2026 deep symbolic PTF)；剩余整合增量非发现级",
+    "ts": "2026-11-01T12:42:05"
+   }
+  ]
+ },
+ {
+  "hid": "RT-1",
+  "claim": "大样本低流（水文干旱）同步化在变暖下增强，且按流域独立性假设设计的水利基础设施（跨流域调水/取水冷却能源）的联合失效暴露被系统性低估，需以同步化趋势重估联合风险",
+  "branch": "threat",
+  "delta": "直接先例：变暖下黄河并发干旱上升(2025)、全球并发干旱 ENSO 调制(2024)；残余开放=水文干旱（低流）侧的大样本同步化趋势+基础设施联合失效暴露重估（2025 跨流域调水复合干旱为邻域起点）",
+  "status": "seed",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1016/j.jhydrol.2025.134186",
+   "doi:10.1016/j.jhydrol.2024.132112",
+   "doi:10.1016/j.ejrh.2025.102438"
+  ],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "金融类比域证据充分（传染/相关性相变/多元化悖论），水文侧直接先例未现",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "证据缺失（检索失败）",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 3,
+    "action": "refine",
+    "note": "直接先例=变暖并发干旱(2025 黄河; 2024 全球 ENSO 调制)；差异化收窄=低流（水文干旱）同步化趋势+按独立性设计的基础设施（调水/冷却水）联合失败暴露重估",
+    "ts": "2026-11-01T12:42:05"
+   },
+   {
+    "round": 4,
+    "action": "keep",
+    "note": "r4 无新先例，信息增量塌缩",
+    "ts": "2026-11-01T12:51:56"
+   }
+  ]
+ },
+ {
+  "hid": "RT-2",
+  "claim": "按历史水文率定的水库调度规则在气候位移下产生系统性'调度反噬'：规则本身成为下游洪水/缺水的风险源",
+  "branch": "threat",
+  "delta": "调度指纹（regulation signature）叠加气候非平稳后，规则失稳的放大机制未被作为'新威胁'建模",
+  "status": "seed",
+  "verification_status": "untested",
+  "nearest_prior": [
+   "doi:10.1088/1748-9326/ae9967",
+   "doi:10.33003/fjs-2023-0705-2001"
+  ],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "调度邻域密集但'规则失稳成为风险源'机制未被建模为威胁",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "证据缺失（检索失败）",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 3,
+    "action": "keep",
+    "note": "'规则性能退化/适应'传统存在(2009/2012/2020)但'历史最优规则成为下游风险放大源'的威胁重构未被建模",
+    "ts": "2026-11-01T12:42:05"
+   },
+   {
+    "round": 4,
+    "action": "keep",
+    "note": "r4 无新先例，信息增量塌缩",
+    "ts": "2026-11-01T12:51:56"
+   }
+  ]
+ },
+ {
+  "hid": "RT-3",
+  "claim": "融雪时相提前与灌溉需水峰的错位在0°C线抬升下非均匀扩大，形成此前未量化的农业供水威胁梯度",
+  "branch": "threat",
+  "delta": "雪线研究聚焦总量变化；'供给峰-需求峰时相错配的空间梯度'是未充分量化的威胁形态",
+  "status": "killed",
+  "verification_status": "untested",
+  "nearest_prior": [],
+  "novelty_queries": [],
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from agent-cold-start（从零循环：三大目标第一性推导，未复用本地旧池）",
+    "ts": "2026-11-01T10:59:56"
+   },
+   {
+    "round": 1,
+    "action": "keep",
+    "note": "融雪-农业邻域存在，供给峰-需求峰威胁梯度未见先例",
+    "ts": "2026-11-01T12:25:23"
+   },
+   {
+    "round": 2,
+    "action": "keep",
+    "note": "证据缺失（检索失败）",
+    "ts": "2026-11-01T12:31:19"
+   },
+   {
+    "round": 3,
+    "action": "kill",
+    "note": "2 篇 Nature Climate Change(2020 农业风险; 2022 远程耦合)直接覆盖供给-需求威胁；剩余'空间梯度'为重新实例化",
+    "ts": "2026-11-01T12:42:05"
+   }
+  ]
+ }
+]
