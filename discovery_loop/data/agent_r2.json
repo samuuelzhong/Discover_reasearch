@@ -1,0 +1,270 @@
+{
+ "RP-1": [
+  {
+   "query": "signature guided loss multi-task streamflow",
+   "hits": []
+  },
+  {
+   "query": "process consistency regularization rainfall runoff",
+   "hits": [
+    {
+     "cite_id": "doi:10.5194/egusphere-2026-2483",
+     "year": "2026",
+     "title": "Extracting Interpretable Representation of Catchment Hydrological Proc"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2026.135357",
+     "year": "2026",
+     "title": "Physics-informed deep learning for hillslope subsurface flow predictio"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.22287126",
+     "year": "2026",
+     "title": "ILMWR V4: A Physics-Constrained Spatial–Temporal Graph Digital Twin fo"
+    }
+   ]
+  }
+ ],
+ "RP-2": [
+  {
+   "query": "climate oscillation indices LSTM runoff",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2022.128153",
+     "year": "2022",
+     "title": "Short-range reservoir inflow forecasting using hydrological and large-"
+    }
+   ]
+  },
+  {
+   "query": "climate index inputs deep learning hydrology",
+   "hits": [
+    {
+     "cite_id": "doi:10.48565/bonndoc-861",
+     "year": "2026",
+     "title": "Deep Learning for Predicting Impacts of Extreme Events and their Drive"
+    },
+    {
+     "cite_id": "doi:10.18419/opus-17694",
+     "year": "2024",
+     "title": "Reconstructing Pre-GRACE terrestrial water storage anomalies using dee"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu24-13159",
+     "year": "2024",
+     "title": "MorSnowAI v1.0 : An Open-Source Python Package for Empowering Artifici"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-1633",
+     "year": "2026",
+     "title": "Advancing Heat-Related Impact Forecast Using Multivariate Deep Learnin"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2025.133689",
+     "year": "2025",
+     "title": "An explainable AI approach for interpreting regionally optimized deep"
+    },
+    {
+     "cite_id": "doi:10.5281/zenodo.23317497",
+     "year": "2026",
+     "title": "Code and data for \"A Benford's Law-Inspired Deep Learning Model for St"
+    }
+   ]
+  }
+ ],
+ "RU-1": [
+  {
+   "query": "model structure error diagnosis hydrology",
+   "hits": [
+    {
+     "cite_id": "doi:10.1002/2014wr016585",
+     "year": "2015",
+     "title": "Diagnosis of insidious data disasters"
+    },
+    {
+     "cite_id": "openalex:W2599730494",
+     "year": "2014",
+     "title": "Diagnosis of Insidious Data Disasters"
+    },
+    {
+     "cite_id": "doi:10.5194/hess-21-3827-2017",
+     "year": "2017",
+     "title": "A comparison of the discrete cosine and wavelet transforms for hydrolo"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-19382",
+     "year": "2026",
+     "title": "Coupling Rainfal-Runoff and Shallow-Water Hybrid Models: A Reliability"
+    },
+    {
+     "cite_id": "doi:10.1137/1010093",
+     "year": "1968",
+     "title": "Fractional Brownian Motions, Fractional Noises and Applications"
+    }
+   ]
+  },
+  {
+   "query": "residual analysis model misspecification hydrology",
+   "hits": [
+    {
+     "cite_id": "doi:10.1002/env.2575",
+     "year": "2019",
+     "title": "Model‐based inference of conditional extreme value distributions with"
+    },
+    {
+     "cite_id": "openalex:W3199768271",
+     "year": "2021",
+     "title": "Desarrollo de técnicas estadísticas basadas en computacion intensiva p"
+    },
+    {
+     "cite_id": "doi:10.5821/dissertation-2117-351135",
+     "year": "2021",
+     "title": "Desarrollo de técnicas estadísticas basadas en computacion intensiva p"
+    },
+    {
+     "cite_id": "doi:10.1080/00273171.2018.1476221",
+     "year": "2018",
+     "title": "The Relationship Between the Standardized Root Mean Square Residual an"
+    },
+    {
+     "cite_id": "doi:10.48550/arXiv.2412.15100",
+     "year": "2024",
+     "title": "Tests for model misspecification in simulation-based inference: from l"
+    },
+    {
+     "cite_id": "doi:10.1111/sjos.70034",
+     "year": "2023",
+     "title": "Assessing estimation uncertainty under model misspecification"
+    },
+    {
+     "cite_id": "arxiv:2302.09106",
+     "year": "2023",
+     "title": "Z-residual diagnostics for detecting misspecification of the functiona"
+    },
+    {
+     "cite_id": "arxiv:2202.06400",
+     "year": "2022",
+     "title": "Misspecification Analysis of High-Dimensional Random Effects Models fo"
+    },
+    {
+     "cite_id": "doi:10.1002/cjs.70087",
+     "year": "2026",
+     "title": "Z"
+    }
+   ]
+  }
+ ],
+ "RT-1": [
+  {
+   "query": "water infrastructure interdependence drought risk",
+   "hits": [
+    {
+     "cite_id": "openalex:W3025231619",
+     "year": "2018",
+     "title": "Time evolving robustness evaluation for risk-based cooperative long-te"
+    },
+    {
+     "cite_id": "doi:10.1007/s44327-026-00374-1",
+     "year": "2026",
+     "title": "Compound and cascading climate risks in urban infrastructure governanc"
+    },
+    {
+     "cite_id": "doi:10.1088/1748-9326/adfbfc",
+     "year": "2025",
+     "title": "Water scarcity challenges water security: a case for Spain’s freshwate"
+    },
+    {
+     "cite_id": "doi:10.1111/j.1749-6632.2009.05318.x",
+     "year": "2010",
+     "title": "Chapter 4: Infrastructure impacts and adaptation challenges"
+    },
+    {
+     "cite_id": "doi:10.3303/cet2081164",
+     "year": "2020",
+     "title": "Inoperability Input-Output Models for Water System in Industrial Parks"
+    },
+    {
+     "cite_id": "doi:10.1002/pan3.70244",
+     "year": "2026",
+     "title": "Electrified rhythms: How hydropower infrastructure transforms hydrosoc"
+    }
+   ]
+  },
+  {
+   "query": "thermoelectric cooling water drought vulnerability",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.envsoft.2019.104514",
+     "year": "2019",
+     "title": "A water-electricity nexus model to analyze thermoelectricity supply re"
+    },
+    {
+     "cite_id": "openalex:W2524763648",
+     "year": "2016",
+     "title": "Stochastic Drought Risk Analysis and Projection Methods For Thermoelec"
+    },
+    {
+     "cite_id": "doi:10.1016/j.apenergy.2013.11.028",
+     "year": "2014",
+     "title": "Transitioning to zero freshwater withdrawal in the U.S. for thermoelec"
+    },
+    {
+     "cite_id": "openalex:W1938766622",
+     "year": "2014",
+     "title": "Mitigating the impacts of droughts and heat waves at thermoelectric po"
+    },
+    {
+     "cite_id": "doi:10.1088/1748-9326/6/3/034015",
+     "year": "2011",
+     "title": "Technical analysis of a river basin-based model of advanced power plan"
+    },
+    {
+     "cite_id": "doi:10.1016/j.egyr.2015.10.002",
+     "year": "2015",
+     "title": "Assessing the impacts of droughts and heat waves at thermoelectric pow"
+    }
+   ]
+  }
+ ],
+ "RT-2": [
+  {
+   "query": "reservoir operation amplify downstream risk",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2026.135321",
+     "year": "2026",
+     "title": "Accumulated ecohydrological impacts and ecological risk of mega-cascad"
+    },
+    {
+     "cite_id": "doi:10.1007/s12665-018-7836-1",
+     "year": "2018",
+     "title": "Dynamic characteristics of tailings reservoir under seismic load"
+    },
+    {
+     "cite_id": "doi:10.1007/s11430-025-1892-0",
+     "year": "2026",
+     "title": "Escalating flood risks under climate change in the Heilong-Amur River"
+    },
+    {
+     "cite_id": "doi:10.33003/fjs-2023-0705-2001",
+     "year": "2023",
+     "title": "EFFECT OF RESERVOIR UTILIZATION AND OTHER ANTHROPOGENIC ACTIVITIES ON"
+    },
+    {
+     "cite_id": "doi:10.2139/ssrn.5175784",
+     "year": "2025",
+     "title": "River Damming Can Amplify or Dampen the Climate-Driven Fluvial Sedimen"
+    },
+    {
+     "cite_id": "doi:10.1088/1748-9326/ae9967",
+     "year": "2026",
+     "title": "Revealing upstream dam operations under information asymmetry for inte"
+    }
+   ]
+  },
+  {
+   "query": "maladaptation water management rule",
+   "hits": []
+  }
+ ]
+}

@@ -1,0 +1,537 @@
+{
+ "SP-1": [
+  {
+   "query": "differentiable reservoir hydrology",
+   "hits": [
+    {
+     "cite_id": "arxiv:2104.10954v1",
+     "year": "2021",
+     "title": "Towards Control of Dam and Reservoir Systems with Forward-Backward Sto"
+    },
+    {
+     "cite_id": "arxiv:2212.04633v1",
+     "year": "2022",
+     "title": "Mitigation of Spatial Nonstationarity with Vision Transformers"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-2025-2797",
+     "year": "2025",
+     "title": "Hybrid Physics-AI and Neural ODE Approaches for Spatially Distributed"
+    }
+   ]
+  },
+  {
+   "query": "reservoir catchment LSTM comparison",
+   "hits": [
+    {
+     "cite_id": "doi:10.2166/nh.2021.016",
+     "year": "2021",
+     "title": "A novel hybrid XAJ-LSTM model for multi-step-ahead flood forecasting a"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2020.124631",
+     "year": "2020",
+     "title": "Exploring a Long Short-Term Memory based Encoder-Decoder framework for"
+    },
+    {
+     "cite_id": "doi:10.3390/rs12244172",
+     "year": "2020",
+     "title": "Comparison of River Basin Water Level Forecasting Methods: Sequential"
+    }
+   ]
+  }
+ ],
+ "SP-2": [
+  {
+   "query": "conformal prediction streamflow",
+   "hits": [
+    {
+     "cite_id": "doi:10.3390/w18111337",
+     "year": "2026",
+     "title": "Hybrid Streamflow Forecasting with ERA5 and Machine Learning Across Da"
+    },
+    {
+     "cite_id": "doi:10.21203/rs.3.rs-10162255/v1",
+     "year": "2026",
+     "title": "Machine Learning and Bias-Corrected CMIP6 for Improved Streamflow Pred"
+    }
+   ]
+  },
+  {
+   "query": "probabilistic deep learning floods extremes",
+   "hits": [
+    {
+     "cite_id": "arxiv:2412.11942v2",
+     "year": "2024",
+     "title": "DRUM: Diffusion-based runoff model for probabilistic flood forecasting"
+    },
+    {
+     "cite_id": "arxiv:2605.19366v1",
+     "year": "2026",
+     "title": "Accurate, Efficient, and Explainable Deep Learning Approaches for Envi"
+    },
+    {
+     "cite_id": "doi:10.29121/ijoest.v9.i5.2025.710",
+     "year": "2025",
+     "title": "PROBABILISTIC FORECASTING OF CLIMATE EXTREMES USING EXTREME VALUE THEO"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-3440",
+     "year": "2026",
+     "title": "Improving Flood Prediction and Warning through Probabilistic Deep Lear"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu25-17902",
+     "year": "2025",
+     "title": "Enhancing Streamflow Prediction in Vulnerable Regions through Probabil"
+    },
+    {
+     "cite_id": "doi:10.22214/ijraset.2026.76920",
+     "year": "2026",
+     "title": "AI for Weather Nowcasting: Opportunities and Challenges"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-1043",
+     "year": "2026",
+     "title": "Probabilistic Precipitation Forecasting over the Eastern Mediterranean"
+    }
+   ]
+  }
+ ],
+ "SC-1": [
+  {
+   "query": "LSTM cell state soil moisture",
+   "hits": [
+    {
+     "cite_id": "doi:10.5194/hess-26-3079-2022",
+     "year": "2021",
+     "title": "Hydrological concept formation inside long  short-term memory (LSTM) n"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-1897",
+     "year": "2026",
+     "title": "The Unreliable Narrator: LSTM Internal States Fluctuate with Software"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-1116",
+     "year": "2026",
+     "title": "Beyond Accuracy: Trustworthy LSTM-Based Hydrological Modelling Assesse"
+    },
+    {
+     "cite_id": "doi:10.1029/2023wr036593",
+     "year": "2025",
+     "title": "Exploring Hydrological Variable Interconnections and Enhancing Predict"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-19039",
+     "year": "2026",
+     "title": "INDRA-Net: A Weakly Supervised Multiple Instance Learning Framework fo"
+    }
+   ]
+  },
+  {
+   "query": "deep learning catchment storage hysteresis",
+   "hits": []
+  }
+ ],
+ "SC-2": [
+  {
+   "query": "deep learning baseflow recession",
+   "hits": [
+    {
+     "cite_id": "doi:10.5281/zenodo.19497132",
+     "year": "2026",
+     "title": "Dataset and Code for: A Benford's Law-Inspired Deep Learning Model for"
+    },
+    {
+     "cite_id": "doi:10.1029/2022wr034118",
+     "year": "2023",
+     "title": "Developing a Physics‐Informed Deep Learning Model to Simulate Runoff R"
+    }
+   ]
+  },
+  {
+   "query": "LSTM streamflow error decomposition",
+   "hits": [
+    {
+     "cite_id": "doi:10.2166/wcc.2024.599",
+     "year": "2024",
+     "title": "Enhancing streamflow prediction in the Wujiang River basin: a two-stag"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2020.124776",
+     "year": "2020",
+     "title": "Decomposition ensemble model based on variational mode decomposition a"
+    },
+    {
+     "cite_id": "doi:10.21203/rs.3.rs-800297/v1",
+     "year": "2021",
+     "title": "Streamflow forecasting based on the hybrid decomposition-ensemble mode"
+    },
+    {
+     "cite_id": "doi:10.1109/aiea53260.2021.00076",
+     "year": "2021",
+     "title": "Research on Streamflow Forecast Based on EEMD and Long Short-Term Memo"
+    },
+    {
+     "cite_id": "doi:10.1038/s41598-021-03725-7",
+     "year": "2022",
+     "title": "Ensemble streamflow forecasting based on variational mode decompositio"
+    },
+    {
+     "cite_id": "doi:10.2112/jcoastres-d-21-00011.1",
+     "year": "2021",
+     "title": "A Multivariate and Multistage Streamflow Prediction Model Based on Sig"
+    }
+   ]
+  }
+ ],
+ "SW-1": [
+  {
+   "query": "reservoir operation change streamflow",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2020.125472",
+     "year": "2020",
+     "title": "Impacts of climate change and reservoir operation on streamflow and fl"
+    },
+    {
+     "cite_id": "doi:10.1007/s11269-009-9438-x",
+     "year": "2009",
+     "title": "Streamflow Forecast and Reservoir Operation Performance Assessment Und"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2021.125959",
+     "year": "2021",
+     "title": "A Bayesian adaptive reservoir operation framework incorporating stream"
+    },
+    {
+     "cite_id": "doi:10.3390/w12041198",
+     "year": "2020",
+     "title": "Impacts of Climate Change and Land Use/Cover Change on Streamflow in B"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu23-10603",
+     "year": "2023",
+     "title": "Multi-Objective Operation- Decision-Making-Risk Propagation Analysis f"
+    },
+    {
+     "cite_id": "doi:10.1016/j.advwatres.2011.01.004",
+     "year": "2011",
+     "title": "Effect of streamflow forecast uncertainty on real-time reservoir opera"
+    }
+   ]
+  },
+  {
+   "query": "design flood updating reservoir",
+   "hits": [
+    {
+     "cite_id": "doi:10.3390/su11071827",
+     "year": "2019",
+     "title": "Revisiting Water Supply Rule Curves with Hedging Theory for Climate Ch"
+    },
+    {
+     "cite_id": "doi:10.2118/169686-ms",
+     "year": "2014",
+     "title": "Reducing Key Uncertainties Prior to a Polymer Injection Trial in a Hea"
+    },
+    {
+     "cite_id": "doi:10.2118/207385-ms",
+     "year": "2021",
+     "title": "Ultra-Deep LWD Electromagnetic Directional Resistivity for Waterflood"
+    },
+    {
+     "cite_id": "doi:10.2118/203163-ms",
+     "year": "2020",
+     "title": "Identification &amp; Mapping of Water Slumping Fronts by Ultra-Deep El"
+    },
+    {
+     "cite_id": "doi:10.3997/2214-4609-pdb.151.iptc13883",
+     "year": "2009",
+     "title": "Fast Appraisal and Development of a Stratigraphic Carbonate Play Fast"
+    },
+    {
+     "cite_id": "openaire:dris___01126::d1",
+     "year": "2019",
+     "title": "Verification of the Methods for Calculating the Probable Maximum Flow"
+    }
+   ]
+  }
+ ],
+ "SW-2": [
+  {
+   "query": "peak water timing shift",
+   "hits": [
+    {
+     "cite_id": "arxiv:2505.18245v1",
+     "year": "2025",
+     "title": "Decomposition of Water Demand Patterns Using Skewed Gaussian Distribut"
+    },
+    {
+     "cite_id": "arxiv:1706.03260v2",
+     "year": "2017",
+     "title": "Cooperation and Environment Characterize the Low-Lying Optical Spectru"
+    },
+    {
+     "cite_id": "arxiv:1901.07792v1",
+     "year": "2019",
+     "title": "Simulated XUV Photoelectron Spectra of THz-pumped Liquid Water"
+    },
+    {
+     "cite_id": "arxiv:2308.00524v1",
+     "year": "2023",
+     "title": "Influence of Hydration and Dehydration on the Viscoelastic Properties"
+    },
+    {
+     "cite_id": "arxiv:2210.08032v1",
+     "year": "2022",
+     "title": "Terahertz Dynamics in the Glycerol-Water System"
+    },
+    {
+     "cite_id": "arxiv:2605.01458v1",
+     "year": "2026",
+     "title": "Revealing the kinetics of interfacial surfactant phase transitions thr"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2006.02.011",
+     "year": "2006",
+     "title": "Partitioning impacts of climate and regulation on water level variabil"
+    },
+    {
+     "cite_id": "doi:10.1007/s12237-016-0097-x",
+     "year": "2016",
+     "title": "Long-Term Seasonal Trends in the Prey Community of Delta Smelt (Hypome"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-6663",
+     "year": "2026",
+     "title": "Changes in Snowmelt Timing and Peak Flow Generation in Non-Regulated F"
+    },
+    {
+     "cite_id": "doi:10.1080/1088937x.2011.638146",
+     "year": "2011",
+     "title": "The cryosphere – past, present, and future: a review of the frozen wat"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2006.08.005",
+     "year": "2007",
+     "title": "Groundwater–surface water interaction under scenarios of climate chang"
+    },
+    {
+     "cite_id": "doi:10.4028/www.scientific.net/amm.405-408.2100",
+     "year": "2013",
+     "title": "Some Characteristics of Peak Flow in the Richelieu River, Quebec some"
+    }
+   ]
+  },
+  {
+   "query": "snowmelt reservoir operations warming",
+   "hits": [
+    {
+     "cite_id": "doi:10.5194/egusphere-egu25-16691",
+     "year": "2025",
+     "title": "Future of Snowmelt Hydrology and Hydropower: A Case Study of T&amp;#25"
+    },
+    {
+     "cite_id": "doi:10.1007/s10584-009-9750-8",
+     "year": "2009",
+     "title": "Estimated impacts of climate warming on California’s high-elevation hy"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2013.12.001",
+     "year": "2014",
+     "title": "Climate change impacts on high-elevation hydroelectricity in Californi"
+    },
+    {
+     "cite_id": "doi:10.1002/joc.8639",
+     "year": "2024",
+     "title": "Hydrologic Responses to Climate Change and Implications for Reservoirs"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu24-13611",
+     "year": "2025",
+     "title": "Hydrologic responses to climate change and implications for reservoirs"
+    },
+    {
+     "cite_id": "doi:10.20944/preprints201711.0116.v1",
+     "year": "2017",
+     "title": "Impact of a Warming Climate on Hydropower in the Northeast United Stat"
+    }
+   ]
+  }
+ ],
+ "SW-3": [
+  {
+   "query": "imperviousness flood response",
+   "hits": [
+    {
+     "cite_id": "doi:10.2166/wst.2025.067",
+     "year": "2025",
+     "title": "Quantifying urban land cover imperviousness as input for flood simulat"
+    },
+    {
+     "cite_id": "doi:10.1016/j.envsoft.2016.08.007",
+     "year": "2016",
+     "title": "Can urban pluvial flooding be predicted by open spatial data and weath"
+    },
+    {
+     "cite_id": "doi:10.3390/w10010053",
+     "year": "2018",
+     "title": "Application of Flood Nomograph for Flood Forecasting in Urban Areas ap"
+    },
+    {
+     "cite_id": "doi:10.1061/(asce)1084-0699(2009)14:4(303)",
+     "year": "2009",
+     "title": "Hydrology and Impervious Areas hydrology and impervious areas"
+    },
+    {
+     "cite_id": "doi:10.1111/jfr3.70194",
+     "year": "2026",
+     "title": "<scp>GIS</scp>                     and                     <scp>SWMM</"
+    },
+    {
+     "cite_id": "doi:10.1029/1999jd900125",
+     "year": "2000",
+     "title": "Assessment of flash flood warning procedures assessment of flash flood"
+    }
+   ]
+  },
+  {
+   "query": "urban flood peak amplification",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.ejrh.2021.100985",
+     "year": "2022",
+     "title": "Urban flood forecasting based on the coupling of numerical weather mod"
+    },
+    {
+     "cite_id": "doi:10.2139/ssrn.6993097",
+     "year": "2026",
+     "title": "Amplification Effects and Multi-Stage Drivers of Urban Compound Floodi"
+    },
+    {
+     "cite_id": "doi:10.1029/2019gl083363",
+     "year": "2019",
+     "title": "Urban Impacts on Extreme Monsoon Rainfall and Flooding in Complex Terr"
+    },
+    {
+     "cite_id": "doi:10.3390/app16073513",
+     "year": "2026",
+     "title": "Multi-Hazard Exposure Prioritization with Time-Varying Population: Int"
+    },
+    {
+     "cite_id": "doi:10.1029/2021ef002055",
+     "year": "2021",
+     "title": "Climate Change and Changes in Compound Coastal‐Riverine Flooding Hazar"
+    },
+    {
+     "cite_id": "doi:10.1002/essoar.10509455.1",
+     "year": "2021",
+     "title": "Compounding Risk of Heat Stress-Rain Induced Floods in Urban India"
+    }
+   ]
+  }
+ ],
+ "SW-4": [
+  {
+   "query": "low flow frequency regulation",
+   "hits": [
+    {
+     "cite_id": "arxiv:2311.11681v3",
+     "year": "2023",
+     "title": "An Operator Splitting Scheme for Distributed Optimal Load-side Frequen"
+    },
+    {
+     "cite_id": "arxiv:2604.24724v2",
+     "year": "2026",
+     "title": "Data-Driven Privacy-Preserving Modeling and Frequency Regulation with"
+    },
+    {
+     "cite_id": "arxiv:1611.07301v3",
+     "year": "2016",
+     "title": "Frequency regulators for the nonperturbative renormalization group: A"
+    },
+    {
+     "cite_id": "arxiv:2011.04101v2",
+     "year": "2020",
+     "title": "Enabling DER Participation in Frequency Regulation Markets"
+    },
+    {
+     "cite_id": "arxiv:2107.11075v1",
+     "year": "2021",
+     "title": "Individual crop loads provide local control for collective food intake"
+    },
+    {
+     "cite_id": "arxiv:1202.3690v1",
+     "year": "2012",
+     "title": "Hybrid zone dynamics under weak Haldane's rule"
+    },
+    {
+     "cite_id": "doi:10.3390/ma18225095",
+     "year": "2025",
+     "title": "Metasurface Lossless-Regulation Mechanism of Dynamic Acoustic Mass for"
+    },
+    {
+     "cite_id": "doi:10.1088/1755-1315/619/1/012041",
+     "year": "2020",
+     "title": "Research on Optimization of Full Frequency Conversion Intelligent Spee"
+    },
+    {
+     "cite_id": "doi:10.1016/j.jenvman.2022.115680",
+     "year": "2022",
+     "title": "Sensitivity of streamflow patterns to river regulation and climate cha"
+    },
+    {
+     "cite_id": "doi:10.3133/ofr84454a",
+     "year": "1984",
+     "title": "Statistical summaries of streamflow data in Oregon; Volume 2, western"
+    },
+    {
+     "cite_id": "doi:10.1134/s000635091901007x",
+     "year": "2019",
+     "title": "The Impact of Stochastic Perturbations upon the Hydrodynamic Relations"
+    },
+    {
+     "cite_id": "doi:10.1016/j.ecoser.2016.06.005",
+     "year": "2016",
+     "title": "The flow regulation services of wetlands the flow regulation services"
+    }
+   ]
+  },
+  {
+   "query": "reservoir drought downstream",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.jhydrol.2024.130668",
+     "year": "2024",
+     "title": "The effects of reservoir storage and water use on the upstream–downstr"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu25-18766",
+     "year": "2025",
+     "title": "Impact of reservoir network on propagation from meteorological to hydr"
+    },
+    {
+     "cite_id": "doi:10.1016/j.scitotenv.2018.07.316",
+     "year": "2019",
+     "title": "Assessing the drought mitigation ability of the reservoir in the downs"
+    },
+    {
+     "cite_id": "doi:10.4028/www.scientific.net/amm.405-408.2157",
+     "year": "2013",
+     "title": "Impounding in Advance for Three Gorges Reservoir by Considering the Do"
+    },
+    {
+     "cite_id": "doi:10.1016/j.ejrh.2023.101604",
+     "year": "2024",
+     "title": "River network-based index to clarify transmission of hydrological drou"
+    },
+    {
+     "cite_id": "doi:10.1016/j.ejrh.2025.102204",
+     "year": "2025",
+     "title": "Reservoir operation strategies to mitigate hydrological drought effect"
+    }
+   ]
+  }
+ ]
+}

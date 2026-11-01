@@ -1,0 +1,186 @@
+{
+ "H1-diffpara-beats-lstm": [
+  {
+   "query": "differentiable hydrological model outperforms LSTM",
+   "hits": [
+    {
+     "cite_id": "arxiv:2502.16444v1",
+     "year": "2025",
+     "title": "Update hydrological states or meteorological forcings? Comparing data"
+    },
+    {
+     "cite_id": "doi:10.1029/2025wr041684",
+     "year": "2025",
+     "title": "Coupling Differentiable Modules of Reservoir Operation and Rainfall‐Ru"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu26-2733",
+     "year": "2026",
+     "title": "Coupling Differentiable Modules of Reservoir Operation and Rainfall-Ru"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu25-15436",
+     "year": "2025",
+     "title": "The Differentiable Distributed Regression Model (dDRM) Balancing Expla"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-2025-1509",
+     "year": "2025",
+     "title": "Beyond Observed Extremes: Can Hybrid Deep Learning Models Improve Floo"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu24-7950",
+     "year": "2025",
+     "title": "Improving streamflow prediction across China by hydrological modelling"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu25-5612",
+     "year": "2025",
+     "title": "Differentiable Parameter Learning Framework for Calibration of Hydrolo"
+    }
+   ]
+  },
+  {
+   "query": "neuralhydrology LSTM benchmark CAMELS NSE",
+   "hits": [
+    {
+     "cite_id": "doi:10.5281/zenodo.4555820",
+     "year": "2021",
+     "title": "Benchmarking Data-Driven Rainfall-Runoff Models in Great Britain: A co"
+    }
+   ]
+  }
+ ],
+ "H2-lstm-encodes-storage-discharge": [
+  {
+   "query": "LSTM internal states hydrological interpretable storage",
+   "hits": [
+    {
+     "cite_id": "arxiv:1903.07903v2",
+     "year": "2019",
+     "title": "NeuralHydrology -- Interpreting LSTMs in Hydrology"
+    },
+    {
+     "cite_id": "doi:10.5194/hess-28-945-2024",
+     "year": "2023",
+     "title": "Toward interpretable LSTM-based  modeling of hydrological systems Towa"
+    },
+    {
+     "cite_id": "doi:10.1029/2025wr040268",
+     "year": "2025",
+     "title": "Integrating Reservoir Dynamics Into Differentiable Process‐Based Hydro"
+    },
+    {
+     "cite_id": "doi:10.2139/ssrn.6235635",
+     "year": "2026",
+     "title": "Understanding Hydroclimatic Controls of Streamflow Across Snow- and Ra"
+    }
+   ]
+  },
+  {
+   "query": "hysteresis storage discharge machine learning streamflow",
+   "hits": [
+    {
+     "cite_id": "doi:10.2139/ssrn.6845369",
+     "year": "2026",
+     "title": "An Optimised Integrated Framework for Multiparameter Water Quality Mon"
+    }
+   ]
+  }
+ ],
+ "H3-error-concentrated-recession": [
+  {
+   "query": "deep learning streamflow recession baseflow error",
+   "hits": []
+  },
+  {
+   "query": "streamflow simulation error decomposition peak low flow",
+   "hits": []
+  }
+ ],
+ "H4-snowmelt-timing-supply-mismatch": [
+  {
+   "query": "snowmelt timing shift water supply mismatch warming",
+   "hits": []
+  },
+  {
+   "query": "snow drought reservoir inflow timing change",
+   "hits": [
+    {
+     "cite_id": "doi:10.3929/ethz-c-000798591",
+     "year": "2026",
+     "title": "Damming extreme river flow: A large-sample perspective on how reservoi"
+    }
+   ]
+  }
+ ],
+ "H5-reservoir-regime-breaks-frequency": [
+  {
+   "query": "reservoir regulation flood frequency nonstationarity design",
+   "hits": [
+    {
+     "cite_id": "doi:10.3390/w13192687",
+     "year": "2021",
+     "title": "Nonstationary Design Flood Estimation in Response to Climate Change, P"
+    }
+   ]
+  },
+  {
+   "query": "dam operation streamflow regime shift stationarity",
+   "hits": [
+    {
+     "cite_id": "arxiv:2610.35464v1",
+     "year": "2026",
+     "title": "EvoBench: An Evolving, Diagnostic Benchmark Framework for Environmenta"
+    }
+   ]
+  }
+ ],
+ "H6-remote-sensing-ungauged-snow": [
+  {
+   "query": "remote sensing snow cover ungauged streamflow prediction",
+   "hits": []
+  },
+  {
+   "query": "satellite data assimilation snow hydrological model ungauged",
+   "hits": [
+    {
+     "cite_id": "doi:10.5194/hess-2021-632",
+     "year": "2021",
+     "title": "High resolution satellite products improve hydrological modeling in no"
+    },
+    {
+     "cite_id": "doi:10.2139/ssrn.6215391",
+     "year": "2026",
+     "title": "Assimilation of Sentinel-1 C-band SAR snow depth retrievals in operati"
+    }
+   ]
+  }
+ ],
+ "H7-urban-flood-threshold": [
+  {
+   "query": "urbanization flood magnification threshold nonlinear response",
+   "hits": []
+  },
+  {
+   "query": "compound climate urbanization flood risk small catchment",
+   "hits": [
+    {
+     "cite_id": "doi:10.18130/v3-8ve8-7z04",
+     "year": "2020",
+     "title": "Flood Risk Assessment and Increased Flood Resilience for Civil Infrast"
+    }
+   ]
+  }
+ ],
+ "H8-lowflow-return-period-bias": [
+  {
+   "query": "low flow return period estimation regulated river bias",
+   "hits": []
+  },
+  {
+   "query": "environmental flow underestimation regulated streamflow drought",
+   "hits": []
+  }
+ ]
+}

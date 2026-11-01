@@ -1,0 +1,253 @@
+{
+ "SP-1": [
+  {
+   "query": "multi-task learning hydrology streamflow evapotranspiration joint",
+   "hits": []
+  },
+  {
+   "query": "unified differentiable model streamflow snow soil moisture prediction",
+   "hits": []
+  },
+  {
+   "query": "process consistency multi-variable deep learning hydrology",
+   "hits": []
+  }
+ ],
+ "SP-2": [
+  {
+   "query": "climate indices conditioned LSTM streamflow forecasting",
+   "hits": []
+  },
+  {
+   "query": "ENSO PDO streamflow prediction nonstationary",
+   "hits": []
+  },
+  {
+   "query": "dynamic covariates deep learning hydrology nonstationarity extrapolation",
+   "hits": []
+  }
+ ],
+ "SP-3": [
+  {
+   "query": "water balance closure error machine learning hydrology",
+   "hits": [
+    {
+     "cite_id": "doi:10.1038/s41545-025-00510-1",
+     "year": "2025",
+     "title": "Knowledge embedding and interpretable machine learning optimize compre"
+    },
+    {
+     "cite_id": "doi:10.3390/f16081325",
+     "year": "2025",
+     "title": "Unraveling Interactive Effects of Climate, Hydrology, and CO2 on Ecolo"
+    },
+    {
+     "cite_id": "doi:10.1029/2024GL110731",
+     "year": "2025",
+     "title": "A Machine Learning‐Based Model Infers the Sea Surface Velocity of Surf"
+    },
+    {
+     "cite_id": "doi:10.1002/vzj2.70011",
+     "year": "2025",
+     "title": "Machine‐learning based spatiotemporal prediction of soil moisture in a"
+    },
+    {
+     "cite_id": "doi:10.2166/hydro.2024.010",
+     "year": "2024",
+     "title": "Internal structure modification of a simple monthly water balance mode"
+    },
+    {
+     "cite_id": "doi:10.1038/s41598-025-11542-5",
+     "year": "2025",
+     "title": "Optimizing base fluid composition for PEMFC cooling: A machine learnin"
+    }
+   ]
+  },
+  {
+   "query": "physics constraint generalization arid catchments deep learning",
+   "hits": []
+  },
+  {
+   "query": "adaptive physical constraints catchment data quality",
+   "hits": []
+  }
+ ],
+ "SC-1": [
+  {
+   "query": "reservoir operation detection streamflow time series attribution",
+   "hits": []
+  },
+  {
+   "query": "dam regulation signature flow regime alteration detection",
+   "hits": [
+    {
+     "cite_id": "doi:10.3390/earth5030023",
+     "year": "2024",
+     "title": "Index-Based Alteration of Long-Term River Flow Regimes Influenced by L"
+    },
+    {
+     "cite_id": "doi:10.1038/s41598-026-71256-0",
+     "year": "2026",
+     "title": "Hydrologic regime alteration and seasonal flow redistribution in a dam"
+    },
+    {
+     "cite_id": "doi:10.3390/w15122166",
+     "year": "2023",
+     "title": "The Effect of Down-Cascade Re-Regulation on Alleviating the Flow Regim"
+    },
+    {
+     "cite_id": "doi:10.1029/2022EF003078",
+     "year": "2023",
+     "title": "Spectral Signatures of Flow Regime Alteration by Dams Across the Unite"
+    },
+    {
+     "cite_id": "doi:10.2166/wcc.2024.660",
+     "year": "2024",
+     "title": "Assessing the effects of dam regulation on multiscale variations in ri"
+    },
+    {
+     "cite_id": "doi:10.63883/ijsrisjournal.v3i6.760",
+     "year": "2024",
+     "title": "Hydrological Regime Alteration in the Lower Ouerrha River Basin Follow"
+    }
+   ]
+  },
+  {
+   "query": "inferring reservoir operating rules observed discharge",
+   "hits": [
+    {
+     "cite_id": "doi:10.1016/j.renene.2020.11.152",
+     "year": "2020",
+     "title": "Optimizing operating rules for multi-reservoir hydropower generation s"
+    },
+    {
+     "cite_id": "doi:10.1002/wat2.1400",
+     "year": "2019",
+     "title": "Inferring efficient operating rules in multireservoir water resource s"
+    },
+    {
+     "cite_id": "doi:10.3390/w13192737",
+     "year": "2021",
+     "title": "Investigation of Forecast Accuracy and its Impact on the Efficiency of"
+    },
+    {
+     "cite_id": "doi:10.1175/jhm-d-19-0058.1",
+     "year": "2019",
+     "title": "Understanding Reservoir Operating Rules in the Transboundary Nile Rive"
+    },
+    {
+     "cite_id": "doi:10.3390/hydrology13020063",
+     "year": "2026",
+     "title": "Seasonal Inflow Shifts and Increasing Hot–Dry Stress for Eagle Mountai"
+    },
+    {
+     "cite_id": "doi:10.1002/essoar.10507302.1",
+     "year": "2021",
+     "title": "Satellite observations reveal thirteen years of reservoir filling stra"
+    }
+   ]
+  }
+ ],
+ "SC-2": [
+  {
+   "query": "water budget closure residual catchment missing process",
+   "hits": [
+    {
+     "cite_id": "doi:10.5194/hess-29-627-2025",
+     "year": "2025",
+     "title": "Achieving water budget closure through physical hydrological process m"
+    },
+    {
+     "cite_id": "doi:10.1029/2021JD036099",
+     "year": "2022",
+     "title": "Air‐Lake Momentum and Heat Exchange in Very Young Waves Using Energy a"
+    },
+    {
+     "cite_id": "doi:10.1126/sciadv.aea0652",
+     "year": "2026",
+     "title": "Improved closure of the global mean sea level budget from observationa"
+    },
+    {
+     "cite_id": "doi:10.1002/2013WR014516",
+     "year": "2014",
+     "title": "Spatiotemporal relations between water budget components and soil wate"
+    },
+    {
+     "cite_id": "doi:10.5194/egusphere-egu2020-19869",
+     "year": "2020",
+     "title": "An enhanced river routing scheme for the closure of global water budge"
+    },
+    {
+     "cite_id": "doi:10.1080/02626667.2022.2093642",
+     "year": "2022",
+     "title": "Uncertainty quantification of multi-source hydrological data products"
+    }
+   ]
+  },
+  {
+   "query": "residual analysis unmodeled processes hydrological cycle",
+   "hits": []
+  }
+ ],
+ "SW-1": [
+  {
+   "query": "snow water equivalent decline water supply reliability warming",
+   "hits": []
+  },
+  {
+   "query": "snowmelt basin reservoir dependence shifting warming",
+   "hits": [
+    {
+     "cite_id": "doi:10.3390/hydrology13010004",
+     "year": "2025",
+     "title": "Shifting Snowmelt Regime in a High-Latitude Asian Basin: Insights from"
+    },
+    {
+     "cite_id": "doi:10.1029/2023WR036898",
+     "year": "2025",
+     "title": "Unraveling the Distinct Roles of Snowmelt and Glacier‐Melt on Agricult"
+    },
+    {
+     "cite_id": "doi:10.1007/s12665-025-12770-8",
+     "year": "2026",
+     "title": "Climate warming alters snowmelt and rainfall-runoff partitioning in a"
+    },
+    {
+     "cite_id": "doi:10.1007/s00704-025-05870-9",
+     "year": "2025",
+     "title": "Spatiotemporal evolution and driving mechanisms of compound dry and ho"
+    },
+    {
+     "cite_id": "doi:10.1016/j.scitotenv.2025.180227",
+     "year": "2025",
+     "title": "Spatiotemporal dependence of heavy precipitation on soil moisture anom"
+    },
+    {
+     "cite_id": "doi:10.1029/2023EF003868",
+     "year": "2024",
+     "title": "Amplified Extreme Floods and Shifting Flood Mechanisms in the Delaware"
+    }
+   ]
+  }
+ ],
+ "SW-2": [
+  {
+   "query": "cascade reservoirs drought operation downstream low flow",
+   "hits": []
+  },
+  {
+   "query": "reservoir coordination drought synchronization compound",
+   "hits": []
+  }
+ ],
+ "SW-3": [
+  {
+   "query": "reservoir operating rules climate change obsolete update",
+   "hits": []
+  },
+  {
+   "query": "environmental flow standards climate mismatch timing",
+   "hits": []
+  }
+ ]
+}
