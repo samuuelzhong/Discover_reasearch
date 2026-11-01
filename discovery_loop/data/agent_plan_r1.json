@@ -1,0 +1,34 @@
+{
+  "H1-diffpara-beats-lstm": [
+    "differentiable hydrological model outperforms LSTM",
+    "neuralhydrology LSTM benchmark CAMELS NSE"
+  ],
+  "H2-lstm-encodes-storage-discharge": [
+    "LSTM internal states hydrological interpretable storage",
+    "hysteresis storage discharge machine learning streamflow"
+  ],
+  "H3-error-concentrated-recession": [
+    "deep learning streamflow recession baseflow error",
+    "streamflow simulation error decomposition peak low flow"
+  ],
+  "H4-snowmelt-timing-supply-mismatch": [
+    "snowmelt timing shift water supply mismatch warming",
+    "snow drought reservoir inflow timing change"
+  ],
+  "H5-reservoir-regime-breaks-frequency": [
+    "reservoir regulation flood frequency nonstationarity design",
+    "dam operation streamflow regime shift stationarity"
+  ],
+  "H6-remote-sensing-ungauged-snow": [
+    "remote sensing snow cover ungauged streamflow prediction",
+    "satellite data assimilation snow hydrological model ungauged"
+  ],
+  "H7-urban-flood-threshold": [
+    "urbanization flood magnification threshold nonlinear response",
+    "compound climate urbanization flood risk small catchment"
+  ],
+  "H8-lowflow-return-period-bias": [
+    "low flow return period estimation regulated river bias",
+    "environmental flow underestimation regulated streamflow drought"
+  ]
+}

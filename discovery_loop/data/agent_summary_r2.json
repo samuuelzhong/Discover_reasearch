@@ -1,0 +1,38 @@
+{
+ "round": 2,
+ "info_gain": "RP-3 被杀（2026 直接先例）；RP-1 精化版未见新先例（存活）；RP-2/RU-1/RU-2/RT-1/RT-2/RT-3 本轮检索失败（S2 限流+OpenAlex 严格 AND 对 5-7 词查询过严）——状态为'证据缺失'而非'无先例'，r3 短查询补证",
+ "deltas": {
+  "RP-3": {
+   "action": "kill",
+   "reason": "Peak Protection Selective Learning (doi:10.3390/w18151832, 2026) 非均匀优化修峰值直接覆盖核心主张；剩余差异（分位数损失 vs 选择性学习）为增量级"
+  },
+  "RP-1": {
+   "action": "keep",
+   "reason": "精化后的尾部增益+动态一致性 vs 静态签名对照未见先例"
+  },
+  "RP-2": {
+   "action": "keep",
+   "reason": "证据缺失（检索失败），非无先例"
+  },
+  "RU-1": {
+   "action": "keep",
+   "reason": "证据缺失（检索失败）"
+  },
+  "RU-2": {
+   "action": "keep",
+   "reason": "证据缺失（检索失败）"
+  },
+  "RT-1": {
+   "action": "keep",
+   "reason": "证据缺失（检索失败）"
+  },
+  "RT-2": {
+   "action": "keep",
+   "reason": "证据缺失（检索失败）"
+  },
+  "RT-3": {
+   "action": "keep",
+   "reason": "证据缺失（检索失败）"
+  }
+ }
+}

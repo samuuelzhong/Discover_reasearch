@@ -1,0 +1,22 @@
+{
+  "RP-1": [
+    "signature guided loss multi-task streamflow",
+    "process consistency regularization rainfall runoff"
+  ],
+  "RP-2": [
+    "climate oscillation indices LSTM runoff",
+    "climate index inputs deep learning hydrology"
+  ],
+  "RU-1": [
+    "model structure error diagnosis hydrology",
+    "residual analysis model misspecification hydrology"
+  ],
+  "RT-1": [
+    "water infrastructure interdependence drought risk",
+    "thermoelectric cooling water drought vulnerability"
+  ],
+  "RT-2": [
+    "reservoir operation amplify downstream risk",
+    "maladaptation water management rule"
+  ]
+}

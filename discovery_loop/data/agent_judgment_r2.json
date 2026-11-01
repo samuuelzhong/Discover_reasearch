@@ -1,0 +1,32 @@
+{
+ "RP-3": [
+  {
+   "cite_id": "doi:10.3390/w18151832",
+   "verdict": "precedent",
+   "reason": "Peak Protection Selective Learning（US CAMELS，2026 Water）——非均匀优化策略修正峰值低估，直接覆盖 RP-3 核心"
+  },
+  {
+   "cite_id": "doi:10.2139/ssrn.6278078",
+   "verdict": "neighbor",
+   "reason": "物理引导 KAN 极端流预测（2026 预印本）——极端流修正邻域"
+  },
+  {
+   "cite_id": "doi:10.3390/w17213152",
+   "verdict": "neighbor",
+   "reason": "KAN-WLSTM 多流域鲁棒建模（2025）"
+  }
+ ],
+ "RP-1": [
+  {
+   "cite_id": "doi:10.5281/zenodo.23317497",
+   "verdict": "noise",
+   "reason": "Benford 定律 DL 数据集，无关"
+  }
+ ],
+ "RP-2": [],
+ "RU-1": [],
+ "RU-2": [],
+ "RT-1": [],
+ "RT-2": [],
+ "RT-3": []
+}

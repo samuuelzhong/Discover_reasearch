@@ -1,0 +1,132 @@
+{
+ "RP-1": [
+  {
+   "cite_id": "doi:10.1038/s41598-026-55130-7",
+   "verdict": "precedent",
+   "reason": "统一共享 Transformer 多任务水文过程框架（2026）——直接做了多出口联合学习"
+  },
+  {
+   "cite_id": "doi:10.1029/2025WR041485",
+   "verdict": "precedent",
+   "reason": "水文签名知情的多任务 DL 流量预测（WRR 2026）——签名=过程一致性约束，核心主张重叠"
+  },
+  {
+   "cite_id": "doi:10.1038/s41598-026-41277-w",
+   "verdict": "precedent",
+   "reason": "多任务+可微物理约束框架（SM/ET，2026）——多出口与物理一致性已结合"
+  },
+  {
+   "cite_id": "doi:10.1029/2023WR036593",
+   "verdict": "neighbor",
+   "reason": "水文变量互连+数据稀缺流域（2025），未达大样本一致性正则主张"
+  },
+  {
+   "cite_id": "doi:10.48550/arXiv.2410.14137",
+   "verdict": "precedent",
+   "reason": "分层条件多任务流量建模（2024）——中间过程作为辅助任务"
+  },
+  {
+   "cite_id": "doi:10.1007/s11269-026-04591-6",
+   "verdict": "neighbor",
+   "reason": "SM+ET 多任务短期预报，非径流大样本基准"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2024.132165",
+   "verdict": "neighbor",
+   "reason": "植被约束分布式水文+DL，约束路线邻域"
+  }
+ ],
+ "RP-2": [
+  {
+   "cite_id": "doi:10.5194/egusphere-egu26-3597",
+   "verdict": "neighbor",
+   "reason": "动态指纹评估 DL 模型行为（EGU2026 摘要）——动态描述子用于评估而非条件化外推"
+  }
+ ],
+ "RP-3": [],
+ "RU-1": [
+  {
+   "cite_id": "doi:10.3389/fenvs.2026.1764771",
+   "verdict": "neighbor",
+   "reason": "流域尺度水量闭合数据集（2026）——闭合作数据产品而非残差信号探测器"
+  }
+ ],
+ "RU-2": [
+  {
+   "cite_id": "doi:10.1073/pnas.1517384113",
+   "verdict": "neighbor",
+   "reason": "SINDy 原始方法（2015 PNAS）——方法学先例，非水文应用"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jcp.2025.114443",
+   "verdict": "neighbor",
+   "reason": "LES-SINDy 方法进展（2025）"
+  },
+  {
+   "cite_id": "doi:10.23919/CCC64809.2025.11179359",
+   "verdict": "neighbor",
+   "reason": "噪声对稀疏辨识的影响（2025）——RU-2 精化时需引用的稳健性约束"
+  }
+ ],
+ "RT-1": [
+  {
+   "cite_id": "arxiv:2510.20868v1",
+   "verdict": "neighbor",
+   "reason": "图时空学习的危机韧性组合管理——危机期相关性结构相变的方法学类比"
+  },
+  {
+   "cite_id": "doi:10.1111/jofi.12203",
+   "verdict": "neighbor",
+   "reason": "全球金融危机传染（JoF 2014）——残差相关性骤升=传染证据的度量传统"
+  },
+  {
+   "cite_id": "arxiv:1505.05182v1",
+   "verdict": "neighbor",
+   "reason": "Ricci 曲率度量市场脆弱性——系统性风险的网络几何度量，可迁移至流域网络"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jet.2004.03.004",
+   "verdict": "neighbor",
+   "reason": "多元化投资组合的自促成传染（JET 2004）——'分散化反而同步化'机制，正对 RT-1 的类比核心"
+  }
+ ],
+ "RT-2": [
+  {
+   "cite_id": "doi:10.1016/j.watres.2025.123443",
+   "verdict": "neighbor",
+   "reason": "对冲规则调度+水动力耦合（2025）——规则与洪水权衡，但无气候位移失稳机制"
+  },
+  {
+   "cite_id": "doi:10.23860/diss-4467",
+   "verdict": "neighbor",
+   "reason": "极端情景下供水水库防洪缓解（2025 学位论文）"
+  }
+ ],
+ "RT-3": [
+  {
+   "cite_id": "openalex:W2377573112",
+   "verdict": "neighbor",
+   "reason": "新疆融雪洪水时空分布（2001-2018）——融雪供给绿洲农业，未做供给-需求时相错配梯度"
+  },
+  {
+   "cite_id": "doi:10.1016/j.scitotenv.2022.154964",
+   "verdict": "neighbor",
+   "reason": "上印度河寒旱区径流来源识别"
+  },
+  {
+   "cite_id": "doi:10.9734/bpi/crgese/v5/6948",
+   "verdict": "noise",
+   "reason": "黎巴嫩区域水脆弱性"
+  },
+  {
+   "cite_id": "doi:10.1093/ajcl/avac014",
+   "verdict": "noise",
+   "reason": "农法与粮食安全法律面"
+  },
+  {
+   "cite_id": "doi:10.2136/sh2012-53-3-lf",
+   "verdict": "noise",
+   "reason": "森林防火水质威胁，无关"
+  }
+ ]
+}

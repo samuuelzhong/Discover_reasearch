@@ -1,0 +1,34 @@
+{
+  "SP-1": [
+    "differentiable reservoir hydrology",
+    "reservoir catchment LSTM comparison"
+  ],
+  "SP-2": [
+    "conformal prediction streamflow",
+    "probabilistic deep learning floods extremes"
+  ],
+  "SC-1": [
+    "LSTM cell state soil moisture",
+    "deep learning catchment storage hysteresis"
+  ],
+  "SC-2": [
+    "deep learning baseflow recession",
+    "LSTM streamflow error decomposition"
+  ],
+  "SW-1": [
+    "reservoir operation change streamflow",
+    "design flood updating reservoir"
+  ],
+  "SW-2": [
+    "peak water timing shift",
+    "snowmelt reservoir operations warming"
+  ],
+  "SW-3": [
+    "imperviousness flood response",
+    "urban flood peak amplification"
+  ],
+  "SW-4": [
+    "low flow frequency regulation",
+    "reservoir drought downstream"
+  ]
+}

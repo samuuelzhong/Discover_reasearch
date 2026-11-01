@@ -1,0 +1,34 @@
+{
+  "SP-1": [
+    "regulated basin model benchmark",
+    "reservoir impact model transfer"
+  ],
+  "SP-2": [
+    "neural network extrapolation extremes hydrology",
+    "distribution shift calibration forecast"
+  ],
+  "SC-1": [
+    "learned parameters catchment memory",
+    "rainfall runoff memory timescale neural"
+  ],
+  "SC-2": [
+    "flow signatures deep learning evaluation",
+    "model error autocorrelation hydrograph"
+  ],
+  "SW-1": [
+    "reservoir indices regime classification",
+    "operation rules change detection river"
+  ],
+  "SW-2": [
+    "reservoir filling policy snow",
+    "water supply reliability snow basin"
+  ],
+  "SW-3": [
+    "runoff coefficient urbanization change",
+    "design storm urban drainage exceedance"
+  ],
+  "SW-4": [
+    "streamflow drought indices regulation",
+    "low flow trends regulated basins"
+  ]
+}

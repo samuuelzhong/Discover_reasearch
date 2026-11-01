@@ -1,0 +1,44 @@
+{
+ "round": 1,
+ "info_gain": "显著——RP-1 发现 2024-2026 密集直接先例（3 篇）需收窄差异化；RU-2 确认 SINDy 方法成熟且 2026 出现水文 SR 应用需差异化；RP-2/RU-1/RT-1/RT-2/RT-3 核心主张未见直接先例（存活）；RP-3 检索词失效需换轴",
+ "deltas": {
+  "RP-1": {
+   "action": "refine",
+   "reason": "先例密集：unified MTL transformer(2026)/签名知情MTL(WRR2026)/MTL+可微物理(2026)。差异化收窄到：过程一致性正则对干旱期与峰值尾部外推的特定增益，及与签名路线(静态签名 vs 动态过程一致性)的正面对照"
+  },
+  "RU-2": {
+   "action": "refine",
+   "reason": "2026 已出现 dependency-guided SR 水文应用（误差补偿方向）。差异化：面向储量-出流方程片段的归纳+与过程模型逐项对照，并处理噪声稳健性（2025 噪声-SINDy 证据）"
+  },
+  "RP-2": {
+   "action": "keep",
+   "reason": "仅邻域（动态指纹评估），条件化-外推主张存活"
+  },
+  "RP-3": {
+   "action": "keep",
+   "reason": "本轮检索词失效无有效证据；主池 'Ranked Right, Sized Wrong'(2026) 为评价错配邻域"
+  },
+  "RU-1": {
+   "action": "keep",
+   "reason": "闭合作数据产品（2026），残差探测器主张存活"
+  },
+  "RT-1": {
+   "action": "keep",
+   "reason": "金融类比域证据充分（传染/相关性相变/多元化悖论），水文侧直接先例未现"
+  },
+  "RT-2": {
+   "action": "keep",
+   "reason": "调度邻域密集但'规则失稳成为风险源'机制未被建模为威胁"
+  },
+  "RT-3": {
+   "action": "keep",
+   "reason": "融雪-农业邻域存在，供给峰-需求峰威胁梯度未见先例"
+  }
+ },
+ "next_round_axes": [
+  "RP-2: climate-informed conditioning / ENSO state index / land-surface state initialization",
+  "RP-3: weighted loss high-flow bias / evaluation-metric alignment",
+  "RT-1: concurrent low flow / hydrological drought synchrony / copula joint return period",
+  "RT-3: snow drought / crop water demand timing shift / supply-demand phenology mismatch"
+ ]
+}

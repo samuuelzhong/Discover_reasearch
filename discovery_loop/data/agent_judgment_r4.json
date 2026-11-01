@@ -1,0 +1,87 @@
+{
+ "RP-1": [
+  {
+   "cite_id": "doi:10.5194/egusphere-2026-2483",
+   "verdict": "neighbor",
+   "reason": "DL 提取流域过程可解释表征（2026）——解释路线邻域，非多出口一致性尾部增益"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2026.135357",
+   "verdict": "noise",
+   "reason": "山坡壤中流物理约束 DL"
+  },
+  {
+   "cite_id": "doi:10.5281/zenodo.22287126",
+   "verdict": "noise",
+   "reason": "洪水数字孪生数据集"
+  }
+ ],
+ "RP-2": [
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2022.128153",
+   "verdict": "neighbor",
+   "reason": "大尺度大气环流指数入 DL 库入流预报（2022 JHydrol）——最近先例：环流条件化已在短临入库流出现；差异化为大样本区域化+非平稳外推"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2025.133689",
+   "verdict": "noise",
+   "reason": "区域优化 LSTM 的 XAI 解释"
+  },
+  {
+   "cite_id": "doi:10.48565/bonndoc-861",
+   "verdict": "noise",
+   "reason": "极端事件影响 DL 学位论文"
+  }
+ ],
+ "RU-1": [
+  {
+   "cite_id": "doi:10.48550/arXiv.2412.15100",
+   "verdict": "neighbor",
+   "reason": "基于模拟推断的模型失设检验（2024）——统计学方法学类比：失设检验传统存在但未用于水文跨过程残差形态分类"
+  },
+  {
+   "cite_id": "doi:10.1002/2014wr016585",
+   "verdict": "neighbor",
+   "reason": "隐伏数据灾害诊断（2015 WRR）——数据误差诊断传统"
+  },
+  {
+   "cite_id": "doi:10.5194/egusphere-egu26-19382",
+   "verdict": "noise",
+   "reason": "耦合模型可靠性测试"
+  }
+ ],
+ "RT-1": [
+  {
+   "cite_id": "doi:10.1016/j.envsoft.2019.104514",
+   "verdict": "neighbor",
+   "reason": "水-电耦合模型分析火电供水可靠性（2019）——基础设施干旱脆弱性传统，但为单点/流域风险，未耦合低流同步化趋势"
+  },
+  {
+   "cite_id": "openalex:W2524763648",
+   "verdict": "neighbor",
+   "reason": "火电系统随机干旱风险分析（2016）——同上"
+  },
+  {
+   "cite_id": "doi:10.1007/s44327-026-00374-1",
+   "verdict": "neighbor",
+   "reason": "城市基础设施复合级联气候风险（2026）——复合风险治理框架"
+  }
+ ],
+ "RT-2": [
+  {
+   "cite_id": "doi:10.1088/1748-9326/ae9967",
+   "verdict": "neighbor",
+   "reason": "信息不对称下的上游水库运行揭示（2026 ERL）——策略行为角度最近邻域（Goodhart 味），但未做'规则成为风险源'的威胁建模"
+  },
+  {
+   "cite_id": "doi:10.33003/fjs-2023-0705-2001",
+   "verdict": "neighbor",
+   "reason": "水库利用加剧下游洪水（2023 个案）——放大的经验个案存在，机制化威胁模型缺失"
+  },
+  {
+   "cite_id": "doi:10.1007/s11430-025-1892-0",
+   "verdict": "noise",
+   "reason": "黑龙江-阿穆尔流域洪水风险上升"
+  }
+ ]
+}

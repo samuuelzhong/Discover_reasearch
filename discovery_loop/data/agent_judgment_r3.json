@@ -1,0 +1,124 @@
+{
+ "RP-2": [
+  {
+   "cite_id": "doi:10.5194/hess-20-3277-2016",
+   "verdict": "neighbor",
+   "reason": "ENSO 条件化 ESP 季节集合预报（HESS 2016）——气候指数条件化传统存在，但在季节重采样框架，非 DL 大样本径流模型条件化"
+  },
+  {
+   "cite_id": "doi:10.1061/(asce)0733-9496(1999)125:6(3",
+   "verdict": "neighbor",
+   "reason": "ENSO/PDO 信号入 ESP 预报（1999 Columbia）——同上传统源头"
+  },
+  {
+   "cite_id": "doi:10.1007/s00477-026-03256-5",
+   "verdict": "neighbor",
+   "reason": "AI 季节径流预测用 ENSO 预测因子（2026）——季节框架内仍在延续"
+  },
+  {
+   "cite_id": "doi:10.1029/2026jh001385",
+   "verdict": "neighbor",
+   "reason": "质量守恒双状态 LSTM（2026 WRR）——内部状态分离，非外部气候状态条件化"
+  }
+ ],
+ "RU-1": [
+  {
+   "cite_id": "arxiv:1902.01933v1",
+   "verdict": "precedent-adjacent",
+   "reason": "物理模型+DL 融合 GRACE：学习模型欠表示过程的失配（2019）——'残差含缺失过程信息'的最近先例，但限于单一数据流融合"
+  },
+  {
+   "cite_id": "doi:10.1038/s41598-019-40155-y",
+   "verdict": "neighbor",
+   "reason": "GRACE 观测中识别气候诱发的地下水亏损（2019）——信号分离目的"
+  },
+  {
+   "cite_id": "doi:10.5194/hess-30-4367-2026",
+   "verdict": "neighbor",
+   "reason": "野火对 ET/径流/水量闭合的破坏（2026 HESS）——闭合变化作为过程变化信号"
+  }
+ ],
+ "RU-2": [
+  {
+   "cite_id": "doi:10.1029/2008wr007658",
+   "verdict": "precedent-adjacent",
+   "reason": "非线性储量-出流关系与流域径流情势（2009 WRR）——S-D 非线性已被系统表征"
+  },
+  {
+   "cite_id": "doi:10.1002/hyp.15201",
+   "verdict": "neighbor",
+   "reason": "森林headwater 非线性 S-D 滞后指数（2024）"
+  },
+  {
+   "cite_id": "doi:10.1007/978-3-319-59650-1_38",
+   "verdict": "precedent-adjacent",
+   "reason": "水文建模外生变量的直线程序 GP 实验（2017）——SR 已进入水文建模"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2026.135173",
+   "verdict": "neighbor",
+   "reason": "深符号回归土壤水力 PTF（2026 JHydrol）——SR 水文应用新近例"
+  }
+ ],
+ "RT-1": [
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2025.134186",
+   "verdict": "precedent",
+   "reason": "变暖下黄河流域空间并发干旱风险上升（2025 JHydrol）——'变暖→同步化'直接先例"
+  },
+  {
+   "cite_id": "doi:10.1016/j.jhydrol.2024.132112",
+   "verdict": "precedent",
+   "reason": "全球主要流域并发干旱受 ENSO 调制（2024 JHydrol）——大尺度并发干旱先例"
+  },
+  {
+   "cite_id": "doi:10.1177/09596836261450769",
+   "verdict": "neighbor",
+   "reason": "美国东南 916 年径流同步性重建（2026）——同步性长期度量"
+  },
+  {
+   "cite_id": "doi:10.1016/j.ejrh.2025.102438",
+   "verdict": "neighbor",
+   "reason": "跨流域调水空间复合干旱概率（2025）——基础设施暴露侧先例"
+  }
+ ],
+ "RT-2": [
+  {
+   "cite_id": "openalex:W2189270915",
+   "verdict": "neighbor",
+   "reason": "气候变化下水库运行规则再检验（2009 Yagisawa）——'规则在气候变化下性能退化'传统存在"
+  },
+  {
+   "cite_id": "doi:10.1029/2011wr011540",
+   "verdict": "neighbor",
+   "reason": "非平稳下实物期权对冲的动态水库管理（2012 WRR）——适应性调度传统"
+  },
+  {
+   "cite_id": "doi:10.1061/(asce)wr.1943-5452.0001300",
+   "verdict": "neighbor",
+   "reason": "多目标水库运行适应雪pack衰减（2020）——气候位移适应先例"
+  }
+ ],
+ "RT-3": [
+  {
+   "cite_id": "doi:10.1038/s41558-020-0746-8",
+   "verdict": "precedent",
+   "reason": "雪melt 变化的农业风险（2020 Nature Climate Change）——直接覆盖核心威胁主张"
+  },
+  {
+   "cite_id": "doi:10.1038/s41558-022-01509-z",
+   "verdict": "precedent",
+   "reason": "雪melt 风险与灌溉农业的远程耦合（2022 Nature Climate Change）——供给-需求耦合威胁已量化"
+  },
+  {
+   "cite_id": "doi:10.1080/19390459.2013.811850",
+   "verdict": "neighbor",
+   "reason": "早雪melt 的灌溉供水成本（2013）"
+  },
+  {
+   "cite_id": "doi:10.1016/j.agwat.2026.110402",
+   "verdict": "neighbor",
+   "reason": "中国雪干旱向农业干旱传播机制（2026）——威胁链条在活跃扩展"
+  }
+ ]
+}
