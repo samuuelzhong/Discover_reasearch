@@ -444,5 +444,361 @@
   "gate": {},
   "formal_status": "formal",
   "resource_gap": null
+ },
+ {
+  "hid": "S1",
+  "claim": "极端外推上限由蓄水容量分布尾形控制：LSTM 对极端降水的凹性饱和响应源于产流机制切换（蓄满→超渗+坡面连通）未进入模型结构，可学习的流域蓄水容量分布（尾形参数化）可消除该上限",
+  "status": "novelty_probed",
+  "verification_status": "partially_tested",
+  "delta": "r3 对抗攻击判读：遭遇强占位——WRR 2026 (10.1029/2025WR040414 cited19) 'Physics-Informed, Differentiable Hydrologic Models for Capturing Unseen Extreme Events' 已占'混合模型极端事件外推'问题框架；WRR 2025 (10.1029/2025WR040076) 'Evaluating the Functional Realism of DL Rainfall-Runoff Models' 与 Water RM 2025 (10.1007/s11269-025-04231-5) 已占'DL 产流机制真实性评估'。delta 最终收窄：外推上限的**尾形机制归因**——占位文献提出问题/评估真实性，均未回答上限的机制来源；独有可证伪主张=跨流域尾参数×峰值低估相关+合成流域机制切换因果裁决。",
+  "nearest_prior": [
+   {
+    "cite_id": "doi:10.2166/NH.2017.245",
+    "year": "2018",
+    "title": "Understanding the impacts of catchment characteristics on the shape of the storage capacity curve and its influence on flood flows",
+    "note": "r2 q=storage capacity curve runoff | 最近邻：曲线形状×洪水（概念模型域）"
+   },
+   {
+    "cite_id": "doi:10.1029/2011wr011613",
+    "year": "2012",
+    "title": "Probabilistic rainfall-runoff transformation considering both infiltration and saturation excess runoff generation processes",
+    "note": "r2 | 双机制解析建模成熟（方法先例）"
+   },
+   {
+    "cite_id": "arxiv:2408.07071v1",
+    "year": "2024",
+    "title": "Approaches for enhancing extrapolability in process-based and data-driven models in hydrology",
+    "note": "r2 q=deep learning runoff extremes extrapolation | DL 水文外推直接邻域"
+   },
+   {
+    "cite_id": "doi:10.1029/2025WR040414",
+    "year": "2026",
+    "title": "Physics-Informed, Differentiable Hydrologic Models for Capturing Unseen Extreme Events",
+    "note": "r3 q=physics informed LSTM peak flow | 强占位：极端外推问题框架已提出（未答机制来源）"
+   },
+   {
+    "cite_id": "doi:10.1029/2025WR040076",
+    "year": "2025",
+    "title": "Evaluating the Functional Realism of Deep Learning Rainfall-Runoff Models Using Catchment Hydrology Principles",
+    "note": "r3 q=runoff generation mechanism deep learning | 机制真实性评估占位"
+   },
+   {
+    "cite_id": "arxiv:2101.05186v3",
+    "year": "2021",
+    "title": "MC-LSTM: Mass-Conserving LSTM",
+    "note": "r3 在库 | 守恒归纳偏置先例（方法基座）"
+   }
+  ],
+  "novelty_queries": [
+   "storage capacity curve runoff",
+   "saturation excess runoff generation",
+   "deep learning runoff extremes extrapolation",
+   "infiltration excess saturation excess"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from 径流假设循环-从零-收敛稿-2026-10-31 人工轮（H-A 收窄为尾形主张）"
+   },
+   {
+    "round": 2,
+    "action": "agent_judgment",
+    "note": "检索判读：容量曲线/双机制为成熟方法域，delta 收窄为'尾形作为 DL 外推上限的机制解释+结构修复'；概念模型先例（NH2018）必须引用并差异化"
+   },
+   {
+    "round": 3,
+    "action": "agent_judgment",
+    "note": "对抗攻击：'PIML 修复极端外推已成熟？'命中 WRR2026 强占位——delta 收窄为尾形机制归因；Erlang/karst 弱 prior 移出（cleanup 留痕）"
+   },
+   {
+    "round": 3,
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=capfit+synthetic-basin（容量分布拟合/可微 HBV 类工具与合成流域仿真器未建；分层评估部分可先用 runs/hydro-r1 的 24 流域快照）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "capfit+synthetic-basin（容量分布拟合/可微 HBV 类工具与合成流域仿真器未建；分层评估部分可先用 runs/hydro-r1 的 24 流域快照）"
+ },
+ {
+  "hid": "S2",
+  "claim": "人类调度是低维可逆的决策结构而非随机噪声：SWOT 水面高程（此前不可观测隐状态）+水量平衡反演水库放水序列，无监督恢复调度规则（分段目标水位+hedging 系数的低维结构），受调控流域模型性能大幅回升",
+  "status": "novelty_probed",
+  "verification_status": "proposed",
+  "delta": "r3 放宽复查判读：卫星观测产品层成熟——GloLakes（ESSD 2024 cited56）27000 湖库蓄水动态 1984-今、ICESat-2 全球 22008 湖库水位（ERL 2022 cited53）、Sentinel-3 月度水位（RS 2024）、Nile 流域卫星监测水库运行（RS 2022）——SWOT 前产品已可直接用，资源风险降级为数据管道工程。反演决策规则层仍 0 占位：全部工作是水位/蓄水的观测与估计，无人从蓄水时序反演调度规则。新增方法基座：hedging 规则形态学（SOP/SH/DH/OPH/TPH 分段结构）='低维分段规则'主张的文献确认。Nile 2022 为最近邻（读数层，非反演层）。",
+  "nearest_prior": [
+   {
+    "cite_id": "doi:10.1145/1015330.1015430",
+    "year": "2004",
+    "title": "Apprenticeship learning via inverse reinforcement learning",
+    "note": "r2 q=inverse reinforcement learning | IRL 方法源头（cited2830）"
+   },
+   {
+    "cite_id": "doi:10.1007/s10462-021-10108-x",
+    "year": "2022",
+    "title": "A survey of inverse reinforcement learning",
+    "note": "r2 | IRL 工具箱综述（低维 reward 恢复）"
+   },
+   {
+    "cite_id": "doi:10.5194/essd-16-201-2024",
+    "year": "2024",
+    "title": "GloLakes: water storage dynamics for 27000 lakes globally from 1984 to present",
+    "note": "r3 q=satellite altimetry lakes reservoirs | 数据资源（资源缺口素材）+邻域"
+   },
+   {
+    "cite_id": "doi:10.3390/rs14184667",
+    "year": "2022",
+    "title": "Water Levels in the Major Reservoirs of the Nile River Basin",
+    "note": "r3 | 最近邻：卫星监测水库运行→协调管理（读数层）"
+   },
+   {
+    "cite_id": "doi:10.1007/s11269-019-02220-z",
+    "year": "2019",
+    "title": "Comparative Effectiveness of Reservoir Operation Applying Hedging Rules",
+    "note": "r3 q=hedging rule reservoir | 规则形态学基座（低维分段结构先验）"
+   }
+  ],
+  "novelty_queries": [
+   "SWOT satellite reservoir",
+   "inverse reinforcement learning",
+   "dam operation machine learning",
+   "reservoir operating rules inference",
+   "satellite altimetry reservoir storage"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from 径流假设循环-从零-收敛稿-2026-10-31 人工轮（H-C 保留，最强假设）"
+   },
+   {
+    "round": 2,
+    "action": "agent_judgment",
+    "note": "检索判读：IRL 方法先例确立（决策低维恢复有工具）；卫星/调度侧 0 命中标记为'短语过严'而非空白，r3 放宽复查后再定 novel/partially"
+   },
+   {
+    "round": 3,
+    "action": "agent_judgment",
+    "note": "放宽复查：观测层成熟+反演层空白双层结构确认；Solander 博士论文移出（被 GloLakes 取代）；S2 由 proposed 升 partially_tested"
+   },
+   {
+    "round": 3,
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=release-data-pipeline（GloLakes/ICESat-2 产品与美国公开调度记录接入未建；反演工具箱 sklearn 在库）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "release-data-pipeline（GloLakes/ICESat-2 产品与美国公开调度记录接入未建；反演工具箱 sklearn 在库）"
+ },
+ {
+  "hid": "S3",
+  "claim": "水量闭合残差是缺失过程探测器而非误差：守恒约束下闭合残差的时空热点定位未建模过程（灌溉取水/岩溶渗漏/冰川融水/跨流域调水），残差空间即未知过程地图",
+  "status": "novelty_probed",
+  "verification_status": "partially_tested",
+  "delta": "r3 判读：'失配当信号'方法先例确认——Sun 2019 (arxiv:1902.01933) GRACE×物理模型失配当学习对象（'Can We Learn from Mismatch?'）；印度抽水致地下水旱不可逆（1908.00255）证明卫星失配可定位人类取水信号。守恒模型内部闭合残差作为缺失过程探测器（残差热点=未知过程地图）仍 0 占位；Budyko residual/unclosed budget 短语层无占位。",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2111.13234v1",
+    "year": "2021",
+    "title": "Incorporating the effect of heterogeneous surface heating into a semi-empirical model of the surface energy balance closure",
+    "note": "r2 q=energy balance closure eddy covariance | 跨域同构：能量闭合残差=测量问题（解释传统，与我们主张相反，差异化明确）"
+   },
+   {
+    "cite_id": "arxiv:1906.06622v1",
+    "year": "2019",
+    "title": "Achieving Conservation of Energy in Neural Network Emulators for Climate Modeling",
+    "note": "r2 q=mass conservation neural network | 守恒 NN 方法先例（残差未被当信号用）"
+   },
+   {
+    "cite_id": "doi:10.57760/sciencedb.36642",
+    "year": "2026",
+    "title": "Global Monthly Terrestrial Water Balance and Surface Environment Dataset (2002-2010)",
+    "note": "r2 q=water balance closure residual | 诊断数据集抬头（资源素材+邻域）"
+   },
+   {
+    "cite_id": "doi:10.5281/zenodo.23455745",
+    "year": "2026",
+    "title": "Multi-product water-balance dataset and spatial hydrological diagnostics for the Kasai River Basin",
+    "note": "r2 | 流域尺度水量平衡诊断+径流萎缩信号（邻域）"
+   },
+   {
+    "cite_id": "arxiv:1902.01933v1",
+    "year": "2019",
+    "title": "Combining Physically-Based Modeling and Deep Learning for Fusing GRACE Satellite Data: Can We Learn from Mismatch?",
+    "note": "r3 q=GRACE groundwater depletion | 失配当信号方法先例（与 HM5-4 关联）"
+   }
+  ],
+  "novelty_queries": [
+   "water balance closure residual",
+   "energy balance closure eddy covariance",
+   "mass conservation neural network"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from 径流假设循环-从零-收敛稿-2026-10-31 人工轮（H-B 收敛为残差=探测器）"
+   },
+   {
+    "round": 2,
+    "action": "agent_judgment",
+    "note": "检索判读：能量闭合残差跨域同构成立但解释传统相反（测量问题 vs 过程信号）——差异化清晰；守恒 NN 当约束用成熟、当探测器用空白"
+   },
+   {
+    "round": 3,
+    "action": "agent_judgment",
+    "note": "失配当信号先例入池（方法论支撑）；残差探测器空白保持"
+   },
+   {
+    "round": 3,
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=closure-data（GLEAM/TWS 产品接入+已知取水流域清单未建；残差源=HM5-1 三档实验产出）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "closure-data（GLEAM/TWS 产品接入+已知取水流域清单未建；残差源=HM5-1 三档实验产出）"
+ },
+ {
+  "hid": "T1",
+  "claim": "干旱下蓄水博弈同步化威胁：独立理性的调度者在旱年各自'留水过冬'（hedging），导致跨流域水库放水相关性异常升高——扣除气候共变（降水/蒸散发联合距平）后偏相关仍显著升高即证明是决策层同步；下游遭遇'联袂断流'，供水组合多元化在系统旱年是假象",
+  "status": "novelty_probed",
+  "verification_status": "proposed",
+  "delta": "r3 直接占位复查：hedging rule 8 命中全为'单库/给定网络内规则正向优化'（WRM 2019 比较研究、Water Research 2025 hedging+水动力防洪耦合、TVH 系列、多库复合 hedging AgWAT 2022）——无人做'多库独立决策同步化'观测诊断。reservoir release correlation 6 命中全为物理噪声；compound drought water supply 0（短语层）；供水组合韧性 1 弱邻域（城市安全讨论，无调度同步机制）。判定：观测诊断层空白保持；裁决路径明确（Dunkelflaute 多阈值时序方法迁移+偏相关）。",
+  "nearest_prior": [
+   {
+    "cite_id": "arxiv:2410.00244v4",
+    "year": "2024",
+    "title": "Multi-threshold time series analysis enables characterization of variable renewable energy droughts in Europe",
+    "note": "r2 q=energy drought | 跨域最强同构：多源组合同时失效的刻画方法可迁移"
+   },
+   {
+    "cite_id": "arxiv:1210.5987v1",
+    "year": "2012",
+    "title": "Stability analysis of financial contagion due to overlapping portfolios",
+    "note": "r2 | 金融同构：共同持仓=传染向量（组合假象机制类比）"
+   },
+   {
+    "cite_id": "doi:10.1016/j.ress.2025.110950",
+    "year": "2025",
+    "title": "Cascading failure analysis of interdependent water-power networks based on functional coupling",
+    "note": "r2 | 网络同构：水-电耦合级联（物理耦合层，非决策层）"
+   },
+   {
+    "cite_id": "doi:10.1016/j.agwat.2022.107542",
+    "year": "2022",
+    "title": "Investigation of a composite two-phase hedging rule policy for a multi reservoir system using streamflow forecast",
+    "note": "r3 | 多库 hedging 正向优化（范式差异锚点：优化 vs 观测诊断）"
+   },
+   {
+    "cite_id": "doi:10.1016/j.watres.2025.123443",
+    "year": "2025",
+    "title": "A coupled optimized hedging rule-based reservoir operation and hydrodynamic model framework for riverine flood risk management",
+    "note": "r3 | hedging 域顶刊近作（范式锚点）"
+   }
+  ],
+  "novelty_queries": [
+   "energy drought renewable power system",
+   "financial contagion diversification crisis",
+   "cascading failure interdependent networks",
+   "reservoir hedging rule drought",
+   "transboundary dam cooperation conflict"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from 径流假设循环-从零-收敛稿-2026-10-31 人工轮（H-F 差异化为供水组合假象）"
+   },
+   {
+    "round": 2,
+    "action": "agent_judgment",
+    "note": "跨域发散三域全命中成熟文献（能源/金融/网络），调度决策同步化+供水组合假象无人做；水文侧 0 命中标注为短语过严，r3 复查"
+   },
+   {
+    "round": 3,
+    "action": "agent_judgment",
+    "note": "直接占位复查：正向优化域成熟、观测诊断层空白保持；Brahmaputra 社会政治弱邻域移出"
+   },
+   {
+    "round": 3,
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=release-data-pipeline（与 S2 共享数据管道；偏相关分析 scipy 在库）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "release-data-pipeline（与 S2 共享数据管道；偏相关分析 scipy 在库）"
+ },
+ {
+  "hid": "T2",
+  "claim": "模型偏差债威胁：主流模型系统性低估稀有洪水→依赖'模型辅助频率分析'的设计洪水（工程影响评价/气候变化情景设计值）存在系统性欠设计，欠设计程度可量化为'设计值 vs 事后实测极值比率'的历史序列，且随气候变化复利放大",
+  "status": "novelty_probed",
+  "verification_status": "proposed",
+  "delta": "r3 直接占位复查：design flood×ML 命中全为词面噪声（FAIS/FloodGenome/城市风险），hydrological model bias design flood 1 噪声，flood design criteria 0——'模型辅助频率分析偏差债→工程欠设计'框架检索层无占位（诚实边界：OpenAlex 短语层弱证据，WOS/Scopus 全文级复查列 p2a）。NS-FFA 最近邻差异化不变。DRUM 逐字引文校验通过（claims 在库：'...forecasting remains challenging due to peak flow underestimation...'）——前提文献级锚点成立。",
+  "nearest_prior": [
+   {
+    "cite_id": "doi:10.1016/j.jhydrol.2022.128235",
+    "year": "2022",
+    "title": "Incorporating nonstationarity in regional flood frequency analysis procedures to account for climate change impact",
+    "note": "r2 q=flood frequency analysis nonstationarity | 最近邻域：NS-FFA（自然漂移，非工具偏差）"
+   },
+   {
+    "cite_id": "doi:10.1016/j.watres.2020.116265",
+    "year": "2020",
+    "title": "Exploring multidecadal changes in climate and reservoir storage for assessing nonstationarity in flood peaks and risks worldwide",
+    "note": "r2 | 气候×水库双协变量非平稳（最近邻域）"
+   },
+   {
+    "cite_id": "arxiv:2412.11942v2",
+    "year": "2024",
+    "title": "DRUM: Diffusion-based runoff model for probabilistic flood forecasting",
+    "note": "r2 q=extreme flood underestimation model | 峰值低估公认+修复尝试（前提支撑）"
+   },
+   {
+    "cite_id": "arxiv:2104.09879v1",
+    "year": "2021",
+    "title": "GARCH-UGH: A bias-reduced approach for dynamic extreme Value-at-Risk estimation in financial time series",
+    "note": "r2 q=return level estimation | 金融跨域同构：尾部模型偏差→监管债"
+   }
+  ],
+  "novelty_queries": [
+   "flood frequency analysis nonstationarity",
+   "extreme flood underestimation model",
+   "return level estimation extreme value",
+   "design flood estimation climate change"
+  ],
+  "blank_queries": 0,
+  "history": [
+   {
+    "round": 0,
+    "action": "seed",
+    "note": "seed from 径流假设循环-从零-收敛稿-2026-10-31 人工轮（H-G 保留，限定模型辅助频率分析）"
+   },
+   {
+    "round": 2,
+    "action": "agent_judgment",
+    "note": "检索判读：NS-FFA 为最近邻域（自然漂移 vs 工具债差异化成立）；'偏差债→欠设计'框架 0 命中；金融 VaR 债务同构可借鉴其量化结构"
+   },
+   {
+    "round": 3,
+    "action": "agent_judgment",
+    "note": "直接占位复查：0 占位（检索层弱证据，proposed 保持）；DRUM 逐字校验通过（paperqa 式回调首个 verified claim）"
+   },
+   {
+    "round": 3,
+    "action": "formal_mark",
+    "note": "formal_status=formal_blocked resource_gap=design-flood-archive（设计值-实测极值比率历史数据源未定标；EVT 工具 scipy/statsmodels 可用）"
+   }
+  ],
+  "gate": {},
+  "formal_status": "formal_blocked",
+  "resource_gap": "design-flood-archive（设计值-实测极值比率历史数据源未定标；EVT 工具 scipy/statsmodels 可用）"
  }
 ]
